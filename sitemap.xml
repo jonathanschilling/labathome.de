@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jonathanschilling.github.io/labathome.de/electronics/</loc>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/</loc>
+  </url><url>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/</loc>
   </url><url>
     <loc>https://jonathanschilling.github.io/labathome.de/</loc>
+  </url><url>
+    <loc>https://jonathanschilling.github.io/labathome.de/about/</loc>
+  </url><url>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/</loc>
   </url>
 </urlset>

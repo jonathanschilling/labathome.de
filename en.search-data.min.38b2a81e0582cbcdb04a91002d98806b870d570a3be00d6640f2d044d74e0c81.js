@@ -1,1 +1,0 @@
-'use strict';(function(){const a={cache:!0};a.doc={id:'id',field:['title','content'],store:['title','href','section']};const b=FlexSearch.create('balance',a);window.bookSearchIndex=b,b.add({id:0,href:'/labathome.de/electronics/',title:"Electrical Engineering",section:"Welcome",content:"Electronics #  Here, I present some electronics projects.\nSMPS #  "})})()

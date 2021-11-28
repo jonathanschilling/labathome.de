@@ -6,5 +6,25 @@
     <description>Recent content in Welcome on Lab@Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jonathanschilling.github.io/labathome.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About this website</title>
+      <link>https://jonathanschilling.github.io/labathome.de/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanschilling.github.io/labathome.de/about/</guid>
+      <description>This website is created using the Hugo static website generator.
+I chose the hugo-book theme.
+You can contact me via email: jonathan.schilling@mail.de</description>
+    </item>
+    
+    <item>
+      <title>AVM B1</title>
+      <link>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/</guid>
+      <description>Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut. Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.</description>
+    </item>
+    
   </channel>
 </rss>
