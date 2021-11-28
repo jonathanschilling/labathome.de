@@ -2,7 +2,7 @@ baseURL = 'https://jonathanschilling.github.io/labathome.de/'
 languageCode = 'en-us'
 title = 'Lab@Home'
 
-theme = "book"
+theme = "hugo-book"
 
 custom_css = ["css/custom.css"]
 
