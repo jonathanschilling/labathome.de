@@ -1,4 +1,4 @@
-baseURL = 'https://jonathanschilling.github.io/test-hugo-book/'
+baseURL = 'https://jonathanschilling.github.io/labathome.de/'
 languageCode = 'en-us'
 title = 'Lab@Home'
 
@@ -31,7 +31,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = "https://github.com/jonathanschilling/test-hugo-book-contents"
+  BookRepo = "https://github.com/jonathanschilling/labathome.de-content"
   
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
