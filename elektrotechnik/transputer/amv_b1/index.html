@@ -5,21 +5,19 @@
   <meta name="generator" content="Hugo 0.89.4" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut. Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.
+<meta name="description" content="AVM B1 #  Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut. Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.
 Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte sitzt der C011, der auf den 4 jumperbaren Adressen vom ISA-Bus aus angesprochen werden kann. Der C011 ist auf der B1 fest auf Link 0 des T400 verdrahtet.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="AVM B1" />
-<meta property="og:description" content="Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut. Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.
-Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte sitzt der C011, der auf den 4 jumperbaren Adressen vom ISA-Bus aus angesprochen werden kann. Der C011 ist auf der B1 fest auf Link 0 des T400 verdrahtet." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/" /><meta property="article:section" content="elektrotechnik" />
-
-
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" />
 
 <title>AVM B1 | Lab@Home</title>
 <link rel="manifest" href="/labathome.de/manifest.json">
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/labathome.de/en.search.min.83c6e3046bf7b0f0b2924e29afa85e3a7f77d07340c61c812bf3266707e83c5f.js" integrity="sha256-g8bjBGv3sPCykk4pr6heOn930HNAxhyBK/MmZwfoPF8="></script>
+<script defer src="/labathome.de/en.search.min.a88ea0643deff0f7bf31fa6416f610cf45c7a46c744a89939599c18bfc47a959.js" integrity="sha256-qI6gZD3v8Pe/MfpkFvYQz0XHpGx0SomTlZnBi/xHqVk="></script>
+<link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/index.xml" title="Lab@Home" />
 
 
   
@@ -101,11 +99,52 @@ Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/" class=" active">AVM B1</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" class=" active">AVM B1</a>
   
+
+          
+  <ul>
+    
+  </ul>
 
         </li>
       
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_t1/" class="">AVM T1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/" class="">Leonardo XL PCI</a>
+  
+
+          
+  <ul>
     
   </ul>
 
@@ -191,9 +230,13 @@ Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB
 
       
       
-  <article class="markdown"><p>Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut.
+  <article class="markdown"><h1 id="avm-b1">
+  AVM B1
+  <a class="anchor" href="#avm-b1">#</a>
+</h1>
+<p>Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut.
 Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.</p>
-<p><img src="../avm_b1_gesamt_web.jpg" alt="AVM B1 ISA-Karte" /></p>
+<p><img src="avm_b1_gesamt_web.jpg" alt="AVM B1 ISA-Karte" /></p>
 <p>Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit
 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte
 sitzt der C011, der auf den 4 jumperbaren Adressen vom ISA-Bus aus angesprochen werden kann.
@@ -201,12 +244,12 @@ Der C011 ist auf der B1 fest auf Link 0 des T400 verdrahtet. Die Links sind
 von AVM auf der Platine auf 10MBit/s verdrahtet.</p>
 <p>An diesem B1 habe ich nun einige Modifikationen vorgenommen:</p>
 <p>Zuerst wurde die Linkgeschwindigkeit des C011 auf 20MBit hochgesetzt:</p>
-<p><img src="../avm_b1_c012_web.jpg" alt="C012 auf dem B1" /></p>
+<p><img src="avm_b1_c012_web.jpg" alt="C012 auf dem B1" /></p>
 <p>Dazu wird Pin 17 mittels eines spitzen Werkzeugs,
 ich habe hier eine feine Messspitze verwendet, hochgebogen
 und auf +5V verdrahtet, z.B. Pin 28 des C011.<br>
 Nun muss natürlich auch die Linkgeschwindigkeit des T400 angepasst werden:</p>
-<p><img src="../avm_b1_t400_web.jpg" alt="T400 auf dem B1" /></p>
+<p><img src="avm_b1_t400_web.jpg" alt="T400 auf dem B1" /></p>
 <p>Das ist leider ein bisschen kniffliger, da der T400 einen noch geringeren Pinabstand besitzt
 als der C011. Es müssen die Pins 8, 9 und 11 hochgebogen und auf +5V gelegt werden, z.B. an dem 1µF-Kondensator,
 der direkt neben dem T400 aufgelötet ist und zur Pufferung der internen Versorgungsspannung des Link-Interfaces vom T400 dient.</p>
@@ -293,16 +336,16 @@ Da der B1 sich auf Adr. 0x150 ansprechen lässt und sich darauf wie eine Inmos B
 bietet der B1 daher eine sehr günstige und direkte Transputer-Einstiegskarte.
 Wenn nun Link 1, der auf den Erweiterungsbus gelegt ist (s.o.),
 nach &ldquo;draußen&rdquo; führt, kann man dort weitere Transputer(netze) anschließen,
-z.B. den <a href="http://jonathanschilling.de/content/elektrotechnik/computerbasteln/transputer/avm_t1b">AVM T1(-B, wenn vorhanden)</a>.</p>
+z.B. den <a href="../avm_t1">AVM T1(-B, wenn vorhanden)</a>.</p>
 <p>Dazu braucht es jedoch einen RS-422-Konverter, der auf den B1 aufgesteckt wird:</p>
-<p><img src="../rs422_top_web.jpg" alt="RS-422-Converter top" /></p>
-<p><img src="../rs422_bottom_web.jpg" alt="RS-422-Converter bottom" /></p>
+<p><img src="rs422_top_web.jpg" alt="RS-422-Converter top" /></p>
+<p><img src="rs422_bottom_web.jpg" alt="RS-422-Converter bottom" /></p>
 <p>Bei Maxim bekommt als kostenlose Samples zwei MAX3467. Es handelt sich dabei um RS-422-Konverter für bis zu 40MBit/s,
 also mehr als ausreichend für die Transputer-Links. Diese werden nun anhand der nachfolgenden Schaltskizze verdrahtet,
 am besten auf einer Lochraster-Platine. Der 15-pol. D-SUB-Stecker ist dabei kein Muss, aber da ich für
 die Verbidung zum T1 das originale Kabel verwende, habe ich hier einen verwendet. Das Pinout des Kabels findet sich,
 ebenso wie weitere Informationen zum T1,
-auf der <a href="http://jonathanschilling.de/content/elektrotechnik/computerbasteln/transputer/avm_t1b">entsprechenden Unterseite</a>.</p>
+auf der <a href="../avm_t1">entsprechenden Unterseite</a>.</p>
 </article>
  
       

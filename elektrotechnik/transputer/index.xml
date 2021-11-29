@@ -6,15 +6,5 @@
     <description>Recent content in Transputer on Lab@Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AVM B1</title>
-      <link>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_b1/</guid>
-      <description>Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut. Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.
-Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte sitzt der C011, der auf den 4 jumperbaren Adressen vom ISA-Bus aus angesprochen werden kann. Der C011 ist auf der B1 fest auf Link 0 des T400 verdrahtet.</description>
-    </item>
-    
   </channel>
 </rss>
