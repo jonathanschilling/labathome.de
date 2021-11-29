@@ -25,7 +25,7 @@ verfügt über 4 weitere Transputer vom Typ ST20450 mit je 2MB D-RAM, sodass die
 Als ich auf der exzellenten Seite [www.geekdot.com](http://www.geekdot.com) vom T1 las,
 war mein Interesse geweckt. Ich hatte vorher schon vom Konzept des Transputers gehört, aber
 das was ich dort sah, versprach ein ähnliches Erlebnis
-wie die [Leonardo XL](http://jonathanschilling.de/content/elektrotechnik/computerbasteln/68k/leonardo_xl_isdn_pci) zu werden.
+wie die [Leonardo XL](../../leonardo_xl) zu werden.
 
 Als ich meinen ersten T1 dann von eBay bekam, habe ich zuerst das Gehäuse geöffnet und mal die Platinen begutachtet.
 Die Bezeichnungen der Bauteile decken sich mit denen, die Axel Muhr auf [seiner Seite zum T1](https://www.geekdot.com/category/hardware/transputer/avm-t1/) verwendet.
