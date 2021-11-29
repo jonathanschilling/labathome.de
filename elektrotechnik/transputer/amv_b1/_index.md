@@ -2,10 +2,12 @@
 title: 'AVM B1'
 ---
 
+# AVM B1
+
 Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut.
 Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.
 
-![AVM B1 ISA-Karte](../avm_b1_gesamt_web.jpg)
+![AVM B1 ISA-Karte](avm_b1_gesamt_web.jpg)
 
 Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit
 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte
@@ -17,14 +19,14 @@ An diesem B1 habe ich nun einige Modifikationen vorgenommen:
 
 Zuerst wurde die Linkgeschwindigkeit des C011 auf 20MBit hochgesetzt:
 
-![C012 auf dem B1](../avm_b1_c012_web.jpg)
+![C012 auf dem B1](avm_b1_c012_web.jpg)
 
 Dazu wird Pin 17 mittels eines spitzen Werkzeugs,
 ich habe hier eine feine Messspitze verwendet, hochgebogen
 und auf +5V verdrahtet, z.B. Pin 28 des C011.  
 Nun muss natürlich auch die Linkgeschwindigkeit des T400 angepasst werden:
 
-![T400 auf dem B1](../avm_b1_t400_web.jpg)
+![T400 auf dem B1](avm_b1_t400_web.jpg)
 
 Das ist leider ein bisschen kniffliger, da der T400 einen noch geringeren Pinabstand besitzt
 als der C011. Es müssen die Pins 8, 9 und 11 hochgebogen und auf +5V gelegt werden, z.B. an dem 1µF-Kondensator,
@@ -57,18 +59,18 @@ Da der B1 sich auf Adr. 0x150 ansprechen lässt und sich darauf wie eine Inmos B
 bietet der B1 daher eine sehr günstige und direkte Transputer-Einstiegskarte.
 Wenn nun Link 1, der auf den Erweiterungsbus gelegt ist (s.o.),
 nach "draußen" führt, kann man dort weitere Transputer(netze) anschließen,
-z.B. den [AVM T1(-B, wenn vorhanden)](http://jonathanschilling.de/content/elektrotechnik/computerbasteln/transputer/avm_t1b).
+z.B. den [AVM T1(-B, wenn vorhanden)](../avm_t1).
 
 Dazu braucht es jedoch einen RS-422-Konverter, der auf den B1 aufgesteckt wird:
 
-![RS-422-Converter top](../rs422_top_web.jpg)
+![RS-422-Converter top](rs422_top_web.jpg)
 
-![RS-422-Converter bottom](../rs422_bottom_web.jpg)
+![RS-422-Converter bottom](rs422_bottom_web.jpg)
 
 Bei Maxim bekommt als kostenlose Samples zwei MAX3467. Es handelt sich dabei um RS-422-Konverter für bis zu 40MBit/s,
 also mehr als ausreichend für die Transputer-Links. Diese werden nun anhand der nachfolgenden Schaltskizze verdrahtet,
 am besten auf einer Lochraster-Platine. Der 15-pol. D-SUB-Stecker ist dabei kein Muss, aber da ich für
 die Verbidung zum T1 das originale Kabel verwende, habe ich hier einen verwendet. Das Pinout des Kabels findet sich,
 ebenso wie weitere Informationen zum T1,
-auf der [entsprechenden Unterseite](http://jonathanschilling.de/content/elektrotechnik/computerbasteln/transputer/avm_t1b).
+auf der [entsprechenden Unterseite](../avm_t1).
 
