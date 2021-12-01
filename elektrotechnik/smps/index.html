@@ -257,7 +257,7 @@ einem <a href="http://www.ti.com/product/OPA541">OPA541</a> Power-Op-Amp auch ei
 welches die Gatetreiber für die HV-Mosfets versorgt.</p>
 <p>Um den rot umrandeten Bereich der beiden Platinen geht es hier:</p>
 <p><img src="sciex_pulser_board_smps.jpg" alt="Platine im Pulser-Modul" /></p>
-<p>Als Controller-IC kommt hier der <a href="https://www.datasheetarchive.com/pdf/download.php?id=da6bfcd6bc709a78aea0c0802a427a24a8dd49&amp;amp;type=M">SG3526J</a> zum Einsatz.
+<p>Als Controller-IC kommt hier der <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a> zum Einsatz.
 Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von <a href="https://www.electronetics.us/">Electronetics</a> hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.</p>
 <p>Die folgende Tabelle gibt die Verbindung des Stromversorgunssteckers links oben (Pins 1-6) an den
 <a href="http://www-bd.gsi.de/dokuwiki/lib/exe/fetch.php?media=misc:nim-standard.pdf">NIM-Stecker</a> wieder:</p>
@@ -318,7 +318,7 @@ parallelgeschalteten Ausgänge angeschlossen.
 Die sich ergebende <a href="Belastungskurve.dat">Belastungskurve</a> ist hier zu sehen:</p>
 <p><img src="smps_load.png" alt="Belastungskurve des SMPS" /></p>
 <p>Als Modell wurde eine ideale Spannungsquelle mit nachgeschaltetem (Innen-)Widerstand angenommen.
-Der Fit an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
+Der <a href="plot_smps_load.sh">Fit</a> an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
 ergibt einen Innenwiderstand von ca. 9.3 Ohm bei einer Leerlaufspannung von 29.7V.
 Eine Messung ohne Last ergibt jedoch eine Leerlaufspannung von ca. 70V.
 Hier spielt wahrscheinlich die Tatsache eine Rolle,
