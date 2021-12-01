@@ -41,7 +41,7 @@ Die sich ergebende [Belastungskurve](Belastungskurve.dat) ist hier zu sehen:
 ![Belastungskurve des SMPS](smps_load.png)
 
 Als Modell wurde eine ideale Spannungsquelle mit nachgeschaltetem (Innen-)Widerstand angenommen.
-Der Fit an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
+Der [Fit](plot_smps_load.sh) an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
 ergibt einen Innenwiderstand von ca. 9.3 Ohm bei einer Leerlaufspannung von 29.7V.
 Eine Messung ohne Last ergibt jedoch eine Leerlaufspannung von ca. 70V.
 Hier spielt wahrscheinlich die Tatsache eine Rolle,
