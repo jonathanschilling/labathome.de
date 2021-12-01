@@ -278,7 +278,7 @@ Allerdings sind nun auch ein paar Probleme deutlich geworden:
 1.)
 Der Support hat merkliches Spiel auf dem Maschinenbett:
 
-![Spiel des Bettschlittens](Bett_Spiel.gif)
+![Spiel des Bettschlittens](Bett_Spiel.png)
 
 Hier ist der Support in rot gezeichnet und die Gleitleiste (?) in grün.
 Meine Idee wäre, ein paar Zehntel vom Support unten abzufräsen.
