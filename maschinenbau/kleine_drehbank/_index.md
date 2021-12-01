@@ -543,4 +543,5 @@ und Gewindesteigungen rauszubekommen. Dabei mache ich dann gleich noch den Schlo
 weil die Rastung des Plan- und Längszuges mir absolut nicht gefällt (man klemmt sich sehr leicht die Finger).
 Mit den neuen Spindeln kann ich dann gleich die Übersetzungen ordentlich berechnen.
 Als Skalenringe schweben mir welche a la Schaublin vor, richtig schön groß und matt verchromt...
+
 "Kommt noch..."
