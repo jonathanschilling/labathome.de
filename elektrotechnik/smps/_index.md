@@ -15,7 +15,7 @@ Um den rot umrandeten Bereich der beiden Platinen geht es hier:
 
 ![Platine im Pulser-Modul](sciex_pulser_board_smps.jpg)
 
-Als Controller-IC kommt hier der [SG3526J](https://www.datasheetarchive.com/pdf/download.php?id=da6bfcd6bc709a78aea0c0802a427a24a8dd49&amp;type=M) zum Einsatz.
+Als Controller-IC kommt hier der [SG3526J](https://www.microsemi.com/existing-parts/parts/55269) zum Einsatz.
 Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von [Electronetics](https://www.electronetics.us/) hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.
 
 Die folgende Tabelle gibt die Verbindung des Stromversorgunssteckers links oben (Pins 1-6) an den
