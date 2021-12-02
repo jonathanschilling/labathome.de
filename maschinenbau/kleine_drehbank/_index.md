@@ -545,3 +545,338 @@ Mit den neuen Spindeln kann ich dann gleich die Übersetzungen ordentlich berech
 Als Skalenringe schweben mir welche a la Schaublin vor, richtig schön groß und matt verchromt...
 
 "Kommt noch..."
+
+## Oberschlitten: Einschaben und neu lagern (2014-04-08)
+
+Nachdem ich gestern die letzte Mathe-Prüfung im Studium erfolgreich hinter mich gebracht habe,
+hab ich mir heute mal wieder ein paar Schabestunden gegönnt.
+
+Ich hab mir zum Ziel gesetzt, den Oberschlitten meiner kleinen Drehbank zu überarbeiten.
+Hier nochmal ein Bild vom Ausgangszustand:
+
+![Oberschlitten Ausgangszustand](00_Ausgangszustand.jpg)
+
+Beim Zerlegen sind mir zwei Stifte wieder eingefallen, mit denen der Lagerbock gehalten wird
+und die inzwischen unter dem Lack versteckt waren:
+
+![Stifte unter Lack](01_Stifte.jpg)
+
+Mit der kleinen Tischbohrmaschine hab ich die dann ausgebohrt:
+
+![Stifte ausbohren](02_Stifte_ausbohren.jpg)
+
+Dann ließ sich der Oberschlitten vollständig zerlegen:
+
+![Oberschlitten zerlegen](03_explodiert.jpg)
+
+Die planen Flächen mal tuschiert, da besteht auf jeden Fall Handlungsbedarf:
+
+![Oberteil tuschiert](04_Oberteil_tuschiert.jpg)
+
+![Unterteil tuschiert](05_Unterteil_tuschiert.jpg)
+
+Grund für die Aktion war ein Versuch, einen Kegel mit dem Oberschlitten zu drehen.
+Die dabei entstehende rillige Oberfläche und die Schwergängigkeit der Kurbel haben mich dann überzeugt,
+dass da was passieren muss.
+
+Zuerst das Unterteil:
+Da habe ich mir ein paar Holzleisten auf den Schreibtisch gespannt,
+die das Werkstück halbwegs sicher fixieren und dann losgelegt.
+
+![Unterteil 1](IMG_1520.jpg)
+
+![Unterteil 2](IMG_1521.jpg)
+
+![Unterteil 3](IMG_1522.jpg)
+
+![Unterteil 4](IMG_1523.jpg)
+
+![Unterteil 5](IMG_1524.jpg)
+
+![Unterteil 6](IMG_1525.jpg)
+
+![Unterteil 7](IMG_1526.jpg)
+
+Kleiner Zeitsprung:
+
+![Unterteil 8](IMG_1533.jpg)
+
+![Unterteil 9](IMG_1541.jpg)
+
+![Unterteil 10](IMG_1551.jpg)
+
+So hab ichs dann erstmal gelassen:
+
+![Unterseite fertig](IMG_1557.jpg)
+
+Dann die Unterseite des Oberteils:
+
+![Oberteil 1](IMG_1558.jpg)
+
+![Oberteil 2](IMG_1559.jpg)
+
+![Oberteil 3](IMG_1562.jpg)
+
+![Oberteil 4](IMG_1563.jpg)
+
+Dann hab ich die Menge der Tuschierfarbe auf der Platte mal drastisch reduziert:
+
+![Oberteil 5](IMG_1567.jpg)
+
+![Oberteil 6](IMG_1568.jpg)
+
+![Oberteil 7](IMG_1570.jpg)
+
+![Oberteil 8](IMG_1578.jpg)
+
+![Oberteil 9](IMG_1592.jpg)
+
+Der Plan ist dann mit dieser Oberfläche die zur Unterseite parallelen Flächen des Unterteils zu tuschieren und zusammen
+mit einem kleinen Prisma dann einzuschaben.
+Dann die schrägen Flächen des Unterteils, parallel zueinander, dann die Schrägen des Oberteils.
+
+Ich überlege, ob ich in das Oberteil eine Keiileiste einbauen sollte. So groß ist der Oberschlitten ja nicht (Gesamtlänge 140mm, Breite 60mm)
+und das wäre eine interessante Aufgabe für die Stoßmaschine ;-)
+
+Wenn der Schlitten dann eingeschabt ist, will ich noch einen radialkugel- und axialnadelgelagerten Lagerbock anfertigen,
+der mir auch noch ein paar 10mm mehr Verfahrweg verschaffen soll. Einen MK2 will ich auf jeden Fall mit dieser Maschinen drehen können, dafür braucht man ja ungefähr 80mm Hub...
+
+Als Tuschierpaste benutze ich die Standardfarbe von Diamant, die man beim örtlichen Werkzeughändler bekommt.
+Über mein Schabewerkzeug hatte ich hier schonmal was geschrieben:
+[Thread #9160](https://forum.zerspanungsbude.net/viewtopic.php?t=9160)
+
+Die Parallelität und Winklichkeit werde ich mit Messstativ, Zylinderstiften und Messuhr und -schraube ausmessen.
+
+Die Unterseite werde ich nochmal ein bisschen nacharbeiten.
+Beim Tuschieren der Unterseite des Oberteils habe ich für das Foto etwas mehr Farbe aufgetragen,
+das ist wirklich schlecht zu fotografieren ;-) Bzgl. Schmierung wollte ich mir noch Schmiernuten
+in die Führungen fräsen, zusammen mit Trichterschmiernippeln an den Seiten sollte das dann eine
+sichere Ölversorgung ergeben...
+
+Heute (2014-04-10) habe ich mal die Freistiche für die nächste zu schabende Fläche hergestellt:
+
+![Freistiche](IMG_1601.jpg)
+
+Eine weitere Sache fällt auf diesem Bild auf: das Spindelmuttergewinde ist direkt in das Unterteil geschnitten.
+Nun ist weder das Muttergewinde noch die Spindel so ausgelatscht, dass sie ausgetauscht werden müssten,
+aber irgendwie hätte ich schon ein besseres Gefühl, wenn die Mutter aus Bronze wäre.
+Insbesondere, da ich eigentlich gern 2mm pro Umdrehung hätte und nicht 3mm. Das momentane Gewinde der Spindel
+ist Tr 12x3, ich tendiere zu einem Umbau auf Tr 12x2, zusammen mit einem schönen Skalenring von Ganter mit 0,02mm-Teilung.
+
+Heute (2014-04-23) noch kein Schabe-rnack sondern ein bisschen Hobelei.
+Nach der [Anregung von Christoph](https://forum.zerspanungsbude.net/viewtopic.php?f=10&t=11248#p117238)
+habe ich die Freistiche nochmal überarbeitet. Ausserdem stellte ich fest,
+dass ich selbst mit meiner dünnsten Schaberklinge nicht in die Sägeschlitze kam.
+
+Also das Unterteil im Klopp eingespannt und ausgerichtet:
+
+![Unterteil ausrichten](01.jpg)
+
+![Unterteil weiter ausrichten](03.jpg)
+
+Eingespannt ist im Sparstahlhalter ein selbstgeschliffener Nutenstechstahl, Nutenbreite etwa 2mm:
+
+![Nutenstahl](05.jpg)
+
+Der Stößelschlitten ist dabei nach Skala auf 30° schräg eingestellt, um genau in die Ecke zuzustellen.
+
+Dann habe ich das Oberteil schon fürs Schaben der Stahlhalterauflagefläche vorbereitet.
+Der Stoßstahl ist hier ein riesiger HSS-Rohling, den mir mal jemand mitgebracht hat.
+Angeschliffen ist er mit einem Radius von etwa 10mm, 0° Spanwinkel, etwa 20° Freiwinkel.
+Das ergibt ziemlich gute Oberflächen in Guss.
+
+![Oberseite hobeln 1](09.jpg)
+
+![Oberseite hobeln 2](16.jpg)
+
+![Oberseite hobeln 3](17.jpg)
+
+![Oberseite hobeln 4](21.jpg)
+
+Fleisch ist genug vorhanden, und die vorhandenen Macken und Einstiche wären beim Schaben mehr als lästig.
+Insgesamt ist jetzt 1mm runter, in Schritten 0.3 - 0.4 - 0.3 mm. Ich war erstaunt, wie tief die Macken von der
+Einstellschraube der Spannklaue dann doch waren.
+
+Dann gings noch ans Vorhobeln eines passenden Tuschierlineals. Ich hatte aus den Resten für mein 450er-Lineal
+noch ein kleines mit ca. 230mm Länge gemacht und auch schon eingeschabt, aber der Winkel passte nicht zu
+diesem Oberschlitten. Bevor ich da mit dem Verkippen des Lineals anfange (was ja scheinbar einige erfolgreich machen...)
+wollte ich lieber erstmal eins mit dem exakten Winkel haben. Diesen habe ich vom Unterteil mit dem Puppitaster
+abgenommen und den Schlitten am Stößel danach ausgerichtet.
+
+![Tuschierlineal neu hobeln](22.jpg)
+
+![Tuschierlineal fertighobeln](27.jpg)
+
+Den Winkel habe ich beim Einrichten des Klopp mit dem Puppitaster vom Unterteil des Oberschlittens abgenommen
+und danach gestoßen. Natürlich gibt es dabei winzige Abweichungen, die man beim ersten Tuschieren
+sicher auch sehen wird. Aber es geht mit primär darum, eine ebene Fläche zu schaffen;
+die Winkel ändern sich dann minimal auf den den Lineals.
+Daher sollte das Lineal schon möglichst genau nach dem vorhandenen Winkel hergestellt werden,
+aber der Winkel, der nachher beim Schaben entsteht, richtet sich dann halt nach dem Lineal.
+Die Maßabweichungen, die sich dadurch ergeben, bewegen sich aber meinem Gefühl nach eher im
+1/100mm-Bereich und können daher vernachlässigt werden, da der Schlitten sich ja später
+über die Einstellleiste spielfrei einstellen lässt.
+
+Jetzt haben die zu schabenden Flächen alle schöne Freistiche:
+
+![Freistiche](IMG_1602.jpg)
+
+Beim Oberteil habe ich dann noch die Farbe abgezopft und die Stahlhalterauflagefläche einmal grob übergeschabt:
+
+![Oberteil nackt](IMG_1604.jpg)
+
+Zusammen mit dem Lineal warten jetzt die Teile darauf, dass ich Lust auf blau-graue Finger habe:
+
+![Tuschierlineal bereit](IMG_1611.jpg)
+
+Zunächst geht es um das Tuschierlineal. Das habe ich nach dem Stoßen auf den neuen Winkel mal tuschiert:
+
+![Tuschierlineal 1](IMG_1616.jpg)
+
+Dann mit viel Tuschierpaste auf der Platte und Biax-Unterstützung grob vorgeschabt, um die Spuren vom
+Stoßen wegzukriegen:
+
+![Tuschierlineal 2](IMG_1618.jpg)
+
+![Tuschierlineal 3](IMG_1628.jpg)
+
+![Tuschierlineal 4](IMG_1629.jpg)
+
+Dann habe ich nach und nach die Farbmenge auf der Platte verringert. Dadurch ändert sich das Tragbild
+natürlich ziemlich drastisch, insbesondere wird es immer schlechter zu erkennen:
+
+![dünne Tuschierfarbe](IMG_1640.jpg)
+
+Ich hab nach dem Schaben die Oberfläche immer mit einem Arkansas-Stein mit dünnem Öl zusammen
+abgezogen, um die Grate u.ä. vom Schaben abzutragen bevor es auf die Tuschierplatte geht.
+Dadurch blieb, wie ich dann feststellte, immer ein grau-blauer Schleier auf der Oberfläche zurück,
+denn ich wischte nur mit einem Tuch ab.
+Einen Unterschied, der mich spontan vom Hocker gehauen hat, habe ich dann erzielt, indem ich die Oberfläche
+vor jedem Tuschiervorgang mit Aceton abgewischt habe, bis am Tuch nichts mehr zu sehen war
+und auch keine Schleier mehr auf der Oberfläche waren. Auf einmal trat selbst bei fast keinem Farbauftrag
+auf der Platte das Tragbild mit winzigen Punkten sehr deutlich wieder hervor:
+
+![ohne Farbe 1](IMG_1641.jpg)
+
+![ohne Farbe 2](IMG_1646.jpg)
+
+![ohne Farbe 3](IMG_1647.jpg)
+
+Das habe ich dann noch ein bisschen verfeinert:
+
+![verfeinertes Lineal](IMG_1651.jpg)
+
+Aus Spaß mal die Punkte pro Quadratzoll gezählt, sollte hinkommen:
+
+![PPSI](IMG_1653.jpg)
+
+Die Unterseite hat sich fast nicht verzogen bei der Bearbeitung, daher nur ein paar Punkte nachgeschabt:
+
+![Unterseite Lineal 1](IMG_1657.jpg)
+
+![Unterseite Lineal 2](IMG_1661.jpg)
+
+Jetzt geht es weiter mit dem Unterteil des Oberschlittens:
+
+![Unterteil verzogen](IMG_1665.jpg)
+
+Dann auch wieder mit maschineller Unterstützung durch den Biax langsam den Mittelstreifen abgetragen:
+
+![Mittelstreifen 1](IMG_1669.jpg)
+
+![Mittelstreifen 2](IMG_1674.jpg)
+
+So langsam wirds besser:
+
+![Mittelstreifen 3](IMG_1675.jpg)
+
+Jetzt beginne ich mit dem Verfeinern des Tragbildes:
+
+![Unterteil verfeinern](IMG_1677.jpg)
+
+Nach und nach weniger Tuschierfarbe:
+
+![Unterteil weniger Farbe 1](IMG_1680.jpg)
+
+![Unterteil weniger Farbe 2](IMG_1683.jpg)
+
+![Unterteil weniger Farbe 3](IMG_1684.jpg)
+
+![Unterteil weniger Farbe 4](IMG_1685.jpg)
+
+![Unterteil weniger Farbe 5](IMG_1686.jpg)
+
+![Unterteil weniger Farbe 6](IMG_1690.jpg)
+
+Ich denke mal, so sollte das jetzt passen.
+
+Weiter im Text (2014-05-01).
+
+Zu Beginn hab ich nochmal die Unterseite des Unterteils kontrolliert, ob sich da auch nix weiter verzogen hat:
+
+![Unterseite glatt](IMG_1691.jpg)
+
+Dann ging es zum zweiten Mal an die Unterseite des Oberteils, die sich beim Freistiche stoßen auch verzogen hatte:
+
+![Oberteil nacharbeiten 1](IMG_1695.jpg)
+![Oberteil nacharbeiten 1](IMG_1696.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1697.jpg)
+![Oberteil nacharbeiten 1](IMG_1699.jpg)
+
+
+Das wurde mir dann zu wenig Farbe bzw. ein zu dünn gesähtes Tragbild, also hab ich nochmal kräftig
+Tuschierpaste auf der Platte verteilt:
+
+![Oberteil nacharbeiten 1](IMG_1702.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1704.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1706.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1707.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1710.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1711.jpg)
+
+Ab jetzt ungefähr habe ich vor jedem Tuschieren die Flächen mit Aceton soweit saubergewischt,
+dass kein Schleier mehr blieb. Ansonsten konnte ich mit der Farbe von Diamant zwar noch die Punkte sehen,
+aber nicht mehr zielgerichtet danach schaben (klingt komisch, kennen vllt. manch Andere hier auch -
+der Kontrast wird einfach zu schlecht...).
+
+![Oberteil nacharbeiten 1](IMG_1713.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1715.jpg)
+
+![Oberteil nacharbeiten 1](IMG_1717.jpg)
+
+So hab ichs jetzt erstmal gelassen: fein genug geschabt?
+Mit der Fläche habe ich dann "mal kurz" die nächsten Flächen tuschiert, die dran sind:
+es handelt sich dabei um die horizontalen Flächen des Schwalbenschwanzes am Unterteil:
+
+![Schwalbenschwanz Unterteil 1](IMG_1718.jpg)
+
+![Schwalbenschwanz Unterteil 2](IMG_1719.jpg)
+
+Ich habe dabei drarauf geachtet, dass der Meister positioniert wird, ohne dass die Flächen,
+die tuschiert werden sollen, an die Farbe kommen und dann den Meister nur soweit verschoben,
+dass er jeweils voll auflag.
+Falls das Tragbild dann korrekt ist, ist hier also auch noch was zu tun :-)
+
+Ich bin ehrlich erstaunt, wie viel sich mit dem krummen Teil noch machen ließ.
+Wenn ich mir die Tragbilder jetzt so ansehe... Na ja, wird jetzt ja besser ;-)
+
+Bis jetzt waren auch nur Flächen dran, die einfach plangeschabt werden mussten.
+Die nächsten Flächen müssen jetzt zum ersten Mal noch weitere Bedingungen erfüllen:
+1. plan
+2. parallel zur Unterseite des Unterteils
+3. kein Streifen durch ungenügendes Tuschieren in dem Winkel, in dem später die Einstellleiste sitzt
+
+Viel zu tun, aber die (halbwegs) fertigen Oberflächen sehen schon so toll aus, das motiviert wieder.
+
+
+
+
+
+
