@@ -93,7 +93,7 @@ Eine Lage sollte eine Dicke von 1mm haben, d.h. für die Isolierung blieben noch
 Diese wurden durch 3 Lagen einer 0.19mm starken PE-Isolierfolie mit einer Durchschlagsfestigkeit von ca. 100kV/mm gebildet.
 Die Isolierfolie wird unter dem Namen Hostaphan vertrieben.
 Die genaue Bezeichnung der Folie, die ich verwendet habe, lautet RN 190
-und gibt es bei der W.Bath GmbH zu kaufen: http://www.bathgmbh.de/polyesterf.htm
+und gibt es bei der W.Bath GmbH zu kaufen: http://www.bathgmbh.de/polyesterf.htm  
 Es wird eine Durchschlagsfestigkeit von 100kV/mm angegeben.
 Ich hatte eine Rolle von 50m bei 600mm Breite, das sind 8,4kg.
 Den Verbrauch sieht man der Rolle aber nicht wirklich an; ich vermute mal, dass auf dem Trafo ca. 6m verbaut sind.
@@ -109,7 +109,7 @@ Bei diesem Trafo bin ich folgendermaßen vorgegangen:
    in der Flanschplatte der Wickelvorrichtung geschaubt wurde.
 3. mit Schelllack einpinseln, evt. vor 2., je nach Zugänglichkeit in der Wickelvorrichtung
 4. Isolierfolie drumwickeln
-5. Isolierfolie mit den Hönden strammziehen, "drumstreichen"
+5. Isolierfolie mit den Handen strammziehen, "drumstreichen".
    Durch den Schelllack haftet die Folie an der Wicklung. Wenn man jetzt die Folie um die Wicklung 3 mal herumgeschlungen hat,
    kann man mit den flachen Händen durch Haftreibung die Folie noch ein bisschen enger festziehen. Dadruch erst geht die meißte Luft aus der Wicklung !
 6. Folie mit Tesa o.ä. festkleben und an der Seite einen kleinen Ausschnitt (ca. 3mm Breite) bis an den Wicklungsanfang einschneiden.
@@ -187,10 +187,4 @@ insgesamt       | ca. 350 Euro
 Und das (und noch viel mehr) kann man mit einem solchen Trafo machen: 
 
 ![Jakobsleiter](DSC_0140.v01_1.jpg)
-
-
-
-
-
-
 
