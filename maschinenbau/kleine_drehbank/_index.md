@@ -1,6 +1,6 @@
 ---
 title: 'Small Tabletop Lathe'
-weight: 1
+weight: 3
 ---
 
 ## neue alte Drehmaschine erstanden (2021-04-03)
