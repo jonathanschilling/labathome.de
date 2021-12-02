@@ -31,8 +31,7 @@ Das hat den Vorteil, dass man Lichtbögen ziehen kann und keine Strombegrenzungs
 Bei Betrieb als Netztrafo für eine funkenstreckengesteuerte Teslaspule (SGTC, wie die meißten sagen)
 tritt netterweise auch noch durch Resonanz mit dem Primärkondensator
 eine Spannungsüberhöhung auf, die bei einem "hart gewickelten" Trafo
-(Primär- und Sekundärwicklung übereinander) sehr viel stärkere Rückwirkungen
-ins Netz hat.
+(Primär- und Sekundärwicklung übereinander) sehr viel stärkere Rückwirkungen ins Netz hat.
 
 ## Kern
 
@@ -188,4 +187,7 @@ Und das (und noch viel mehr) kann man mit einem solchen Trafo machen:
 ![Jakobsleiter](DSC_0140.v01_1.jpg)
 
 ![Jakobsleiter II](DSC_0143.v01.jpg)
+
+Eine tabellarische Aufstellung der Vermessung des Trafos ist hier zu finden:
+[WickeldatenUndMesswerte.ods](WickeldatenUndMesswerte.ods)
 
