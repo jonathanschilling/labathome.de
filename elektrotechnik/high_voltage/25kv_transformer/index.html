@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.89.4" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="25kV-Transformator #  Ich lese immer wieder, wie &ldquo;unmöglich&rdquo; und &ldquo;mit Hausmitteln nicht machbar&rdquo; der Bau eines Hochspannungstrafos doch wäre. Daher möchte ich gerne hier den Bau meines 25kV-Trafos mit 2.4kVA vorstellen. Ich habe diesen Trafo mit freundlichen Unterstützung eines Dipl.-Ing. der Ostfalia in Wolfenbüttel, wo ich damals wohnte, gebaut. Das war in der Zeit vom Dezember 2010 bis etwa März 2011.
+Hier ist er mal zu sehen:
+Die technischen Daten sind folgende:">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="25kV Transformer" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" />
+
+<title>25kV Transformer | Lab@Home</title>
+<link rel="manifest" href="/labathome.de/manifest.json">
+<link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
+<script defer src="/labathome.de/en.search.min.72c13a7646ed05126225517c77339deada211ed914ff58934fa4ca3a84377c80.js" integrity="sha256-csE6dkbtBRJiJVF8dzOd6tohHtkU/1iTT6TKOoQ3fIA="></script>
+<link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/index.xml" title="Lab@Home" />
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/labathome.de"><span>Lab@Home</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="toggle" checked />
+    <label for="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="flex justify-between">
+      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/" class="">Electrical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="toggle" checked />
+    <label for="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="flex justify-between">
+      <a  class="">High Voltage</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" class=" active">25kV Transformer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/" class="">SMPS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa15f7083ed8e658e721b252b26a01ae" class="toggle"  />
+    <label for="section-aa15f7083ed8e658e721b252b26a01ae" class="flex justify-between">
+      <a  class="">Transputer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" class="">AVM B1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_t1/" class="">AVM T1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/" class="">Leonardo XL PCI</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c2643383fea6fada6fc27dbe97de8e4" class="toggle"  />
+    <label for="section-2c2643383fea6fada6fc27dbe97de8e4" class="flex justify-between">
+      <a  class="">Mechanical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/" class="">Small Tabletop Lathe</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e7cfe3d2127c77d408f29ad616291b1e" class="toggle"  />
+    <label for="section-e7cfe3d2127c77d408f29ad616291b1e" class="flex justify-between">
+      <a  class="">Physics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/physics/TVP250/" class="">Pfeiffer TVP250</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/about/" class="">About this website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/labathome.de/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>25kV Transformer</strong>
+
+  <label for="toc-control">
+    
+    <img src="/labathome.de/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#25kv-transformator">25kV-Transformator</a></li>
+    <li><a href="#kern">Kern</a></li>
+    <li><a href="#primärwicklung">Primärwicklung</a></li>
+    <li><a href="#wickelkörper">Wickelkörper</a></li>
+    <li><a href="#sekundärspule">Sekundärspule</a></li>
+    <li><a href="#wickelvorrichtung">Wickelvorrichtung</a></li>
+    <li><a href="#verguss">Verguss</a></li>
+    <li><a href="#fertiger-transformator">Fertiger Transformator</a></li>
+    <li><a href="#kosten">Kosten</a></li>
+    <li><a href="#experimente">Experimente</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="25kv-transformator">
+  25kV-Transformator
+  <a class="anchor" href="#25kv-transformator">#</a>
+</h2>
+<p>Ich lese immer wieder, wie &ldquo;unmöglich&rdquo; und &ldquo;mit Hausmitteln nicht machbar&rdquo; der Bau eines Hochspannungstrafos doch wäre.
+Daher möchte ich gerne hier den Bau meines 25kV-Trafos mit 2.4kVA vorstellen.
+Ich habe diesen Trafo mit freundlichen Unterstützung eines Dipl.-Ing. der Ostfalia in Wolfenbüttel, wo ich damals wohnte, gebaut.
+Das war in der Zeit vom Dezember 2010 bis etwa März 2011.</p>
+<p>Hier ist er mal zu sehen:</p>
+<p><img src="DSC_0125.v01.jpg" alt="25kV-Trafo" /></p>
+<p>Die technischen Daten sind folgende:</p>
+<table>
+<thead>
+<tr>
+<th>Kenngröße</th>
+<th>Kenndaten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primärspannung</td>
+<td>250V</td>
+</tr>
+<tr>
+<td>Primärwicklung</td>
+<td>177 Wdg. (CuL 2.0mm)</td>
+</tr>
+<tr>
+<td>Sekundärspannung</td>
+<td>25kV, einseitig geerdet</td>
+</tr>
+<tr>
+<td>Sekundärwicklung</td>
+<td>17466 Wdg. (CuL 0.224mm)</td>
+</tr>
+<tr>
+<td>Nennleistung</td>
+<td>2.4kVA</td>
+</tr>
+<tr>
+<td>Kern</td>
+<td>UI210, 141 0.5mm-Bleche</td>
+</tr>
+</tbody>
+</table>
+<p>Die Primär- und Sekundärwicklung sind auf verschiedenen Schenkeln gewickelt.
+Das hat den Vorteil, dass man Lichtbögen ziehen kann und keine Strombegrenzungsdrossel wie bei Messwandlern braucht.
+Bei Betrieb als Netztrafo für eine funkenstreckengesteuerte Teslaspule (SGTC, wie die meißten sagen)
+tritt netterweise auch noch durch Resonanz mit dem Primärkondensator
+eine Spannungsüberhöhung auf, die bei einem &ldquo;hart gewickelten&rdquo; Trafo
+(Primär- und Sekundärwicklung übereinander) sehr viel stärkere Rückwirkungen
+ins Netz hat.</p>
+<h2 id="kern">
+  Kern
+  <a class="anchor" href="#kern">#</a>
+</h2>
+<p>Es handelt sich um einen UI210-Kern, also mit einem Wickelfenster von 70x210mm. Bei 141 Blechen mit 0,5mm Dicke
+ergibt sich ein Kernquerschnitt von ca. 7x7cm = 49cm². Anhand einer Faustformel lässt sich daraus
+die zu erreichenden Leistung abschätzen: Man nimmt einfach den Kernquerschnitt in cm² ins Quadrat und erhält die
+ungefähre Nennleisung in VA, in diesem Fall also 49² = 2401 VA ~ 2.4kVA.
+Der Kern wurde später wechselseitig geschichtet, mit einem Holzhammer glattgeklopft und zwischen Buchenleisten
+verschraubt. Dabei ist darauf zu achten, dass kein elektischer Kontakt zwischen den Gewindenstangen/Schrauben und dem Kern auftritt,
+um Wirbelströme zu vermeiden. Weiterhin musste ich darauf achten, mit den Handgriffen keine Kurzschlusswindung zu erzeugen.
+Die schwarzen Handgriffe sind daher Vollmaterial, in das auf jeder Seite auf der Drehbank ein M10-Gewinde geschnitten habe.
+Die Hutmuttern sind dann jeweils mit kurzen Gewindestücken festgeschraubt.</p>
+<p>Die Firma, von der ich mir die Kernbleche geholt habe,
+heißt Bausch und hat ihre Internet-Seite hier: <a href="http://www.bausch.de">http://www.bausch.de</a></p>
+<h2 id="primärwicklung">
+  Primärwicklung
+  <a class="anchor" href="#prim%c3%a4rwicklung">#</a>
+</h2>
+<p>Die Primärspannung sollte 250V betragen, da dies die maximale Ausgangsspannung meines Stelltrafos ist.
+Bei der Nennleistung von 2,4kVA bedeutet dass, das ein Strom von ca. 10A fließt.
+Bei einem maximalen Strom von 3A pro mm² Drahtquerschnitt kann ein 2mm-Draht mit
+1² * Pi * 3A = 9,5A belastet werden. Ich denke, dass das reichen sollte, da der Trafo eben nicht
+im Dauerbetrieb laufen soll.</p>
+<p>Die Windungsanzahl habe ich nach der Formel
+<!-- raw HTML omitted -->$$
+N = \frac{\sqrt{2} \cdot U}{2 \pi f \cdot A \cdot B}
+<!-- raw HTML omitted -->$$
+mit U der Primärspannung, B = 1.3 T der Flussdichte im Kern, A = 0.0049 m^2 und f=50Hz der Netzfrequenz berechnet.</p>
+<p>Dadurch kann der Draht in zwei Lagen gewickelt werden, was für die Wärmeabfuhr auch günstiger ist.
+Zum Wickeln wurde mit zwei Malerböcken eine stabile Wickelvorrichtung gebaut, die mit einem 6-fach-Drehstern
+mit ca. 40cm Durchmesser (aus Holz) gedreht werden konnte. Über eine kugelgelagerte Achse wurde dann
+ein Hartholzklotz angetrieben, der genau den Maßen des Kerns entsprach. Die Wickelvorrichtung habe ich
+dann an einem sonnigen Tag an einem Baum im Garten festgebunden, den Draht befestigt und gegen das Gewicht
+eines Helfers, der sich mit seinem Gewicht an den Draht hängt, die Primärwicklung aufgebracht.</p>
+<h2 id="wickelkörper">
+  Wickelkörper
+  <a class="anchor" href="#wickelk%c3%b6rper">#</a>
+</h2>
+<p>Der genannte Hartholzklotz wurde eingeölt, sodass kein Kleber mehr an ihm haftet. Dann habe ich
+aus 1mm-Pertinax Platten gesägt und diese um den Klotz mit Uhu Endfest 300 geklebt. Nach dem Trocknen
+konnte man den Holzklotz mit einem beherzten Schlag entfernen.
+Damit der Draht beim Wickeln nicht geknickt wird, habe ich an den Seiten, die nicht im Wickelfenster
+oder unten unter dem Trafo sind, Balsaholz-Backen aufgeklebt, jeweils ca. 30mm.
+Diese habe ich dann abgefeilt und geschmirgelt, damit sich der Draht schön anschmiegen kann.
+Beim Wickeln wurde der Draht jeweils noch mit doppelseitigem Klebeband auf dem Balsaholz und (bei der zweiten Lage)
+auf der unteren Lage fixiert. Da zwei Lagen gewickelt wurden, endete die Wicklung auf derselben Seite, wo sie angefangen hatte.</p>
+<p>Ein Stück Isolierschlauch auf die beiden Drahtenden gesteckt verhindert das Zurückschnellen des Drahtes.
+Zusätzlich habe ich dann den unbewickelten Rand (im Foto gelb schimmernd) mit Epoxidharz vergossen:
+Ein Streifen Paketklebeband auf die Wicklung und die Primärspule auf die Seite gelegt und schon konnte das
+Harz eingegossen werden. Die ganze Wicklung wurde dann noch mit Schelllack lackiert.</p>
+<h2 id="sekundärspule">
+  Sekundärspule
+  <a class="anchor" href="#sekund%c3%a4rspule">#</a>
+</h2>
+<p>Ich wollte einen Trafo für 25kV haben, also stand nach obiger Formel die Windungsanzahl mit ca. 17000 bereits fest.
+Eine Lage sollte eine Dicke von 1mm haben, d.h. für die Isolierung blieben noch ca. 0,75mm übrig.
+Diese wurden durch 3 Lagen einer 0.19mm starken PE-Isolierfolie mit einer Durchschlagsfestigkeit von ca. 100kV/mm gebildet.
+Die Isolierfolie wird unter dem Namen Hostaphan vertrieben.
+Die genaue Bezeichnung der Folie, die ich verwendet habe, lautet RN 190
+und gibt es bei der W.Bath GmbH zu kaufen: <a href="http://www.bathgmbh.de/polyesterf.htm">http://www.bathgmbh.de/polyesterf.htm</a>
+Es wird eine Durchschlagsfestigkeit von 100kV/mm angegeben.
+Ich hatte eine Rolle von 50m bei 600mm Breite, das sind 8,4kg.
+Den Verbrauch sieht man der Rolle aber nicht wirklich an; ich vermute mal, dass auf dem Trafo ca. 6m verbaut sind.</p>
+<p>Der Spulenkörper wurde analog zum Primärwickelkörper gebaut, jedoch wurden die Balsabacken hier nur mit ca. 10mm Breite ausgeführt.
+Der innere Spulenanschluss ist als ein Stück Kupferfolie ausgeführt, die vor Wickelbeginn auf den Wickelkörper geklebt wurde und beim Wickeln zwischen
+dem Hartholzklotz und dem Wickelkörper steckte. So habe ich verhindert, dass sich da was vertüddelt.</p>
+<p>Daran wurde dann der Draht angelötet und mit dem Wickeln begonnen.
+Bei diesem Trafo bin ich folgendermaßen vorgegangen:</p>
+<ol>
+<li>Eine Lage wickeln</li>
+<li>Spulenkörper festsetzen, ich habe hier ein M10-Gewinde in den Hartholzklotz geschnitten, in das eine Schraube durch ein Loch
+in der Flanschplatte der Wickelvorrichtung geschaubt wurde.</li>
+<li>mit Schelllack einpinseln, evt. vor 2., je nach Zugänglichkeit in der Wickelvorrichtung</li>
+<li>Isolierfolie drumwickeln</li>
+<li>Isolierfolie mit den Hönden strammziehen, &ldquo;drumstreichen&rdquo;
+Durch den Schelllack haftet die Folie an der Wicklung. Wenn man jetzt die Folie um die Wicklung 3 mal herumgeschlungen hat,
+kann man mit den flachen Händen durch Haftreibung die Folie noch ein bisschen enger festziehen. Dadruch erst geht die meißte Luft aus der Wicklung !</li>
+<li>Folie mit Tesa o.ä. festkleben und an der Seite einen kleinen Ausschnitt (ca. 3mm Breite) bis an den Wicklungsanfang einschneiden.
+Dieser Einschnitt sollte wirklich herausgetrennt werden, da sonst beim Festziehen der Draht abgeschert werden könnte.
+Dann kann die Schraube zum Festsetzen wieder gelöst werden und die nächste Lage beginnt.</li>
+</ol>
+<p>Schelllack habe ich verwendet, weil ich mir bei dem sicher war, dass
+er auf Grund seines natürlichen Ursprunges nicht die Lackschicht des Drahtes
+angreift und beim Ausdünsten so dermaßen klebrig wird,
+dass er vernünfitig an der PE-Folie klebt und nicht abperlt.</p>
+<h2 id="wickelvorrichtung">
+  Wickelvorrichtung
+  <a class="anchor" href="#wickelvorrichtung">#</a>
+</h2>
+<ul>
+<li>Alle Achsen sollten (für die Sekundärwicklung: müssen) kugelgelagert sein. Ich habe die Achsen aus M10-Gewindestangen gemacht
+und daher 6000-2RS-Lager verwendet. Es muss peinlich genau darauf geachtet werden, dass alle Achsen parallel zu einander stehen
+und nicht eiern! Sonst kann es passieren, dass der Draht überspringt und die Wicklung wird fehlerhaft/muss wieder abgewickelt werden.</li>
+<li>Die Drahtrolle muss gebremst sein. Ich habe damals einen Pinsel genommen, der mit Laborklemmen fest an die Spule gedrückt wurde
+und sie so gebremst hat.</li>
+<li>Der Draht muss über eine Führungsrolle geführt werden. Das funktioniert folgendermaßen:
+Man nimmt ein Kabelschutzrohr aus Kunststoff z.B. mit 25mm Drm. und bewickelt es mit genau dem Draht, der auf die Spule später drauf soll.
+Der Draht wird an beiden Enden fixiert. Die Wickellänge sollte ca. 5cm mehr als die größte Wickelbreite der zu wickelnden Spule betragen.
+Auf diese Führungsrolle werden Papierringe gesteckt (am besten auch auf(nicht mit) ihr verklebt), die sich seitlich verschieben lassen.
+Diese Ringe dienen später als &ldquo;Anschläge&rdquo; und werden mit dem Lineal auf die Wicklungsbreite zurechtgeschoben.
+Die Führungsrolle befindet sich ca. 20cm vom Wickelkörper entfernt an zwei &ldquo;Auslegern&rdquo;/&ldquo;Ohren&rdquo; an der Wickelvorrichtung und ist ebenfalls kugelgelagert.
+Sie wird über einen Treibriemen synchron mit dem Wickelkörper angetrieben. Dazu eignet sich z.B. zu einem Ring verlötetes
+hochflexibles Messkabel. Es ist wichtig, dass sich der Riemen nicht dehnt, denn sonst käme es zu Wickelfehlern!</li>
+<li>Der Schelllack sollte in warmem Spiritus gelöst werden. Das dauert ungefähr 3 Tage für die notwendige Menge (ca. 200g) und ergibt
+weniger Krümel als wenn man es mit kaltem Spiritus versucht. Trotzdem sollte er vor Benutzung noch gefiltert werden,
+z.B. durch ein Teesieb o.ä.</li>
+<li>Vergesst Akkuschrauber, Motoren, o.ä. zum Drehen der Wickelvorrichtung. Die 17000 Windungen der Sekundärspule wurden von mir
+und besagtem Dipl.-Ing. in drei Tagen über Silvester 2010 von Hand gekurbelt. Bei dem dünnen Draht und der großen Vorratsrolle
+muss man das sehr feinfühlig angehen! Insgesamt sind ca. 2 kg Draht auf der Sekundärspule gelandet.</li>
+</ul>
+<h2 id="verguss">
+  Verguss
+  <a class="anchor" href="#verguss">#</a>
+</h2>
+<p>Die Lagenisolation der Sekundärspule steht an jeder Seite etwa 1cm über.
+Die Wickelbreite verjüngt sich alle 5 Lagen um ca. 1cm.
+Als Anschlusspunkt für die Sekundärwicklung habe ich mir ein Messing-Drehteil gemacht, im Wesentlichen ein Teller mit einem Pömpel drauf,
+in dem ein M10-Gewinde ist. Der Draht ist (nach einer großen Schlaufe, um bei einem ungewollten Abreißen des Anschlusspunkts noch was
+zum Anlöten zu haben) an den Teller gelötet. Dann ist der Teller mit doppelseitigem Klebeband auf die Lagenisolation geklebt.
+Als letztes kam dann noch eine Isolierlage drum herum, die wieder über die volle Breite ging und die oben je Lage ein Loch hatte,
+durch den der Pömpel ragte. Dadruch entstanden auf jeder Seite &ldquo;Burggräben&rdquo; mit dreieckigem Querschnitt, die zum Schluss,
+als der rausgelaufene Schelllack nicht mehr klebte und der Kern eingeschachtelt war, mit Vergussmasse aufgefüllt wurden.
+Der Kupferstreifen (innerer Sekundäranschluss) wurde zwischen Kern und Kernhalter (aus Buchenholz) eingeklemmt und dann auf
+eine Rampa-Mutter gelötet.Dort ist eine M4-Schraube eingeschraubt, an die man Drähte direkt klemmen kann.
+Zum Anschlusskasten führt ein auf den Streifen aufgelöteter Installationsdraht.</p>
+<p>Hier ist noch ein Bild von dem Trafo.
+Man sieht den Kupferstreifen, der noch (vor dem Abschneiden) von außen über die Schrauben gelegt ist. Der Streifen ist bereits
+unter dem Holz einmal durchgelegt! Weiterhin sieht man den Isolierschlauch über den Primärdrähten und die zulaufenden Sekundärwicklung.
+Als der Trafo so weit zusammengebaut wurde, kam der o.g. Anschluss oben drauf und dann die letzte Lagenisolation.
+Die Vergussmasse floss dabei auch zwischen Kern und Wickelkörper (und unerwünschterweise dann unten raus). Das ist sehr wichtig,
+denn es darf sich keinerlei Luft zwischen Kern und Wicklung befinden, sonst gibt es dort (zumindest auf der dem Erdanschluss entgegengesetzten Seite,
+wo schon die einfache Lagenspannung anliegt) Korona-Entladungen, die die Isolierung stark schädigen.
+Aus demselben Grund muss der &ldquo;Burggraben&rdquo; ausgegossen werden.</p>
+<h2 id="fertiger-transformator">
+  Fertiger Transformator
+  <a class="anchor" href="#fertiger-transformator">#</a>
+</h2>
+<p><img src="Foto074.v01_2.jpg" alt="fertig gewickelt ohne Verguss" /></p>
+<h2 id="kosten">
+  Kosten
+  <a class="anchor" href="#kosten">#</a>
+</h2>
+<p>Hier ist eine ungefähre Aufstellung der Kosten:</p>
+<table>
+<thead>
+<tr>
+<th>Komponente</th>
+<th>Preis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kernbleche</td>
+<td>80 Euro</td>
+</tr>
+<tr>
+<td>Isolationsfolie</td>
+<td>200 Euro, allerdings noch Unmengen übrig</td>
+</tr>
+<tr>
+<td>Primärdraht</td>
+<td>10 Euro</td>
+</tr>
+<tr>
+<td>Sekundärdraht</td>
+<td>50 Euro</td>
+</tr>
+<tr>
+<td>insgesamt</td>
+<td>ca. 350 Euro</td>
+</tr>
+</tbody>
+</table>
+<h2 id="experimente">
+  Experimente
+  <a class="anchor" href="#experimente">#</a>
+</h2>
+<p>Und das (und noch viel mehr) kann man mit einem solchen Trafo machen:</p>
+<p><img src="DSC_0140.v01_1.jpg" alt="Jakobsleiter" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#25kv-transformator">25kV-Transformator</a></li>
+    <li><a href="#kern">Kern</a></li>
+    <li><a href="#primärwicklung">Primärwicklung</a></li>
+    <li><a href="#wickelkörper">Wickelkörper</a></li>
+    <li><a href="#sekundärspule">Sekundärspule</a></li>
+    <li><a href="#wickelvorrichtung">Wickelvorrichtung</a></li>
+    <li><a href="#verguss">Verguss</a></li>
+    <li><a href="#fertiger-transformator">Fertiger Transformator</a></li>
+    <li><a href="#kosten">Kosten</a></li>
+    <li><a href="#experimente">Experimente</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
