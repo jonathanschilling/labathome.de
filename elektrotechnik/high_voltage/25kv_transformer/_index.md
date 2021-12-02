@@ -143,7 +143,7 @@ dass er vernünfitig an der PE-Folie klebt und nicht abperlt.
   und besagtem Dipl.-Ing. in drei Tagen über Silvester 2010 von Hand gekurbelt. Bei dem dünnen Draht und der großen Vorratsrolle
   muss man das sehr feinfühlig angehen! Insgesamt sind ca. 2 kg Draht auf der Sekundärspule gelandet.
 
-## Verguss
+## Zusammenbau und Verguss
 
 Die Lagenisolation der Sekundärspule steht an jeder Seite etwa 1cm über.
 Die Wickelbreite verjüngt sich alle 5 Lagen um ca. 1cm.
@@ -157,7 +157,10 @@ Der Kupferstreifen (innerer Sekundäranschluss) wurde zwischen Kern und Kernhalt
 eine Rampa-Mutter gelötet.Dort ist eine M4-Schraube eingeschraubt, an die man Drähte direkt klemmen kann.
 Zum Anschlusskasten führt ein auf den Streifen aufgelöteter Installationsdraht.
 
-Hier ist noch ein Bild von dem Trafo.
+Hier ist noch ein Bild von dem Trafo:
+
+![fertig gewickelt ohne Verguss](Foto074.v01_2.jpg)
+
 Man sieht den Kupferstreifen, der noch (vor dem Abschneiden) von außen über die Schrauben gelegt ist. Der Streifen ist bereits
 unter dem Holz einmal durchgelegt! Weiterhin sieht man den Isolierschlauch über den Primärdrähten und die zulaufenden Sekundärwicklung.
 Als der Trafo so weit zusammengebaut wurde, kam der o.g. Anschluss oben drauf und dann die letzte Lagenisolation.
@@ -165,10 +168,6 @@ Die Vergussmasse floss dabei auch zwischen Kern und Wickelkörper (und unerwüns
 denn es darf sich keinerlei Luft zwischen Kern und Wicklung befinden, sonst gibt es dort (zumindest auf der dem Erdanschluss entgegengesetzten Seite,
 wo schon die einfache Lagenspannung anliegt) Korona-Entladungen, die die Isolierung stark schädigen.
 Aus demselben Grund muss der "Burggraben" ausgegossen werden. 
-
-## Fertiger Transformator
-
-![fertig gewickelt ohne Verguss](Foto074.v01_2.jpg)
 
 ## Kosten
 
@@ -187,4 +186,6 @@ insgesamt       | ca. 350 Euro
 Und das (und noch viel mehr) kann man mit einem solchen Trafo machen: 
 
 ![Jakobsleiter](DSC_0140.v01_1.jpg)
+
+![Jakobsleiter II](DSC_0143.v01.jpg)
 
