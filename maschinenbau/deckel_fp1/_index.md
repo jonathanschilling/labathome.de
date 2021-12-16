@@ -61,7 +61,7 @@ Wenn die Nadeln verschlissen sind oder Lauffläche(n) nachgeschliffen werden mü
 Diese sind (soweit ich informiert bin, bitte ggf. um korrigierende Worte!) aber heutezutage für diese Lagerbauart nicht mehr bzw. nur noch als Restbestände verfügbar.
 
 Die Pinolenführung des Vertikalkopfes wurde also abgenommen und die Spindel von Hand durchgedreht.
-Bingo, mehrere Rastpunkte zu spüren und insgesamt ein eher verdrecktes Inneres: 
+Bingo, mehrere Rastpunkte zu spüren und insgesamt ein eher verdrecktes Inneres:
 
 ![Vertikalkopf innen](IMG_6391_r.jpg)
 
@@ -98,11 +98,11 @@ For the recond: selbstverständlich wurde vorher über die vorhandenen Ölablass
 Zuhause angekommen hab ich mir dann als ersten den Vertikalkopf vorgenommen, um Gewissheit zu haben,
 ob ich im Rest des Jahres mir noch was anderes als Nudelsuppe zu Essen würde leisten können oder ob die Nadellager wundersamerweise doch noch in Ordnung sind.
 
-Als erstes den Sicherungsstift für die Kappe an der Anzugspindel herausgeklopft: 
+Als erstes den Sicherungsstift für die Kappe an der Anzugspindel herausgeklopft:
 
 ![Sicherungsstift](IMG_6392_r.jpg)
 
-Die Zahnwelle für die Bohrzustellung kommt als nächstes raus: 
+Die Zahnwelle für die Bohrzustellung kommt als nächstes raus:
 
 ![Zahnwelle für Pinole](IMG_6393_r.jpg)
 
@@ -165,7 +165,7 @@ Das gemessene Radialspiel lag bei ca. 3µm und das Axialspiel ist jetzt auch pas
 Gerade da bei der FP1 die Vertikalpinole wohl das kritischste Teil ist, war es mir wichtig, dass diese Arbeit von jemandem gemacht wird, der weiß was er tut.
 Die überarbeitete Pinole lässt sich jetzt wunderbar samtig-sanft durchdrehen und weckt Vertrauen, dass ich mit ihr viele Jahre gute Arbeit mit der FP1 erledigen werde können :-)
 
-Hier sieht man nochmal die zusammengebauten Innereien der FP1-Vertikalspindel (aufgenommen vor der Überholung): 
+Hier sieht man nochmal die zusammengebauten Innereien der FP1-Vertikalspindel (aufgenommen vor der Überholung):
 
 ![Innenleben Pinole](IMG_6413_r.jpg)
 
@@ -232,7 +232,7 @@ Zunächst erfolgte eine Begutachtung des Fräs-/Hauptgetriebes ...
 
 ![Hauptgetriebe](IMG_6715_r.jpg)
 
-... sowie des Vorschubgetriebes: 
+... sowie des Vorschubgetriebes:
 
 ![Vorschubgetriebe](IMG_6716_r.jpg)
 
@@ -281,7 +281,7 @@ Zwei weitere Wellen folgen:
 
 "Klappe zu, Affe tot"; das Vorschubgetriebe ist wieder zusammen :-)
 Die Wählscheibe mit Skalen etc. war auch auseinander und hat ein Petroleumbad genommen.
-Die fehlende Skala mit "I/II" für den inneren Schaltgriff muss ich noch bestellen... 
+Die fehlende Skala mit "I/II" für den inneren Schaltgriff muss ich noch bestellen...
 
 ![Vorschubgetriebe zu](IMG_6812_r.jpg)
 
@@ -303,7 +303,7 @@ aber dafür muss die Zeit da sein und ich muss mich noch deutlich weiterentwicke
 
 Im aktuellen Zustand waren allerdings die Schabemarken bereits größtenteils verschwunden und daher habe ich mich entschlossen,
 alle Gleitflächen zumindest einmal kreuz und einmal quer mit dem Biax aufzubrechen, um dem Öl etwas Halt und Platz zu geben.
-Hier zu sehen an der Y-Führung ... 
+Hier zu sehen an der Y-Führung ...
 
 ![Y-Führung zerkratzt](IMG_6817_r.jpg)
 
@@ -475,7 +475,7 @@ Den Montagewinkel werde ich wohl als Stahlkonstruktion bauen und auf eine überz
 Weiterhin ziert ein 250er Rundtisch seit neuestem meine Werkstatt.
 Zugegebenermaßen ist das auf dem Tisch der FP1 ein ganz schöner Klopper,
 aber immerhin ist er immer noch kleiner als das 380mm-Monster von Deckel.
-Auch hier wieder: auseinandernehmen, Teile säubern und frisch geölt wieder zusammenbauen --> stay tuned... 
+Auch hier wieder: auseinandernehmen, Teile säubern und frisch geölt wieder zusammenbauen --> stay tuned...
 
 ![Rundtisch](IMG_7774.jpg)
 
@@ -528,3 +528,84 @@ aber immerhin ist die Fräse damit jetzt wieder einen deutlichen Schritt weiter:
 
 ![Anzugstange drin](IMG_7789.jpg)
 
+## Schaltschrank
+
+Der Schaltschrank enthält im wesentlichen eine Schützsteuerung für den Dahlander-Motor an der Maschine sowie den Motor des Schnellläufers.
+Weiterhin ist im Original ein Steuertrafo 380V->220V verbaut, damit kein Nullleiter benötigt wird.
+Zu guter Letzt findet sich eine Steckdose für das Zentriermikroskop, die das Starten des Motors bei eingestecktem Stecker verhindert.
+
+Der originale Schaltschrank war bei meiner Maschine aber nicht dabei, weshalb ich die für mich nicht benötigten Teile weggelassen habe.
+Der Motor ist wie gesagt ein Dahlander mit 1400 bzw. 2800 Upm:
+
+![Typenschild Motor](Motor_Typenschild.jpg)
+
+Der Motor ist über ein sechspoliges (+Erde), abgeschirmtes Kabel mit dem Schaltschrank verbunden:
+
+![Anschlussfeld Motor](IMG_8134_r.jpg)
+
+Ausgehend von einem Deckel-Schaltplan aus den 60ern sowie dem Eaton-Schaltungsbuch habe ich dann die folgende Schaltung aufgezeichnet.
+
+Erstmal der Leistungsteil:
+![Schaltplan Leistungsteil](IMG_8145_r.jpg)
+
+Der Hauptschalter trennt die gesamte Mimik vom Netz.
+Für die langsame Drehzahl müssen die drei Phasen an Ua, Va und Wa angelegt werden.
+Dies geschiet über Schütz c1.
+Im Betrieb mit langsamer Drehzahl schützt der Motor-Schutzschalter F1 vor Überlast.
+Für die hohe Drehzahl müssen die drei Phasen an Ub, Vb und Wb angelegt werden.
+Dies geschiet über Schütz c3.
+Weiterhin müssen Ua, Va und Wa miteinander verbunden werden - hier über Schütz c2.
+Im Betrieb mit hoher Drehzahl schützt der Motor-Schutzschalter F2 vor Überlast.
+Eine Schuko-Steckdose wird mit über den Hauptschalter geschaltet und kann z.B. für eine Lampe genutzt werden.
+Die Steckdose ist über die Sicherung e4' abgesichtert.
+
+Dann kommt hier der Steuerteil:
+![Schaltplan Steuerteil](IMG_8146_r.jpg)
+
+Der Steuerteil nutzt hier den Nullleiter, da in meiner Werkstatt alle Drehstrom-Steckdosen über selbigen verfügen.
+Die Tasteneinheit oben an der Maschine ist über ein vieradriges Steuerkabel mit dem Schaltschrank verbunden.
+Der Steuerteil ist ebenfalls separat abgesichert; hier über Sicherung e4.
+Die Versorgung der Schützspulen wird global durch den (Not-)Aus-Taster unterbrochen.
+Eingeschaltet werden kann jede der zwei Drehzahlen über die entsprechenden Tasten.
+Je ein Schließer-Steuerkontakt in c1 bzw. c3 sorgen dann für Selbsthaltung.
+
+Interessant wird es bei der Verriegelung der Schütze gegeneinander, damit beim Hängen eines Schützes nicht sofort ein Kurzschluss auftritt.
+
+Für die niedrige Drehzahl muss nur c1 eingeschaltet werden.
+Hier unterbricht dann ein Öffner-Steuerkontakt die Versorgung zu den Spulen von c2 und c3.
+Die Spule von c1 wird wiederum durch Öffner-Steuerkontakte von c2 und c3 in Reihe getrennt.
+Die Spule vom Schütz c1 kann also nur Strom bekommen, wenn sowohl c2 als auch c3 geöffnet sind.
+Damit ist vor allem auch ausgeschlossen, dass ein satter Kurzschluss zwischen allen drei Phasen auftritt,
+falls c2 noch geschlossen wäre, wenn c1 per Tastendruck eingeschaltet wird.
+
+Für die schnelle Drehzahl wird zunächst c2 direkt versorgt und schaltet dann per zusätzlichem Schließer-Steuerkontakt erst c3 zu.
+Damit ist sichergestellt, dass die Sternbrücke über c2 sicher hergestellt ist, bevor Strom auf den Motor per c3 gegeben wird.
+
+Die Lampen h1 und h2 können dazu dienen, anzuzeigen, welche Drehzahl gerade aktiv ist.
+Die Hintergrundlautstärke in meiner Werkstatt ist aber leise genug, um zu hören, wie schnell sich der Motor dreht.
+Ich habe daher die beidem Lampen weggelassen.
+
+So sieht die (fast) fertig verdrahtete Schalttafel dann also aus:
+![Schalttafel verdrahtet](IMG_8139_r.jpg)
+
+Fast fertig, weil die zwei Motorschutzschalter zum Zeitpunkt des Fotos noch nicht geliefert worden waren.
+Ich habe daher provisorisch einen alten Motor-Schutzschalter direkt hinter dem Hauptschalter eingeschleift.
+Die beiden separaten MSS sind allerdings heute geliefert worden, sodass ich morgen ein finales Bild nachliefern kann.
+
+Hier sind dann schon mal die Steckverbindungen etc. zum Testen angeschlossen:
+![Schalttafel mit Steckern](IMG_8140_r.jpg)
+
+Eine provisorische Inbetriebnahme hat dann erfreulicherweise ergeben, dass die Schaltung so funktioniert
+und man sogar beliebig an den Tasten herumdrücken kann, ohne dass sich die Schütze in die Quere kommen.
+Ich gehe daher davon aus, dass die Verriegelungsschaltung (wie oben gezeigt) sicher funktioniert.
+![provisorischer Anschluss](IMG_8141_r.jpg)
+
+Eingebaut wird die ganze Mimik in einen Schaltschrank mit dem Maßen 300x400x150mm:
+![Loecher im Schaltschrank](IMG_8142_r.jpg)
+
+Der Einbau der Teile gestaltete sich dann nicht mehr schwierig:
+![Schaltschrank bestueckt](IMG_8143_r.jpg)
+
+An der Wand neben der Fräsmaschine war noch ein guter Platz für den Schaltschrank frei,
+sodass er da jetzt zum Hängen gekommen ist:
+![Schaltschrank an Wand](IMG_8144_r.jpg)
