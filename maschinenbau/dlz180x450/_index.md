@@ -68,7 +68,7 @@ Diverse Eigenschaften dieser Maschine begeistern nachhaltig:
 - Schieberadgetriebe anstatt Wendeherz für Umkehr der Vorschubrichtung
 
 Hier mal ein Blick in den Spindelstock:
- 
+
 ![Spindelstock innen](GBBL2669_r.jpg)
 
 Leider gibt es auch ein paar Schattenseiten an dieser Maschine:
@@ -343,12 +343,38 @@ Eine Passfedernut mit einer Breite von 4mm und einer Höhe (ggü der Bohrungswan
 
 Folgende Wechselräder waren bei mir dabei:
 
-mit 8mm Zahnbreite und einer Nabenbreite von 10mm:  
+mit 8mm Zahnbreite und einer Nabenbreite von 10mm:
 120 (M), 110 (M), 100 (P), 90 (M), 80 (M), 75 (P), 2 Stk. 70 (P), 65 (P), 2 Stk. 60 (P), 2 Stk. 50 (P), 45 (M), 40 (P)
 
-mit 10mm Zahnbreite und einer Nabenbreite von 12.2mm:  
+mit 10mm Zahnbreite und einer Nabenbreite von 12.2mm:
 32 (M), 30 (M)
 
-Hierbei bedeutet (M), dass die Zahnräder aus Metall gefräst sind.  
+Hierbei bedeutet (M), dass die Zahnräder aus Metall gefräst sind.
 (P) steht für Spritzguss aus irgendeinem Plastik.
 
+## Schaltschrank
+
+Neulich hatte ich dann endlich Zeit, den FU in einen anständigen Schaltschrank einzubauen.
+Zunächst mal wurde sichergestellt, dass der Motor immer noch im Dreieck angeschlossen ist:
+![Motoranschluss](IMG_7486_r.jpg)
+
+Der verwendete FU ist ein Siemens Micromaster 440:
+![Typenschild MM440](IMG_8062_r.jpg)
+
+Hier ist der dann zusammengeklöppelte Schaltschrank dann zu sehen:
+![Schaltschrank](IMG_8130_r.jpg)
+
+Einen Schaltplan gibt es auch noch:
+![Schaltplan mit FU](IMG_8131_r.jpg)
+
+Ein Lüfter bläst unten rechts frische gefilterte Luft in den Schaltschrank.
+Diese kann nach oben links durch einen weiteren Filter entweichen, sodass dem FU hoffentlich nicht zu heiß wird:
+![Luftauslass](IMG_8129_r.jpg)
+
+Weiterhin bietet es sich evtl. an, irgendwann einmal einen Bremswiderstand nachzurüsten.
+Genug Platz ist definitiv noch vorhanden und der Widerstand würde damit "optimal" im Luftzug sitzen.
+
+Den Schaltschrank habe ich dann neben der Drehbank an die Wand geschraubt:
+![Schaltschrank an der Wand](IMG_8132_r.jpg)
+
+Es ist schon schön, jetzt einfach nur den Hauptschalter drehen zu müssen und schon kann es losgehen :-)
