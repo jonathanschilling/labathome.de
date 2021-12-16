@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.89.4" />
+  <meta name="generator" content="Hugo 0.90.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Deckel FP1 #  Anfang Mai 2020, gegen Ende der ersten Covid-19-Welle, wurde auf eBay Kleinanzeigen diese Maschine für ca. 24 Stunden gelistet:
@@ -17,7 +17,7 @@ Alles begann damit, dass ich damals meine kleine Drehbank so langsam betriebsber
 <link rel="manifest" href="/labathome.de/manifest.json">
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/labathome.de/en.search.min.d469aff0bd1c6048bcb1a7ddb0a3b6ab4862403705cc4dbc561a10abc723aadd.js" integrity="sha256-1Gmv8L0cYEi8safdsKO2q0hiQDcFzE28VhoQq8cjqt0="></script>
+<script defer src="/labathome.de/en.search.min.fcca2346b57bce6cf7c9474d2258731b6e07b6c250a1a96b1bd5575008fa01ca.js" integrity="sha256-/MojRrV7zmz3yUdNIlhzG24HtsJQoalrG9VXUAj6Aco="></script>
 <link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/maschinenbau/deckel_fp1/index.xml" title="Lab@Home" />
 
 
@@ -495,6 +495,7 @@ Alles begann damit, dass ich damals meine kleine Drehbank so langsam betriebsber
     <li><a href="#zubehör">Zubehör</a></li>
     <li><a href="#untergestell">Untergestell</a></li>
     <li><a href="#anzugstange">Anzugstange</a></li>
+    <li><a href="#schaltschrank">Schaltschrank</a></li>
   </ul>
 </nav>
 
@@ -870,6 +871,69 @@ Ich hab kein einziges S20x2-Werkzeug im Haus und musste daher von Anfang an auf 
 <p>Montiert sieht man davon natürlich am Ende nichts mehr,
 aber immerhin ist die Fräse damit jetzt wieder einen deutlichen Schritt weiter:</p>
 <p><img src="IMG_7789.jpg" alt="Anzugstange drin" /></p>
+<h2 id="schaltschrank">
+  Schaltschrank
+  <a class="anchor" href="#schaltschrank">#</a>
+</h2>
+<p>Der Schaltschrank enthält im wesentlichen eine Schützsteuerung für den Dahlander-Motor an der Maschine sowie den Motor des Schnellläufers.
+Weiterhin ist im Original ein Steuertrafo 380V-&gt;220V verbaut, damit kein Nullleiter benötigt wird.
+Zu guter Letzt findet sich eine Steckdose für das Zentriermikroskop, die das Starten des Motors bei eingestecktem Stecker verhindert.</p>
+<p>Der originale Schaltschrank war bei meiner Maschine aber nicht dabei, weshalb ich die für mich nicht benötigten Teile weggelassen habe.
+Der Motor ist wie gesagt ein Dahlander mit 1400 bzw. 2800 Upm:</p>
+<p><img src="Motor_Typenschild.jpg" alt="Typenschild Motor" /></p>
+<p>Der Motor ist über ein sechspoliges (+Erde), abgeschirmtes Kabel mit dem Schaltschrank verbunden:</p>
+<p><img src="IMG_8134_r.jpg" alt="Anschlussfeld Motor" /></p>
+<p>Ausgehend von einem Deckel-Schaltplan aus den 60ern sowie dem Eaton-Schaltungsbuch habe ich dann die folgende Schaltung aufgezeichnet.</p>
+<p>Erstmal der Leistungsteil:
+<img src="IMG_8145_r.jpg" alt="Schaltplan Leistungsteil" /></p>
+<p>Der Hauptschalter trennt die gesamte Mimik vom Netz.
+Für die langsame Drehzahl müssen die drei Phasen an Ua, Va und Wa angelegt werden.
+Dies geschiet über Schütz c1.
+Im Betrieb mit langsamer Drehzahl schützt der Motor-Schutzschalter F1 vor Überlast.
+Für die hohe Drehzahl müssen die drei Phasen an Ub, Vb und Wb angelegt werden.
+Dies geschiet über Schütz c3.
+Weiterhin müssen Ua, Va und Wa miteinander verbunden werden - hier über Schütz c2.
+Im Betrieb mit hoher Drehzahl schützt der Motor-Schutzschalter F2 vor Überlast.
+Eine Schuko-Steckdose wird mit über den Hauptschalter geschaltet und kann z.B. für eine Lampe genutzt werden.
+Die Steckdose ist über die Sicherung e4' abgesichtert.</p>
+<p>Dann kommt hier der Steuerteil:
+<img src="IMG_8146_r.jpg" alt="Schaltplan Steuerteil" /></p>
+<p>Der Steuerteil nutzt hier den Nullleiter, da in meiner Werkstatt alle Drehstrom-Steckdosen über selbigen verfügen.
+Die Tasteneinheit oben an der Maschine ist über ein vieradriges Steuerkabel mit dem Schaltschrank verbunden.
+Der Steuerteil ist ebenfalls separat abgesichert; hier über Sicherung e4.
+Die Versorgung der Schützspulen wird global durch den (Not-)Aus-Taster unterbrochen.
+Eingeschaltet werden kann jede der zwei Drehzahlen über die entsprechenden Tasten.
+Je ein Schließer-Steuerkontakt in c1 bzw. c3 sorgen dann für Selbsthaltung.</p>
+<p>Interessant wird es bei der Verriegelung der Schütze gegeneinander, damit beim Hängen eines Schützes nicht sofort ein Kurzschluss auftritt.</p>
+<p>Für die niedrige Drehzahl muss nur c1 eingeschaltet werden.
+Hier unterbricht dann ein Öffner-Steuerkontakt die Versorgung zu den Spulen von c2 und c3.
+Die Spule von c1 wird wiederum durch Öffner-Steuerkontakte von c2 und c3 in Reihe getrennt.
+Die Spule vom Schütz c1 kann also nur Strom bekommen, wenn sowohl c2 als auch c3 geöffnet sind.
+Damit ist vor allem auch ausgeschlossen, dass ein satter Kurzschluss zwischen allen drei Phasen auftritt,
+falls c2 noch geschlossen wäre, wenn c1 per Tastendruck eingeschaltet wird.</p>
+<p>Für die schnelle Drehzahl wird zunächst c2 direkt versorgt und schaltet dann per zusätzlichem Schließer-Steuerkontakt erst c3 zu.
+Damit ist sichergestellt, dass die Sternbrücke über c2 sicher hergestellt ist, bevor Strom auf den Motor per c3 gegeben wird.</p>
+<p>Die Lampen h1 und h2 können dazu dienen, anzuzeigen, welche Drehzahl gerade aktiv ist.
+Die Hintergrundlautstärke in meiner Werkstatt ist aber leise genug, um zu hören, wie schnell sich der Motor dreht.
+Ich habe daher die beidem Lampen weggelassen.</p>
+<p>So sieht die (fast) fertig verdrahtete Schalttafel dann also aus:
+<img src="IMG_8139_r.jpg" alt="Schalttafel verdrahtet" /></p>
+<p>Fast fertig, weil die zwei Motorschutzschalter zum Zeitpunkt des Fotos noch nicht geliefert worden waren.
+Ich habe daher provisorisch einen alten Motor-Schutzschalter direkt hinter dem Hauptschalter eingeschleift.
+Die beiden separaten MSS sind allerdings heute geliefert worden, sodass ich morgen ein finales Bild nachliefern kann.</p>
+<p>Hier sind dann schon mal die Steckverbindungen etc. zum Testen angeschlossen:
+<img src="IMG_8140_r.jpg" alt="Schalttafel mit Steckern" /></p>
+<p>Eine provisorische Inbetriebnahme hat dann erfreulicherweise ergeben, dass die Schaltung so funktioniert
+und man sogar beliebig an den Tasten herumdrücken kann, ohne dass sich die Schütze in die Quere kommen.
+Ich gehe daher davon aus, dass die Verriegelungsschaltung (wie oben gezeigt) sicher funktioniert.
+<img src="IMG_8141_r.jpg" alt="provisorischer Anschluss" /></p>
+<p>Eingebaut wird die ganze Mimik in einen Schaltschrank mit dem Maßen 300x400x150mm:
+<img src="IMG_8142_r.jpg" alt="Loecher im Schaltschrank" /></p>
+<p>Der Einbau der Teile gestaltete sich dann nicht mehr schwierig:
+<img src="IMG_8143_r.jpg" alt="Schaltschrank bestueckt" /></p>
+<p>An der Wand neben der Fräsmaschine war noch ein guter Platz für den Schaltschrank frei,
+sodass er da jetzt zum Hängen gekommen ist:
+<img src="IMG_8144_r.jpg" alt="Schaltschrank an Wand" /></p>
 </article>
  
       
@@ -918,6 +982,7 @@ aber immerhin ist die Fräse damit jetzt wieder einen deutlichen Schritt weiter:
     <li><a href="#zubehör">Zubehör</a></li>
     <li><a href="#untergestell">Untergestell</a></li>
     <li><a href="#anzugstange">Anzugstange</a></li>
+    <li><a href="#schaltschrank">Schaltschrank</a></li>
   </ul>
 </nav>
 
