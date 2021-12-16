@@ -592,6 +592,14 @@ Fast fertig, weil die zwei Motorschutzschalter zum Zeitpunkt des Fotos noch nich
 Ich habe daher provisorisch einen alten Motor-Schutzschalter direkt hinter dem Hauptschalter eingeschleift.
 Die beiden separaten MSS sind allerdings heute geliefert worden, sodass ich morgen ein finales Bild nachliefern kann.
 
+Hier ist eine Übersicht über die letztendlich verbauten Teile:
+
+ * 3 Stk. Leistungsschütz Eaton DIL-M7-10
+ * 3 Stk. Hilfsschalter Eaton DIL M32-XHI11
+ * 2 Stk. Motor-Schutzschalter Eaton PKZM0-4
+ * 2m LAPP ÖLFLEX® CLASSIC 110 CY - 7G1,0mm^2 (Motor)
+ * 3m LAPP ÖLFLEX® CLASSIC 110 CY - 4G0,75mm^2 (Tasten)
+
 Hier sind dann schon mal die Steckverbindungen etc. zum Testen angeschlossen:
 ![Schalttafel mit Steckern](IMG_8140_r.jpg)
 
