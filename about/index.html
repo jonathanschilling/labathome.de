@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.90.1" />
+  <meta name="generator" content="Hugo 0.91.2" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This website is created using the Hugo static website generator.
@@ -24,6 +24,29 @@ Test some $inline$math: $$E = m c^2$$" />
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
 <script defer src="/labathome.de/en.search.min.8c41e878e2d6b29c86277163458e961456824bd8aa59212420877b60492b73e4.js" integrity="sha256-jEHoeOLWspyGJ3FjRY6WFFaCS9iqWSEkIId7YEkrc&#43;Q="></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
 
 
   
