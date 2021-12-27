@@ -1,6 +1,7 @@
 ---
 title: 'About this website'
 weight: 100
+mathjax: true
 ---
 
 This website is created using the [Hugo](https://gohugo.io/) static website generator.  
