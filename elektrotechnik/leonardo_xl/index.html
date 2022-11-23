@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.106.0">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Leonardo XL PCI # Sie werden den älteren Mac-Benutzern wohl bekannt sein: die Leonardo-ISDN-Karten der (inzwischen insolventen) Firma Hermstedt.
+Durch Zufall entdeckte ich in einer eBay-Auktion eine Leonardo XL-PCI V1.3, die augenscheinlich einen 68000er enthielt. Das musste sofort untersucht werden!
+Also flugs das Teil für ein paar Euro zusammen mit einer Pentium I-PC-Compatibility-Card für PowerMacs geordert und analysiert:
+In diesem Bild sind die ISDN-Übertrager bereits heruntergelötet, um die Sub-D-Buchsen für andere Zwecke verwenden zu können.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Leonardo XL PCI" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/" />
+
+<title>Leonardo XL PCI | Lab@Home</title>
+<link rel="manifest" href="/labathome.de/manifest.json">
+<link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
+<script defer src="/labathome.de/en.search.min.98e7e4703595b4e121b2ad105351ed6a09153cb039fd54e95b8515f4eca1a736.js" integrity="sha256-mOfkcDWVtOEhsq0QU1HtagkVPLA5/VTpW4UV9OyhpzY="></script>
+<link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/index.xml" title="Lab@Home" />
+
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/labathome.de"><span>Lab@Home</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="toggle" checked />
+    <label for="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="flex justify-between">
+      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/" class="">Electrical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="toggle"  />
+    <label for="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="flex justify-between">
+      <a  class="">High Voltage</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" class="">25kV Transformer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/" class="">SMPS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa15f7083ed8e658e721b252b26a01ae" class="toggle"  />
+    <label for="section-aa15f7083ed8e658e721b252b26a01ae" class="flex justify-between">
+      <a  class="">Transputer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" class="">AVM B1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_t1/" class="">AVM T1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/" class=" active">Leonardo XL PCI</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2c2643383fea6fada6fc27dbe97de8e4" class="toggle"  />
+    <label for="section-2c2643383fea6fada6fc27dbe97de8e4" class="flex justify-between">
+      <a  class="">Mechanical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/deckel_fp1/" class="">Deckel FP1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/dlz180x450/" class="">Saupe DLZ180x450</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/" class="">Small Tabletop Lathe</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/gys_protig/" class="">GYS PROTIG 201 AC/DC</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/klopp_550/" class="">Klopp 550</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tiboma_bm6/" class="">Johannes Tittel BM6</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/" class="">Maschinenzubehör</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ab610fcdf9409e4ed411cb3c34fcb85a" class="toggle"  />
+    <label for="section-ab610fcdf9409e4ed411cb3c34fcb85a" class="flex justify-between">
+      <a  class="">Numerics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/numerics/fftw_tutorial/" class="">FFTW Tutorial</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e7cfe3d2127c77d408f29ad616291b1e" class="toggle"  />
+    <label for="section-e7cfe3d2127c77d408f29ad616291b1e" class="flex justify-between">
+      <a  class="">Physics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/physics/TVP250/" class="">Pfeiffer TVP250</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/" class="">Adapterflansche KF40/CF40</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/about/" class="">About this website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/labathome.de/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Leonardo XL PCI</strong>
+
+  <label for="toc-control">
+    
+    <img src="/labathome.de/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="leonardo-xl-pci">
+  Leonardo XL PCI
+  <a class="anchor" href="#leonardo-xl-pci">#</a>
+</h1>
+<p>Sie werden den älteren Mac-Benutzern wohl bekannt sein:
+die Leonardo-ISDN-Karten der (inzwischen insolventen) Firma Hermstedt.</p>
+<p>Durch Zufall entdeckte ich in einer eBay-Auktion eine
+Leonardo XL-PCI V1.3, die augenscheinlich einen 68000er
+enthielt. Das musste sofort untersucht werden!</p>
+<p>Also flugs das Teil für ein paar Euro zusammen mit einer
+Pentium I-PC-Compatibility-Card für PowerMacs geordert und analysiert:</p>
+<p><img src="Leonardo_XL-PCI_V1.3.jpg" alt="Leonardo XL-PCI V1.3" /></p>
+<p>In diesem Bild sind die ISDN-Übertrager bereits heruntergelötet, um die Sub-D-Buchsen
+für andere Zwecke verwenden zu können. Ebenfalls wurde bereits ein Stück
+Präzisionssockel für J7 eingelötet, um das Config-EEPROM auslesen zu können
+und man kann das grüne Kabel sehen, dass den ehemals unbelegten Pin am Erweiterungsport
+mit dem Pin A23 des 68HC001 verbindet, um den gesamten Addressraum
+von 16MB am Erweiterungsport zur Verfügung zu haben.</p>
+<p>Es handelt sich dabei um ein komplettes 68k-System mit folgenden Komponenten:</p>
+<table>
+<thead>
+<tr>
+<th>Komponente</th>
+<th>Funktion</th>
+<th>Bezeichnung auf der Karte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HAL-9001-MW-95</td>
+<td>FPGA für PCI-Interface</td>
+<td>IC1</td>
+</tr>
+<tr>
+<td>AT17C65</td>
+<td>I²C-EEPROM (24Cxx-komp.) für FPGA-Config</td>
+<td>IC2</td>
+</tr>
+<tr>
+<td>MC68HC001FN16</td>
+<td>16MHz-68000er mit 8/16-Bit Bus</td>
+<td>IC3</td>
+</tr>
+<tr>
+<td>KM681000BLG-7</td>
+<td>2 Stk: 128kx16 SRAM</td>
+<td>IC4(ODD), IC5(EVEN)</td>
+</tr>
+<tr>
+<td>MC68681FN</td>
+<td>DUART mit Quarz 3.686MHz</td>
+<td>IC6</td>
+</tr>
+<tr>
+<td>PEB2086N</td>
+<td>ISAC (ISDN-Controller)</td>
+<td>IC7, IC9</td>
+</tr>
+<tr>
+<td>SAB82525N</td>
+<td>HSCX (SCC)</td>
+<td>IC8, IC10</td>
+</tr>
+<tr>
+<td>grüne LED</td>
+<td>eine grüne LED am Pin OP6 von IC6</td>
+<td>D25</td>
+</tr>
+</tbody>
+</table>
+<p>Des weiteren verfügt die Karte über einen Erweiterungsbus, der dem PDS der älteren Macs ähnelt.</p>
+<p>Soweit ich ihn ausgemessen habe, hat er die in <a href="Pinout_Expansion.ods">diesem Calc-Dokument</a> hinterlegte Belegung.</p>
+<p>Dann hat sich mittels einer Sitzung mit PonyProg und einem fliegenden Aufbau
+der SI-Prog-Hardware das Config-EEPROM geöffnet und folgende Konfigurationsdatei ausgespuckt:</p>
+<p><img src="DSC00008.jpg" alt="SI-Prog-Setup" /></p>
+<ul>
+<li><a href="fpga_config.bin">FPGA-Config-EEPROM als Binary</a></li>
+<li><a href="fpga_config_bitstream.txt">FPGA-Config-EEPROM als Textzeile</a></li>
+</ul>
+<p>Leider ist mir völlig unklar, um was für ein FPGA es sich hierbei handeln könnte
+und meine diesbezüglichen Anfragen an die Firma GAFICON, die in DE den Vertrieb für
+die Firma Pro2Col, den Aufkäufer von Hermstedt, übernimmt, blieben noch unbeantwortet.</p>
+<p>Dann war es an der Zeit, mal ein bisschen mit der Software herumzuspielen.
+Die Originaltreiber bekommt man immer noch mittels der Wayback Machine von
+einem Backup der Hermstedt-Seite.
+Ich habe mir dann den Windows 95-Treiber heruntergeladen und mal entpackt.
+Es finden sich ein paar unwichtige Dateien, aber auch ein paar Binaries,
+z.B. die Dateien <a href="HermWAN.sys">HermWAN.sys</a> und <a href="LeoFW.bin">LeoFW.bin</a>.</p>
+<p>Insbesondere der Name der letzten Datei hat bei mir heftigste Assoziationen
+hervorgerufen :-). Also mal im Hex-Editor angeschaut:
+In den ersten beiden 32-Bit-Worten stehen die Werte 0x400 und 0x4AC,
+wobei in der Datei ab 0x400 der Code losgeht. Wie man aus dem 68000-User-Manual weiß,
+sind das der Initial Program Counter und Supervisor Stack Pointer!
+Damit ist schon mal klar, dass diese Datei offensichtlich &ldquo;unten&rdquo; in das On-Board-RAM
+geladen und von dort direkt gestartet wird.
+Ausserdem ist bekannt, dass an den Adressen von 0x8 bis 0x3FC die Exception Table steht.
+Sie liegt somit vollständig im RAM und kann daher bei Verwendung eigener Firmware
+beliebig verändert werden! Sehr praktisch&hellip;</p>
+<p>Also habe ich die Firmware mal durch IDA Pro gejagt, und siehe da, man hat vor dem Hochladen
+des Treiber vergessen, die Debug-Symbole in der Firmware zu entfernen :-).
+Also ist es ein leichtes, die Funktionen zuzuordnen und ein kommentiertes Listing zu erstellen:
+<a href="LeoFW.bin.asm">Firmware-Disassembly</a>.</p>
+<p>Ebenfalls der Windows-Treiber HermWAN.sys wurde nicht von den Debug-Symbolen bereinigt,
+sodass dieser ebenfalls gegenüber IDA Pro machtlos ist. Da es sich hierbei um
+x86-Code handelt, funktioniert sogar HexRays Decompiler, um Pseudocode zu erstellen :-).</p>
+<p>Das Interessanteste an dem Windows-Treiber ist die Möglichkeit, mittels SoftICE, einem Windows-Debugger,
+sich dann beim Laden des Treibers beim Rechnerstart einzuklinken und mit einem Oszilloskop
+am Reset-Pin des 68HC001 zu schauen, was in welche Register geschrieben werden muss,
+um den Reset zu deaktivieren und den 68HC001 zu starten.
+Da der Reset-Pin auf den Erweiterungsport geführt ist, muss man dazu nicht mal
+an der Karte selbst rumlöten :-).</p>
+<p><img src="DSC00026.jpg" alt="Reset-Untersuchung" /></p>
+<p>So und mittels lspci von Linux findet man dann raus, dass die Karte 1MByte des PCI-Adressraums belegt
+und die Control-Register in den oberen 512kByte, genauer ab 0x80000 im Karten-Adressraum, liegen.</p>
+<p>Damit lässt sich schon mal ein Linux-Kernel-Modul schreiben, dass beim Laden
+den Reset deaktiviert und beim Entladen ihn wieder aktiviert: <a href="leodrv.tar.gz">leodrv</a>.
+Im Quellcode finden sich auch Angaben zu der genauen Position der Register.</p>
+<p>Das ist im Moment der Stand der Dinge; Weiteres folgt sobald wieder Zeit für
+dieses interessante Projekt vorhanden ist.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de-content/commit/734c503f4b3b82a0fe06b144ee642e3427960a8a" title='Last modified by Jonathan Schilling | November 23, 2022' target="_blank" rel="noopener">
+      <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>November 23, 2022</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
