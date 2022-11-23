@@ -17,7 +17,7 @@ One-Dimensional Examples # This tutorial starts by computing one-dimensional (1D
 <link rel="manifest" href="/labathome.de/manifest.json">
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/labathome.de/en.search.min.98e7e4703595b4e121b2ad105351ed6a09153cb039fd54e95b8515f4eca1a736.js" integrity="sha256-mOfkcDWVtOEhsq0QU1HtagkVPLA5/VTpW4UV9OyhpzY="></script>
+<script defer src="/labathome.de/en.search.min.93f6bebadf3447246d8f8d6e04f56d1ba6349133f7d1b41b70557fe6efda83ac.js" integrity="sha256-k/a&#43;ut80RyRtj41uBPVtG6Y0kTP30bQbcFV/5u/ag6w="></script>
 <link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/numerics/fftw_tutorial/index.xml" title="Lab@Home" />
 <script>
   MathJax = {
@@ -584,7 +584,7 @@ One-Dimensional Examples # This tutorial starts by computing one-dimensional (1D
   FFTW Tutorial
   <a class="anchor" href="#fftw-tutorial">#</a>
 </h1>
-<p>This is a basic C project (Makefile, but also for the Eclipse IDE) I use for exploring FFTW 3.3.9.</p>
+<p><a href="https://github.com/jonathanschilling/fftw_tutorial">This</a> is a basic C project (Makefile, but also for the Eclipse IDE) I use for exploring FFTW 3.3.9.</p>
 <p>One- and two-dimensional discrete Fourier transforms (DFTs) of random data are computed using both FFTW and straight-forward naive algorithms
 in order to illustrate explicitly what kind of symmetries and scaling properties FFTW implies in its inputs and outputs.</p>
 <h2 id="one-dimensional-examples">
@@ -694,7 +694,7 @@ Finally, the <code>fftw_plan</code> is destroyed and the memory is released usin
 </span></span><span style="display:flex;"><span>    status <span style="color:#f92672">+=</span> test_1d_c2c(<span style="color:#ae81ff">33</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> status;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The code is available in the file <a href="src/test_1d_c2c.c"><code>src/test_1d_c2c.c</code></a>.</p>
+</span></span></code></pre></div><p>The code is available in the file <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_c2c.c"><code>src/test_1d_c2c.c</code></a>.</p>
 <h3 id="1d-complex-to-real-and-real-to-complex">
   1D complex-to-real and real-to-complex
   <a class="anchor" href="#1d-complex-to-real-and-real-to-complex">#</a>
@@ -717,7 +717,7 @@ Y_{-k} =&amp; \sum\limits_{j=0}^{n-1} X_j \Bigl(    \cos(-2 \pi j k / n)
 \end{align}$$<!-- raw HTML omitted --></p>
 <p>The figure below illustrates the structure of the complex-valued Fourier space arrays
 occuring in the DFT for both even-valued (<code>n=6</code>) and odd-valued (<code>n=7</code>) sizes of the DFT.</p>
-<p><img src="img/array_structures.png" alt="array structure" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/array_structures.png" alt="array structure" /></p>
 <p>The size required to contain all information required for the transform from or to a real-valued array
 is contained in the first <code>n/2+1</code> (division by 2 rounded down) entries of the complex array, indicated by the red bars in above figure.
 For both even and odd values of <code>n</code>, Hermitian symmetry implies <em>Y_0</em> = <em>Y*_0</em> and thus <em>Y_0</em> is always real.
@@ -732,7 +732,7 @@ have to be weighted with a factor of 2.
 The elements that need to be weighted by a factor of 2 are highlighted by solid blue lines in above illustration.
 The redundant elements that are not explicitly needed are indicated by dashed blue lines.</p>
 <p>The backward transformation from complex-valued Fourier space
-to real space is demonstrated in <a href="src/test_1d_c2r.c"><code>src/test_1d_c2r.c</code></a>.
+to real space is demonstrated in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_c2r.c"><code>src/test_1d_c2r.c</code></a>.
 The relevant portion of the source code is here:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> nCplx <span style="color:#f92672">=</span> n <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> n; <span style="color:#f92672">++</span>k) {
@@ -783,7 +783,7 @@ of the complex product of input Fourier coefficient and complex-valued basis fun
 </span></span></code></pre></div><p>Note that in this case, only the non-redundant part of the complex-values Fourier coefficients need to be computed
 from a real-valued input. The separate handling of the DC component is not strictly necessary, since <code>cos(0)=1</code> and <code>sin(0)=0</code>
 and thus the DC component would get no imaginary contribution.
-The full example is available in the file <a href="src/test_1d_r2c.c"><code>src/test_1d_r2c.c</code></a>.</p>
+The full example is available in the file <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_r2c.c"><code>src/test_1d_r2c.c</code></a>.</p>
 <p>It becomes evident in above examples that the sign of a <code>c2r</code> DFT is always <code>FFTW_BACKWARD</code> and
 the sign of a <code>r2c</code> DFT is always <code>FFTW_FORWARD</code>.</p>
 <h3 id="1d-real-to-real">
@@ -882,12 +882,12 @@ and in particular <a href="https://upload.wikimedia.org/wikipedia/commons/3/31/D
 <p>In case of the real-valued even-parity DFT with no shifts in either input or output array (REDFT00),
 also called the DCT-I, the corresponding logical DFT size is given by <em>N</em> = 2(<code>n</code>-1), corresponding to <code>n</code> = <em>N</em>/2+1.</p>
 <p>The formal definition of the REDFT00 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/redft00.png" alt="REDFT00 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = X_0 + (-1)^k X_{n-1} + 2 \sum\limits_{j=1}^{n-2} X_j \cos\left[ \pi j k / (n-1) \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is REDFT00 itself.
 The input array is assumed to have even symmetry around <em>j=0</em> and even symmetry also around <em>j=n−1</em>.</p>
-<p><img src="img/redft00.png" alt="REDFT00" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft00.png" alt="REDFT00" /></p>
 <p>In above figure, the lowercase letters <em>a</em> to <em>e</em> refer to the input data <em>abcde</em> for the size-5 REDFT00,
 which is logically equivalent to a size-8 DFT with real-valued input data <em>abcdedcb</em>.</p>
 <p>In order to demonstrate the use of this method,
@@ -938,7 +938,7 @@ The logically equivalent DFT output should be purely real-valued:</p>
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n<span style="color:#f92672">+</span>i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_redft00.c"><code>src/test_1d_redft00.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_redft00.c"><code>src/test_1d_redft00.c</code></a>.</p>
 <h4 id="redft10-dct-ii">
   REDFT10 (DCT-II)
   <a class="anchor" href="#redft10-dct-ii">#</a>
@@ -947,12 +947,12 @@ The logically equivalent DFT output should be purely real-valued:</p>
 also called the DCT-II, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.
 This function is commonly known as &ldquo;the&rdquo; DCT.</p>
 <p>The formal definition of the REDFT10 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/redft10.png" alt="REDFT10 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \cos\left[ \pi (j+1/2) k / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is REDFT01.
 The input array is assumed to have even symmetry around <em>j=-0.5</em> and even symmetry also around <em>j=n−0.5</em>.</p>
-<p><img src="img/redft10.png" alt="REDFT10" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft10.png" alt="REDFT10" /></p>
 <p>In above figure, the lowercase letters <em>a</em> to <em>e</em> refer to the input data <em>abcd</em> for the size-4 REDFT10,
 which is logically equivalent to a size-8 DFT with real-valued input data <em>abcddcba</em>.</p>
 <p>In order to demonstrate the use of this method,
@@ -1009,7 +1009,7 @@ The logically equivalent DFT output should be purely real-valued:</p>
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_redft10.c"><code>src/test_1d_redft10.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_redft10.c"><code>src/test_1d_redft10.c</code></a>.</p>
 <h4 id="redft01-dct-iii">
   REDFT01 (DCT-III)
   <a class="anchor" href="#redft01-dct-iii">#</a>
@@ -1018,12 +1018,12 @@ The logically equivalent DFT output should be purely real-valued:</p>
 also called the DCT-III, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.
 This function is commonly known as &ldquo;the&rdquo; inverse DCT (IDCT).</p>
 <p>The formal definition of the REDFT01 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/redft01.png" alt="REDFT01 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = X_0 + 2 \sum\limits_{j=1}^{n-1} X_j \cos\left[ \pi j (k+1/2) / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is REDFT10.
 The input array is assumed to have even symmetry around <em>j=0</em> and odd symmetry around <em>j=n</em>.</p>
-<p><img src="img/redft01.png" alt="REDFT01" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft01.png" alt="REDFT01" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>REDFT01</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>REDFT01</code>
@@ -1071,7 +1071,7 @@ The logically equivalent DFT output should be purely real-valued:</p>
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_redft01.c"><code>src/test_1d_redft01.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_redft01.c"><code>src/test_1d_redft01.c</code></a>.</p>
 <h4 id="redft11-dct-iv">
   REDFT11 (DCT-IV)
   <a class="anchor" href="#redft11-dct-iv">#</a>
@@ -1079,12 +1079,12 @@ The logically equivalent DFT output should be purely real-valued:</p>
 <p>In case of the real-valued even-parity DFT with both shifted input and output data (REDFT11),
 also called the DCT-IV, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.</p>
 <p>The formal definition of the REDFT11 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/redft11.png" alt="REDFT11 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \cos\left[ \pi (j+1/2) (k+1/2) / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is REDFT11 itself.
 The input array is assumed to have even symmetry around <em>j=-0.5</em> and odd symmetry around <em>j=n-0.5</em>.</p>
-<p><img src="img/redft11.png" alt="REDFT11" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft11.png" alt="REDFT11" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>REDFT11</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>REDFT11</code>
@@ -1132,7 +1132,7 @@ The logically equivalent DFT output should be purely real-valued:</p>
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_redft11.c"><code>src/test_1d_redft11.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_redft11.c"><code>src/test_1d_redft11.c</code></a>.</p>
 <h4 id="rodft00-dst-i">
   RODFT00 (DST-I)
   <a class="anchor" href="#rodft00-dst-i">#</a>
@@ -1144,12 +1144,12 @@ leads to <em>X_0 = -X_0</em> which is equivalent to <em>X_0 = 0</em>.
 This first always-zero element of the input array is not explicitly included in the input to FFTW
 and the input array thus has a size of one less and the indices of the symmetry axis shift by 1.</p>
 <p>The formal definition of the RODFT00 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/rodft00.png" alt="RODFT00 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \sin \left[ \pi (j+1) (k+1) / (n+1) \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is RODFT00 itself.
 The input array is assumed to have odd symmetry around <em>j=-1</em> and odd symmetry also around <em>j=n</em>.</p>
-<p><img src="img/rodft00.png" alt="RODFT00" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/rodft00.png" alt="RODFT00" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>RODFT00</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>RODFT00</code>
@@ -1219,7 +1219,7 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_rodft00.c"><code>src/test_1d_rodft00.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_rodft00.c"><code>src/test_1d_rodft00.c</code></a>.</p>
 <h4 id="rodft10-dst-ii">
   RODFT10 (DST-II)
   <a class="anchor" href="#rodft10-dst-ii">#</a>
@@ -1228,12 +1228,12 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 also called the DST-II, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.
 This function is commonly known as &ldquo;the&rdquo; DST.</p>
 <p>The formal definition of the RODFT10 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/rodft10.png" alt="RODFT10 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \sin \left[ \pi (j+1/2) (k+1) / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is RODFT01.
 The input array is assumed to have odd symmetry around <em>j=-0.5</em> and odd symmetry also around <em>j=n-0.5</em>.</p>
-<p><img src="img/rodft10.png" alt="RODFT10" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/rodft10.png" alt="RODFT10" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>RODFT10</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>RODFT10</code>
@@ -1293,7 +1293,7 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_rodft10.c"><code>src/test_1d_rodft10.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_rodft10.c"><code>src/test_1d_rodft10.c</code></a>.</p>
 <h4 id="rodft01-dst-iii">
   RODFT01 (DST-III)
   <a class="anchor" href="#rodft01-dst-iii">#</a>
@@ -1302,12 +1302,12 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 also called the DST-III, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.
 This function is commonly known as &ldquo;the&rdquo; inverse DST (IDST).</p>
 <p>The formal definition of the RODFT01 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/rodft01.png" alt="RODFT01 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = (-1)^kX_{n-1} + 2 \sum\limits_{j=0}^{n-2} X_j \sin \left[ \pi (j+1) (k+1/2) / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is RODFT10.
 The input array is assumed to have odd symmetry around <em>j=-1</em> and even symmetry around <em>j=n-1</em>.</p>
-<p><img src="img/rodft01.png" alt="RODFT01" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/rodft01.png" alt="RODFT01" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>RODFT01</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>RODFT01</code>
@@ -1363,7 +1363,7 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_rodft01.c"><code>src/test_1d_rodft01.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_rodft01.c"><code>src/test_1d_rodft01.c</code></a>.</p>
 <h4 id="rodft11-dst-iv">
   RODFT11 (DST-IV)
   <a class="anchor" href="#rodft11-dst-iv">#</a>
@@ -1371,12 +1371,12 @@ the negative imaginary parts in the output of the logically equivalent DFT shift
 <p>In case of the real-valued odd-parity DFT with both shifted input and output data (RODFT11),
 also called the DST-IV, the corresponding logical DFT size is given by <em>N</em> = 2<code>n</code>, corresponding to <code>n</code> = <em>N</em>/2.</p>
 <p>The formal definition of the RODFT11 is given below:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/rodft11.png" alt="RODFT11 formula" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \sin \left[ \pi (j+1/2) (k+1/2) / n \right]
+$$<!-- raw HTML omitted --></p>
 <p>The inverse of this transform is RODFT11 itself.
 The input array is assumed to have odd symmetry around <em>j=-0.5</em> and even symmetry around <em>j=n-0.5</em>.</p>
-<p><img src="img/rodft11.png" alt="RODFT11" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/rodft11.png" alt="RODFT11" /></p>
 <p>In order to demonstrate the use of this method,
 the logically equivalent DFT input is filled appropriately and its output is checked against <code>RODFT11</code>.
 In the following code, <code>in</code> is the input array (size <code>n</code>) given to <code>RODFT11</code>
@@ -1426,7 +1426,7 @@ the negative imaginary parts in the output of the logically equivalent DFT):</p>
 </span></span><span style="display:flex;"><span>        printf(<span style="color:#e6db74">&#34;match of [%d] (delta=%g)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, n <span style="color:#f92672">+</span> i, delta);
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_1d_rodft11.c"><code>src/test_1d_rodft11.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_1d_rodft11.c"><code>src/test_1d_rodft11.c</code></a>.</p>
 <h2 id="two-dimensional-examples">
   Two-Dimensional Examples
   <a class="anchor" href="#two-dimensional-examples">#</a>
@@ -1503,7 +1503,7 @@ The two-dimensional complex-valued DFT is computed manually for reference
 and the outputs are compared against the result of FFTW.
 The product of the one-dimensional DFTs along the two dimensions is computed here
 via addition of the corresponding phases in the exponent of the complex-valued basis function.</p>
-<p>The code can be found in <a href="src/test_2d_c2c.c"><code>src/test_2d_c2c.c</code></a>.</p>
+<p>The code can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_2d_c2c.c"><code>src/test_2d_c2c.c</code></a>.</p>
 <h3 id="2d-complex-to-real">
   2D complex-to-real
   <a class="anchor" href="#2d-complex-to-real">#</a>
@@ -1549,7 +1549,7 @@ and (<code>n0</code>x<code>n1</code>) is the logical size of the DFT and also th
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_2d_c2r.c"><code>src/test_2d_c2r.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_2d_c2r.c"><code>src/test_2d_c2r.c</code></a>.</p>
 <h3 id="2d-real-to-complex">
   2D real-to-complex
   <a class="anchor" href="#2d-real-to-complex">#</a>
@@ -1584,7 +1584,7 @@ The output data then has a shape of (<code>n0</code>x<code>n1_cplx</code>) where
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_2d_r2c.c"><code>src/test_2d_r2c.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_2d_r2c.c"><code>src/test_2d_r2c.c</code></a>.</p>
 <h3 id="2d-real-to-real">
   2D real-to-real
   <a class="anchor" href="#2d-real-to-real">#</a>
@@ -1596,9 +1596,10 @@ and also do not contribute much insight.</p>
 <p>Note that FFTW computes the <em>separable product</em> of the transforms along each dimension
 and not the true multi-dimensional DFT.
 This can be understood intuitively by the addition formulas for sine and cosine:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/sin_cos_add.png" alt="Addition formulas for sine and cosine" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+\sin(u \pm v) =&amp; \sin(u) \cos(v) \pm \cos(u) \sin(v) \\
+\cos(u \pm v) =&amp; \cos(u) \cos(v) \mp \sin(u) \sin(v)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>FFTW&rsquo;s two-dimensional real-to-real DFTs can be used to compute the products on the right-hand side
 of above equation and two such DFts have to be added together to arrive at the true
 two-dimensional DFT with the Fourier kernel as on the left-hand side of above equation.</p>
@@ -1619,20 +1620,22 @@ with <code>REDFT10</code> in the first dimension and <code>RODFT10</code> in the
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>basis_1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.0</span> <span style="color:#f92672">*</span> sin(M_PI <span style="color:#f92672">*</span> (j1 <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">*</span> (k1 <span style="color:#f92672">+</span> <span style="color:#ae81ff">1.0</span>) <span style="color:#f92672">/</span> ((<span style="color:#66d9ef">double</span>) n1));
 </span></span></code></pre></div><p>The contribution to the output array is computed as follows:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>ref_out[idx_k] <span style="color:#f92672">+=</span> in[idx_j] <span style="color:#f92672">*</span> basis_0 <span style="color:#f92672">*</span> basis_1;
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_2d_r2r_e10_o10.c"><code>src/test_2d_r2r_e10_o10.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_2d_r2r_e10_o10.c"><code>src/test_2d_r2r_e10_o10.c</code></a>.</p>
 <h4 id="true-2d-idct-using-fftw">
   True 2D IDCT using FFTW
   <a class="anchor" href="#true-2d-idct-using-fftw">#</a>
 </h4>
 <p>A true two-dimensional inverse discrete cosine transform is computed using FFTW in this example:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/true_2d_idct.png" alt="True two-dimensional IDCT" /></p>
+<p><!-- raw HTML omitted -->$$
+Y_{k_0,k_1} = \sum\limits_{j_0=0}^{n_0-1} \sum\limits_{j_1=0}^{n_1-1} X_{j_0,j_1} \cos \left( \pi \left( j_0 \frac{k_0 + \frac{1}{2}}{n_0} + j_1 \frac{k_1 + \frac{1}{2}}{n_1} \right)  \right)
+$$<!-- raw HTML omitted --></p>
 <p>FFTW can only compute the separable product of one-dimensional transforms for multi-dimensional transform.
 Above kernel function thus has to be split up by application of the addition formula for sine and cosine:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/true_2d_idct_kernel.png" alt="True two-dimensional IDCT kernel" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+~&amp; \cos \left( \pi \left( j_0 \frac{k_0 + \frac{1}{2}}{n_0} + j_1 \frac{k_1 + \frac{1}{2}}{n_1} \right)  \right) \\
+=&amp;   \cos \left( \pi j_0 \frac{k_0 + \frac{1}{2}}{n_0} \right) \cos \left( \pi j_1 \frac{k_1 + \frac{1}{2}}{n_1} \right)
+- \sin \left( \pi j_0 \frac{k_0 + \frac{1}{2}}{n_0} \right) \sin \left( \pi j_1 \frac{k_1 + \frac{1}{2}}{n_1} \right)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>The left half of above equation is computed using a two-dimensional <code>REDFT01</code>
 and the right half is computed using a two-dimensional <code>RODFT01</code>.
 The outputs of these transforms are subtracted from each other to yield the desired result.</p>
@@ -1685,9 +1688,9 @@ Then, the two input arrays are filled separately.</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// make sure that all entries are zero
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        in1[idx_j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>;
 </span></span><span style="display:flex;"><span>        in2[idx_j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>;
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* fill in1 */</span>
-</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">/* fill in2 */</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
@@ -1747,7 +1750,7 @@ from the two-dimensional <code>RODFT01</code> to arrive at the final result in <
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        out1[idx_k] <span style="color:#f92672">-=</span> out2[idx_k];
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/test_2d_r2r_true2d.c"><code>src/test_2d_r2r_true2d.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/test_2d_r2r_true2d.c"><code>src/test_2d_r2r_true2d.c</code></a>.</p>
 <h2 id="real-world-applications">
   Real-world applications
   <a class="anchor" href="#real-world-applications">#</a>
@@ -1756,7 +1759,7 @@ from the two-dimensional <code>RODFT01</code> to arrive at the final result in <
 of the magnetic axis and a flux surface of a stellarator ideal magnetohydrodynamic (MHD) plasma equilibrium
 as computed by the <a href="https://doi.org/10.1016/0010-4655%2886%2990058-5">Variational Moments Equilibrium Code (VMEC)</a>.</p>
 <p>Here is a plot of a few of the flux surfaces of the <a href="https://www.ipp.mpg.de/w7x">Wendelstein 7-X</a> stellarator:</p>
-<p><img src="img/flux_surfaces_w7x_ref_163_1_10_50_98_cut_small.png" alt="flux surfaces and magnetic axis of W7-X" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/flux_surfaces_w7x_ref_163_1_10_50_98_cut_small.png" alt="flux surfaces and magnetic axis of W7-X" /></p>
 <p>Nested flux surfaces are shown in grey, red, green and blue.
 The black line indicates the magnetic axis.</p>
 <p>The geometry of the magnetic axis and that of a flux surface are real-valued.
@@ -1767,21 +1770,27 @@ Therefore, <code>c2r</code> DFTs are sufficient to compute the backward transfor
 </h3>
 <p>The real-space geometry of the magnetic axis (a general closed curve) is given via a one-dimensional DFT
 <a href="https://github.com/jonathanschilling/fftw_tutorial#1d-complex-to-complex">evaluated using real-valued arithmetics</a>:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/magn_axis.png" alt="full Fourier series for magnetic axis" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+R_\mathrm{ax}(\zeta) =&amp; \sum\limits_{n=0}^{N}   R_{\mathrm{ax}, n}^\mathrm{cos} \cos \left( n \zeta \right)
++ R_{\mathrm{ax}, n}^\mathrm{sin} \sin \left( n \zeta \right) \\
+Z_\mathrm{ax}(\zeta) =&amp; \sum\limits_{n=0}^{N}   Z_{\mathrm{ax}, n}^\mathrm{sin} \sin \left( n \zeta \right)
++ Z_{\mathrm{ax}, n}^\mathrm{cos} \cos \left( n \zeta \right)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>where ζ is the toroidal angle per field period in radians.
 For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine.
 Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.</p>
 <p>In this example the geometry of the magnetic axis is evaluated at regular intervals in ζ:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/grid_zeta.png" alt="grid in zeta" /></p>
+<p><!-- raw HTML omitted -->$$
+\zeta_l = 2 \pi l / n_\zeta
+$$<!-- raw HTML omitted --></p>
 <p>where <em>l</em> ranges from <code>0</code> to <code>n_ζ-1</code>.</p>
 <p>Inserting this into the Fourier series for, e.g., the <em>R</em> coordinate, leads to a DFT:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/magn_axis_dft.png" alt="magnetic axis R via DFT" /></p>
+<p><!-- raw HTML omitted -->$$
+R_{\mathrm{ax}, l}
+= \sum\limits_{n=0}^{N}
+\left( R_{\mathrm{ax}, n}^\mathrm{cos} - i , R_{\mathrm{ax}, n}^\mathrm{sin} \right)
+e^{2 \pi i n l / n_\zeta}
+$$<!-- raw HTML omitted --></p>
 <p>Note that typically the number of Fourier coefficients included in computation
 of the MHD equilibrium is (much) less than the number of grid points, i.e., <em>N</em> &lt; <code>n_ζ</code>.
 The physics happens in real space and certains aspects of a computation
@@ -1829,13 +1838,14 @@ and (if present) the remainder of the input array is set to zero:</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> n<span style="color:#f92672">=</span>ntor<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>; n<span style="color:#f92672">&lt;</span>nCplx; <span style="color:#f92672">++</span>n) {
 </span></span><span style="display:flex;"><span>    in[n] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The full example can be found in <a href="src/app_magn_axis.c"><code>src/app_magn_axis.c</code></a>.</p>
+</span></span></code></pre></div><p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/app_magn_axis.c"><code>src/app_magn_axis.c</code></a>.</p>
 <p>Assuming <a href="https://doi.org/10.1016/S0167-2789%2897%2900216-9">stellarator symmetry</a>,
 half of the Fourier coefficients can be omitted and the transform
 reduces to the one-dimensional IDCT and IDST, respectively:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/magn_axis_stellsym.png" alt="stellarator-symmetric Fourier series for magnetic axis" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+R_\mathrm{ax}(\zeta) =&amp; \sum\limits_{n=0}^{N}   R_{\mathrm{ax}, n}^\mathrm{cos} \cos \left( n \zeta \right) \\
+Z_\mathrm{ax}(\zeta) =&amp; \sum\limits_{n=0}^{N}   Z_{\mathrm{ax}, n}^\mathrm{sin} \sin \left( n \zeta \right)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>The <a href="http://fftw.org/fftw3_doc/Real-even_002fodd-DFTs-_0028cosine_002fsine-transforms_0029.html#DOCF4">FFTW documentation</a>
 explicitly advises against using <code>R*DFT00</code> transforms for this purpose due to numerical stability issues
 which are currently circumvented within FFTW by using a less efficient algorithm.
@@ -1868,11 +1878,11 @@ is filled by applying the even symmetry of the output data implicitly used in <c
 </span></span><span style="display:flex;"><span>    out[n_zeta <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> n] <span style="color:#f92672">=</span> out[n];
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The output data is compared in the following figure with the equivalent result from using a <code>c2r</code> transform:</p>
-<p><img src="img/axis_R.png" alt="R of magnetic axis: c2r DFT vs. REDFT01" /></p>
+<p><img src="https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/axis_R.png" alt="R of magnetic axis: c2r DFT vs. REDFT01" /></p>
 <p>The violet curve labelled &lsquo;DFT&rsquo; is the output from the <code>c2r</code> DFT applied in the first half of this example.
 The green curve labelled &lsquo;REDFT01&rsquo; is the output from the <code>REDFT01</code> applied in the second half of this example.
 Note that the locations of the <code>REDFT01</code> output needed to be shifted to the right by half an index to yield overlapping curves.</p>
-<p>The full example can be found in <a href="src/app_magn_axis_stellsym.c"><code>src/app_magn_axis_stellsym.c</code></a>.</p>
+<p>The full example can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/app_magn_axis_stellsym.c"><code>src/app_magn_axis_stellsym.c</code></a>.</p>
 <h3 id="geometry-of-a-flux-surface-in-a-stellarator">
   Geometry of a Flux Surface in a Stellarator
   <a class="anchor" href="#geometry-of-a-flux-surface-in-a-stellarator">#</a>
@@ -1880,31 +1890,45 @@ Note that the locations of the <code>REDFT01</code> output needed to be shifted 
 <p>The real-space geometry of the flux surface is a general toroidal surface
 which is conveniently parameterized using poloidal and toroidal angle-like coordinates.
 The surface geometry is then given via a two-dimensional DFT:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/flux_surface.png" alt="full Fourier series for flux surface" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+R(\theta, \zeta) =&amp; \phantom{+}~                      \sum\limits_{n= 0}^{N}   R_{0,n}^\mathrm{cos} \cos \left(            n \zeta \right)
++ R_{0,n}^\mathrm{sin} \sin \left(            n \zeta \right) \\
+~&amp;          +  \sum\limits_{m=1}^{M} \sum\limits_{n=-N}^{N}   R_{m,n}^\mathrm{cos} \cos \left( m \theta - n \zeta \right)
++ R_{m,n}^\mathrm{sin} \sin \left( m \theta - n \zeta \right) \\
+Z(\theta, \zeta) =&amp; \phantom{+}~                      \sum\limits_{n= 0}^{N}   Z_{0,n}^\mathrm{sin} \sin \left(            n \zeta \right)
++ Z_{0,n}^\mathrm{cos} \cos \left(            n \zeta \right) \\
+~&amp;          +  \sum\limits_{m=1}^{M} \sum\limits_{n=-N}^{N}   Z_{m,n}^\mathrm{sin} \sin \left( m \theta - n \zeta \right)
++ Z_{m,n}^\mathrm{cos} \cos \left( m \theta - n \zeta \right)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>where (θ,ζ) are the poloidal and toroidal angle-like variables in radians, respectively.
 For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine.
 Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.
 The poloidal angle-like coordinate θ ranges from 0 to 2π once the short way around the torus (wristband-like).</p>
 <p>The two-dimensional DFT above can be simplified (shown here for <em>R</em> only)
 by introducing rectangular two-dimensional Fourier coefficient matrices:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/vmec_2d_fc.png" alt="full 2d FC matrix for flux surface" /></p>
+<p><!-- raw HTML omitted -->$$
+R_{m,n} = \begin{cases}
+0                                             &amp; m=0, n&lt;0 \\
+R_{0,n}^\mathrm{cos} - i R_{0,n}^\mathrm{sin} &amp; m=0,n \geq 0 \\
+R_{m,n}^\mathrm{cos} - i R_{m,n}^\mathrm{sin} &amp; \textrm{else}
+\end{cases}
+$$<!-- raw HTML omitted --></p>
 <p>In this example the geometry of the flux surface is evaluated
 on a regular grid in θ and ζ:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/grid_zeta.png" alt="grid in zeta" /></p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/grid_theta.png" alt="grid in theta" /></p>
+<p><!-- raw HTML omitted -->$$
+\zeta_l = 2 \pi l / n_\zeta
+$$<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->$$
+\theta_k = 2 \pi k / n_\theta
+$$<!-- raw HTML omitted --></p>
 <p>where <em>l</em> ranges from <code>0</code> to <code>n_ζ-1</code> and <em>k</em> ranges from <code>0</code> to <code>n_θ-1</code>.</p>
 <p>Inserting this into the Fourier series for, e.g., the <em>R</em> coordinate, leads to a DFT:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/flux_surface_dft.png" alt="flux surface R via DFT" /></p>
+<p><!-- raw HTML omitted -->$$
+R_{l,k}
+= \sum\limits_{m= 0}^{M}
+\sum\limits_{n=-N}^{N}
+R_{m,n} , e^{2 \pi i ( n l / n_\zeta + m k / n_\theta ) }
+$$<!-- raw HTML omitted --></p>
 <p>The <em>R</em> coordinate is a real-valued quantity
 which implies that a two-dimensional <code>c2r</code> DFT provided by FFTW can be used to
 perform the backward transform in order to evaluate the flux surface geometry.
@@ -1961,13 +1985,16 @@ which is not the case for VMEC output. Thus, they are (in this case errornously)
 scaled internally by a factor of <code>2</code>, which needs to be counteracted by a scaling factor of <code>0.5</code> in the input.</p>
 <p>Assuming <a href="https://doi.org/10.1016/S0167-2789%2897%2900216-9">stellarator symmetry</a>,
 half of the Fourier coefficients can be omitted and the transform reduces to the two-dimensional IDCT and IDST:</p>
-<p><!-- raw HTML omitted -->$$</p>
-<p>$$<!-- raw HTML omitted -->
-<img src="eqn/flux_surface_stellsym.png" alt="stellarator-symmetric Fourier series for flux surface" /></p>
+<p><!-- raw HTML omitted -->\begin{align*}
+R(\theta, \zeta) =&amp;                          \sum\limits_{n= 0}^{N} R_{0,n}^\mathrm{cos} \cos \left(            n \zeta \right)
++  \sum\limits_{m=1}^{M} \sum\limits_{n=-N}^{N} R_{m,n}^\mathrm{cos} \cos \left( m \theta - n \zeta \right) \\
+Z(\theta, \zeta) =&amp;                          \sum\limits_{n= 0}^{N} Z_{0,n}^\mathrm{sin} \sin \left(            n \zeta \right)
++  \sum\limits_{m=1}^{M} \sum\limits_{n=-N}^{N} Z_{m,n}^\mathrm{sin} \sin \left( m \theta - n \zeta \right)
+\end{align*}<!-- raw HTML omitted --></p>
 <p>This is currently resolved by simply omitting the stellarator-asymmetric terms
 in the input to FFTW.</p>
-<p>The full example code can be found in <a href="src/app_flux_surface.c"><code>src/app_flux_surface.c</code></a>.
-A Python script is provided to plot the resulting real-space geometry in <a href="src/plot_lcfs_realspace.py"><code>src/plot_lcfs_realspace.py</code></a>.</p>
+<p>The full example code can be found in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/app_flux_surface.c"><code>src/app_flux_surface.c</code></a>.
+A Python script is provided to plot the resulting real-space geometry in <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/plot_lcfs_realspace.py"><code>src/plot_lcfs_realspace.py</code></a>.</p>
 <h2 id="allocation-of-arrays">
   Allocation of arrays
   <a class="anchor" href="#allocation-of-arrays">#</a>
@@ -1989,7 +2016,7 @@ The corresponding &ldquo;raw&rdquo; allocation code would look like this:</p>
   Utility functions
   <a class="anchor" href="#utility-functions">#</a>
 </h2>
-<p>In order to keep the examples short, a separate header file <a href="src/util.h"><code>src/util.h</code></a> is provided.
+<p>In order to keep the examples short, a separate header file <a href="https://github.com/jonathanschilling/fftw_tutorial/tree/master/src/util.h"><code>src/util.h</code></a> is provided.
 It contains methods to operate on one- and two-dimensional arrays (the latter stored in row-major order)
 of real (<code>double</code>) and complex (<code>fftw_complex</code>) numbers.
 The following operations are supported:</p>
@@ -2009,7 +2036,7 @@ The following operations are supported:</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/2d6b82c7619e4e7cba9e9dac7ec5af15b0baef13" title='Last modified by Jonathan Schilling | November 23, 2022' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/5adc20849eab08c1dd9d5b22c41db07261a665d1" title='Last modified by Jonathan Schilling | November 23, 2022' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>November 23, 2022</span>
     </a>

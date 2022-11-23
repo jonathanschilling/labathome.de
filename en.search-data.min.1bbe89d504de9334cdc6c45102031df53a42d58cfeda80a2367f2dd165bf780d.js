@@ -182,8 +182,8 @@ type actual r2r input logically-equivalent DFT input REDFT00 a b c d e a b c d e
 For the DSTs, please also consider https://en.wikipedia.org/wiki/Discrete_sine_transform#Definition and in particular https://upload.wikimedia.org/wikipedia/commons/3/31/DST-symmetries.svg .
 REDFT00 (DCT-I) # In case of the real-valued even-parity DFT with no shifts in either input or output array (REDFT00), also called the DCT-I, the corresponding logical DFT size is given by N = 2(n-1), corresponding to n = N/2+1.
 The formal definition of the REDFT00 is given below:
-$$
-$$ The inverse of this transform is REDFT00 itself. The input array is assumed to have even symmetry around j=0 and even symmetry also around j=n−1.
+$$ Y_k = X_0 + (-1)^k X_{n-1} + 2 \\sum\\limits_{j=1}^{n-2} X_j \\cos\\left[ \\pi j k / (n-1) \\right] $$
+The inverse of this transform is REDFT00 itself. The input array is assumed to have even symmetry around j=0 and even symmetry also around j=n−1.
 In above figure, the lowercase letters a to e refer to the input data abcde for the size-5 REDFT00, which is logically equivalent to a size-8 DFT with real-valued input data abcdedcb.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against REDFT00. In the following code, in is the input array (size n) given to REDFT00 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from REDFT00 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
@@ -193,8 +193,8 @@ double delta; for (int i = 0; i \u0026lt; n; ++i) { delta = creal(out_logical[i]
 for (int i = 0; i \u0026lt; n - 2; ++i) { delta = creal(out_logical[n + i]) - out[n - 2 - i]; if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n+i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n+i, delta); } } The full example can be found in src/test_1d_redft00.c.
 REDFT10 (DCT-II) # In case of the real-valued even-parity DFT with shifted input data (REDFT10), also called the DCT-II, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2. This function is commonly known as \u0026ldquo;the\u0026rdquo; DCT.
 The formal definition of the REDFT10 is given below:
-$$
-$$ The inverse of this transform is REDFT01. The input array is assumed to have even symmetry around j=-0.5 and even symmetry also around j=n−0.5.
+$$ Y_k = 2 \\sum\\limits_{j=0}^{n-1} X_j \\cos\\left[ \\pi (j+1/2) k / n \\right] $$
+The inverse of this transform is REDFT01. The input array is assumed to have even symmetry around j=-0.5 and even symmetry also around j=n−0.5.
 In above figure, the lowercase letters a to e refer to the input data abcd for the size-4 REDFT10, which is logically equivalent to a size-8 DFT with real-valued input data abcddcba.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against REDFT10. In the following code, in is the input array (size n) given to REDFT10 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from REDFT10 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
@@ -205,8 +205,8 @@ if (fabs(creal(out_logical[n])) \u0026gt; eps) { printf(\u0026#34;error: delta o
 for (int i = 1; i \u0026lt; n; ++i) { delta = creal(out_logical[n + i]) - (-out[n - i]); if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + i, delta); } } The full example can be found in src/test_1d_redft10.c.
 REDFT01 (DCT-III) # In case of the real-valued even-parity DFT with shifted output data (REDFT01), also called the DCT-III, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2. This function is commonly known as \u0026ldquo;the\u0026rdquo; inverse DCT (IDCT).
 The formal definition of the REDFT01 is given below:
-$$
-$$ The inverse of this transform is REDFT10. The input array is assumed to have even symmetry around j=0 and odd symmetry around j=n.
+$$ Y_k = X_0 + 2 \\sum\\limits_{j=1}^{n-1} X_j \\cos\\left[ \\pi j (k+1/2) / n \\right] $$
+The inverse of this transform is REDFT10. The input array is assumed to have even symmetry around j=0 and odd symmetry around j=n.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against REDFT01. In the following code, in is the input array (size n) given to REDFT01 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from REDFT01 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
 // the first half of the array is identical for (int i = 0; i \u0026lt; n; ++i) { in_logical[i] = in[i]; } // second half is filled according to odd symmetry around n for (int i = 1; i \u0026lt; n; ++i) { in_logical[n + i] = -in[n - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely real-valued:
@@ -215,8 +215,8 @@ for (int i = 0; i \u0026lt; n; ++i) { delta = creal(out_logical[i]) - out[i]; if
 for (int i = 0; i \u0026lt; n; ++i) { delta = creal(out_logical[n + i]) - out[n - 1 - i]; if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + i, delta); } } The full example can be found in src/test_1d_redft01.c.
 REDFT11 (DCT-IV) # In case of the real-valued even-parity DFT with both shifted input and output data (REDFT11), also called the DCT-IV, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2.
 The formal definition of the REDFT11 is given below:
-$$
-$$ The inverse of this transform is REDFT11 itself. The input array is assumed to have even symmetry around j=-0.5 and odd symmetry around j=n-0.5.
+$$ Y_k = 2 \\sum\\limits_{j=0}^{n-1} X_j \\cos\\left[ \\pi (j+1/2) (k+1/2) / n \\right] $$
+The inverse of this transform is REDFT11 itself. The input array is assumed to have even symmetry around j=-0.5 and odd symmetry around j=n-0.5.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against REDFT11. In the following code, in is the input array (size n) given to REDFT11 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from REDFT11 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
 // the first half of the array is identical for (int i = 0; i \u0026lt; n; ++i) { in_logical[i] = in[i]; } // second half is filled according to odd symmetry around n-0.5 for (int i = 0; i \u0026lt; n; ++i) { in_logical[n + i] = -in[n - 1 - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely real-valued:
@@ -225,8 +225,8 @@ for (int i = 0; i \u0026lt; n; ++i) { delta = creal(out_logical[i]) - out[i]; if
 for (int i = 0; i \u0026lt; n; ++i) { delta = creal(out_logical[n + i]) - (-out[n - 1 - i]); if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + i, delta); } } The full example can be found in src/test_1d_redft11.c.
 RODFT00 (DST-I) # In case of the real-valued odd-parity DFT with no shifts in either input or output array (RODFT00), also called the DST-I, the corresponding logical DFT size is given by N = 2(n+1), corresponding to n = N/2-1. Note that the periodicity of N of the logical input array in combination with odd symmetry X_j = -X_{n-j} leads to X_0 = -X_0 which is equivalent to X_0 = 0. This first always-zero element of the input array is not explicitly included in the input to FFTW and the input array thus has a size of one less and the indices of the symmetry axis shift by 1.
 The formal definition of the RODFT00 is given below:
-$$
-$$ The inverse of this transform is RODFT00 itself. The input array is assumed to have odd symmetry around j=-1 and odd symmetry also around j=n.
+$$ Y_k = 2 \\sum\\limits_{j=0}^{n-1} X_j \\sin \\left[ \\pi (j+1) (k+1) / (n+1) \\right] $$
+The inverse of this transform is RODFT00 itself. The input array is assumed to have odd symmetry around j=-1 and odd symmetry also around j=n.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against RODFT00. In the following code, in is the input array (size n) given to RODFT00 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from RODFT00 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
 // the first half of the array is identical // except the first 0 (and the rest of the array being shifted) in_logical[0] = 0.0; for (int i = 0; i \u0026lt; n; ++i) { in_logical[i + 1] = in[i]; } // second half is filled according to odd symmetry around (n+1) in_logical[n + 1] = 0.0; for (int i = 0; i \u0026lt; n; ++i) { in_logical[n + 2 + i] = -in[n - 1 - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely imaginary-valued:
@@ -237,8 +237,8 @@ if (fabs(cimag(out_logical[n + 1])) \u0026gt; eps) { printf(\u0026#34;error: del
 for (int i = 0; i \u0026lt; n; ++i) { delta = -cimag(out_logical[n + 2 + i]) - (-out[n - 1 - i]); if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + 2 + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + 2 + i, delta); } } The full example can be found in src/test_1d_rodft00.c.
 RODFT10 (DST-II) # In case of the real-valued odd-parity DFT with shifted input data (RODFT10), also called the DST-II, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2. This function is commonly known as \u0026ldquo;the\u0026rdquo; DST.
 The formal definition of the RODFT10 is given below:
-$$
-$$ The inverse of this transform is RODFT01. The input array is assumed to have odd symmetry around j=-0.5 and odd symmetry also around j=n-0.5.
+$$ Y_k = 2 \\sum\\limits_{j=0}^{n-1} X_j \\sin \\left[ \\pi (j+1/2) (k+1) / n \\right] $$
+The inverse of this transform is RODFT01. The input array is assumed to have odd symmetry around j=-0.5 and odd symmetry also around j=n-0.5.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against RODFT10. In the following code, in is the input array (size n) given to RODFT10 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from RODFT10 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
 // the first half of the array is identical for (int i = 0; i \u0026lt; n; ++i) { in_logical[i] = in[i]; } // second half is filled according to odd symmetry around (n-0.5) for (int i = 0; i \u0026lt; n; ++i) { in_logical[n + i] = -in[n - 1 - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely imaginary-valued:
@@ -248,8 +248,8 @@ for (int i = 0; i \u0026lt; n; ++i) { delta = -cimag(out_logical[i + 1]) - out[i
 for (int i = 0; i \u0026lt; n - 1; ++i) { delta = -cimag(out_logical[n + 1 + i]) - out[n - 2 - i]; if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + 1 + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + 1 + i, delta); } } The full example can be found in src/test_1d_rodft10.c.
 RODFT01 (DST-III) # In case of the real-valued odd-parity DFT with shifted output data (RODFT01), also called the DST-III, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2. This function is commonly known as \u0026ldquo;the\u0026rdquo; inverse DST (IDST).
 The formal definition of the RODFT01 is given below:
-$$
-$$ The inverse of this transform is RODFT10. The input array is assumed to have odd symmetry around j=-1 and even symmetry around j=n-1.
+$$ Y_k = (-1)^kX_{n-1} + 2 \\sum\\limits_{j=0}^{n-2} X_j \\sin \\left[ \\pi (j+1) (k+1/2) / n \\right] $$
+The inverse of this transform is RODFT10. The input array is assumed to have odd symmetry around j=-1 and even symmetry around j=n-1.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against RODFT01. In the following code, in is the input array (size n) given to RODFT01 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from RODFT01 and out_logical is the output array (size N) from a generic 1D DFT.
 The input of RODFT01 is shifted by one index to the left with respect to the logically-equivalent DFT, since the first input is constrained to be zero (resulting in odd parity about -1 in the input to RODFT01). Here is how the symmetric input is generated:
 // a zero in the first entry is needed to satisfy // odd symmetry about -1 in the shifted input array in_logical[0] = 0.0; // the first half of the array is identical up to shift for (int i = 0; i \u0026lt; n; ++i) { in_logical[i + 1] = in[i]; } // second half is filled according to even symmetry around (n-1) for (int i = 0; i \u0026lt; n - 1; ++i) { in_logical[n + 1 + i] = in[n - 2 - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely imaginary-valued:
@@ -258,8 +258,8 @@ for (int i = 0; i \u0026lt; n; ++i) { delta = -cimag(out_logical[i]) - out[i]; i
 for (int i = 0; i \u0026lt; n; ++i) { delta = -cimag(out_logical[n + i]) - (-out[n - 1 - i]); if (fabs(delta) \u0026gt; eps) { printf(\u0026#34;error: delta of [%d] is %g\\n\u0026#34;, n + i, delta); status = 1; } else { printf(\u0026#34;match of [%d] (delta=%g)\\n\u0026#34;, n + i, delta); } } The full example can be found in src/test_1d_rodft01.c.
 RODFT11 (DST-IV) # In case of the real-valued odd-parity DFT with both shifted input and output data (RODFT11), also called the DST-IV, the corresponding logical DFT size is given by N = 2n, corresponding to n = N/2.
 The formal definition of the RODFT11 is given below:
-$$
-$$ The inverse of this transform is RODFT11 itself. The input array is assumed to have odd symmetry around j=-0.5 and even symmetry around j=n-0.5.
+$$ Y_k = 2 \\sum\\limits_{j=0}^{n-1} X_j \\sin \\left[ \\pi (j+1/2) (k+1/2) / n \\right] $$
+The inverse of this transform is RODFT11 itself. The input array is assumed to have odd symmetry around j=-0.5 and even symmetry around j=n-0.5.
 In order to demonstrate the use of this method, the logically equivalent DFT input is filled appropriately and its output is checked against RODFT11. In the following code, in is the input array (size n) given to RODFT11 and in_logical is the (complex-valued) input array (size N) handed to a generic 1D DFT. Similarly, out is the output array (size n) from RODFT11 and out_logical is the output array (size N) from a generic 1D DFT.
 Here is how the symmetric input is generated:
 // the first half of the array is identical up to shift for (int i = 0; i \u0026lt; n; ++i) { in_logical[i] = in[i]; } // second half is filled according to even symmetry around (n-0.5) for (int i = 0; i \u0026lt; n; ++i) { in_logical[n + i] = in[n - 1 - i]; } The checks are a little bit more involved. The logically equivalent DFT output should be purely imaginary-valued:
@@ -280,18 +280,18 @@ double *in = fftw_alloc_real(n0 * n1); fftw_complex *out = fftw_alloc_complex(n0
 int idx_k, idx_j; double phi; for (int k0 = 0; k0 \u0026lt; n0; ++k0) { for (int k1 = 0; k1 \u0026lt; n1_cplx; ++k1) { idx_k = k0 * n1_cplx + k1; ref_out[idx_k] = 0.0; for (int j0 = 0; j0 \u0026lt; n0; ++j0) { for (int j1 = 0; j1 \u0026lt; n1; ++j1) { idx_j = j0 * n1 + j1; phi = -2.0 * M_PI * ( k0 * j0 / ((double) n0) + k1 * j1 / ((double) n1) ); ref_out[idx_k] += in[idx_j] * cexp(I*phi); } } } } The full example can be found in src/test_2d_r2c.c.
 2D real-to-real # Two-dimensional real-to-real DFTs can be defined with any of the one-dimensional transforms in each of the two dimensions. This implies that for eight one-dimensional transforms there is a total of 64 possible combinations that exceed the scope of this tutorial and also do not contribute much insight.
 Note that FFTW computes the separable product of the transforms along each dimension and not the true multi-dimensional DFT. This can be understood intuitively by the addition formulas for sine and cosine:
-$$
-$$ FFTW\u0026rsquo;s two-dimensional real-to-real DFTs can be used to compute the products on the right-hand side of above equation and two such DFts have to be added together to arrive at the true two-dimensional DFT with the Fourier kernel as on the left-hand side of above equation.
+\\begin{align*} \\sin(u \\pm v) =\u0026amp; \\sin(u) \\cos(v) \\pm \\cos(u) \\sin(v) \\\\ \\cos(u \\pm v) =\u0026amp; \\cos(u) \\cos(v) \\mp \\sin(u) \\sin(v) \\end{align*}
+FFTW\u0026rsquo;s two-dimensional real-to-real DFTs can be used to compute the products on the right-hand side of above equation and two such DFts have to be added together to arrive at the true two-dimensional DFT with the Fourier kernel as on the left-hand side of above equation.
 In the following, two examples are presented. First, a mixed r2r DFT with REDFT10 in the first dimension and RODFT10 in the second dimension is computed. Second, a true two-dimensional DFT in computed using two FFTW calls.
 2D REDFT10+RODFT10 # An example of a two-dimensional transform is presented with REDFT10 in the first dimension and RODFT10 in the second dimension.
 The basis functions for the two dimensions are computed separately:
 // REDFT10 in first dimension basis_0 = 2.0 * cos(M_PI * (j0 + 0.5) * k0 / ((double) n0)); // RODFT10 in second dimension basis_1 = 2.0 * sin(M_PI * (j1 + 0.5) * (k1 + 1.0) / ((double) n1)); The contribution to the output array is computed as follows:
 ref_out[idx_k] += in[idx_j] * basis_0 * basis_1; The full example can be found in src/test_2d_r2r_e10_o10.c.
 True 2D IDCT using FFTW # A true two-dimensional inverse discrete cosine transform is computed using FFTW in this example:
-$$
-$$ FFTW can only compute the separable product of one-dimensional transforms for multi-dimensional transform. Above kernel function thus has to be split up by application of the addition formula for sine and cosine:
-$$
-$$ The left half of above equation is computed using a two-dimensional REDFT01 and the right half is computed using a two-dimensional RODFT01. The outputs of these transforms are subtracted from each other to yield the desired result.
+$$ Y_{k_0,k_1} = \\sum\\limits_{j_0=0}^{n_0-1} \\sum\\limits_{j_1=0}^{n_1-1} X_{j_0,j_1} \\cos \\left( \\pi \\left( j_0 \\frac{k_0 + \\frac{1}{2}}{n_0} + j_1 \\frac{k_1 + \\frac{1}{2}}{n_1} \\right) \\right) $$
+FFTW can only compute the separable product of one-dimensional transforms for multi-dimensional transform. Above kernel function thus has to be split up by application of the addition formula for sine and cosine:
+\\begin{align*} ~\u0026amp; \\cos \\left( \\pi \\left( j_0 \\frac{k_0 + \\frac{1}{2}}{n_0} + j_1 \\frac{k_1 + \\frac{1}{2}}{n_1} \\right) \\right) \\\\ =\u0026amp; \\cos \\left( \\pi j_0 \\frac{k_0 + \\frac{1}{2}}{n_0} \\right) \\cos \\left( \\pi j_1 \\frac{k_1 + \\frac{1}{2}}{n_1} \\right) - \\sin \\left( \\pi j_0 \\frac{k_0 + \\frac{1}{2}}{n_0} \\right) \\sin \\left( \\pi j_1 \\frac{k_1 + \\frac{1}{2}}{n_1} \\right) \\end{align*}
+The left half of above equation is computed using a two-dimensional REDFT01 and the right half is computed using a two-dimensional RODFT01. The outputs of these transforms are subtracted from each other to yield the desired result.
 First consider the naive implementation in plain C.
 The input and output arrays are allocated and filled with random data:
 double *in = fftw_alloc_real(n0 * n1); double *ref_out = fftw_alloc_real(n0 * n1); fill_random_2d_real(n0, n1, in); The two-dimensional IDCT is computed from the input data:
@@ -310,21 +310,21 @@ Here is a plot of a few of the flux surfaces of the Wendelstein 7-X stellarator:
 Nested flux surfaces are shown in grey, red, green and blue. The black line indicates the magnetic axis.
 The geometry of the magnetic axis and that of a flux surface are real-valued. Therefore, c2r DFTs are sufficient to compute the backward transforms to real space.
 Geometry of the Magnetic Axis in a Stellarator # The real-space geometry of the magnetic axis (a general closed curve) is given via a one-dimensional DFT evaluated using real-valued arithmetics:
-$$
-$$ where ζ is the toroidal angle per field period in radians. For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine. Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.
+\\begin{align*} R_\\mathrm{ax}(\\zeta) =\u0026amp; \\sum\\limits_{n=0}^{N} R_{\\mathrm{ax}, n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) + R_{\\mathrm{ax}, n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) \\\\ Z_\\mathrm{ax}(\\zeta) =\u0026amp; \\sum\\limits_{n=0}^{N} Z_{\\mathrm{ax}, n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) + Z_{\\mathrm{ax}, n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) \\end{align*}
+where ζ is the toroidal angle per field period in radians. For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine. Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.
 In this example the geometry of the magnetic axis is evaluated at regular intervals in ζ:
-$$
-$$ where l ranges from 0 to n_ζ-1.
+$$ \\zeta_l = 2 \\pi l / n_\\zeta $$
+where l ranges from 0 to n_ζ-1.
 Inserting this into the Fourier series for, e.g., the R coordinate, leads to a DFT:
-$$
-$$ Note that typically the number of Fourier coefficients included in computation of the MHD equilibrium is (much) less than the number of grid points, i.e., N \u0026lt; n_ζ. The physics happens in real space and certains aspects of a computation might require a fine spatial resolution (i.e., many grid points in real space) to accurately resolve, e.g., gradients while the overall complexity of the solution (gouverned by the number of included Fourier coefficients) does not need to be extremely high. FFTW only supports (logically) equally-sized input and output arrays and thus, if less Fourier coefficients than desired grid points are to be used, the Fourier coefficient array needs to be filled with zeros in the remaining area.
+$$ R_{\\mathrm{ax}, l} = \\sum\\limits_{n=0}^{N} \\left( R_{\\mathrm{ax}, n}^\\mathrm{cos} - i , R_{\\mathrm{ax}, n}^\\mathrm{sin} \\right) e^{2 \\pi i n l / n_\\zeta} $$
+Note that typically the number of Fourier coefficients included in computation of the MHD equilibrium is (much) less than the number of grid points, i.e., N \u0026lt; n_ζ. The physics happens in real space and certains aspects of a computation might require a fine spatial resolution (i.e., many grid points in real space) to accurately resolve, e.g., gradients while the overall complexity of the solution (gouverned by the number of included Fourier coefficients) does not need to be extremely high. FFTW only supports (logically) equally-sized input and output arrays and thus, if less Fourier coefficients than desired grid points are to be used, the Fourier coefficient array needs to be filled with zeros in the remaining area.
 The axis geometry is defined as follows:
 // number of Fourier coefficients int ntor = 12; // cos-parity Fourier coefficients for magnetic axis double R_ax_cos[13] = { 5.63, 0.391, 0.0123, 1.21e-3, 4.89e-6, -5.12e-5, -6.57e-5, 2.27e-6, -9.28e-5, -5.32e-7, 6.67e-5, 5.72e-5, 2.38e-5 }; // sin-parity Fourier coefficients for magnetic axis double R_ax_sin[13] = { 0.0, 0.0727, 6.34e-3, 5.84e-3, 9.77e-4, 5.32e-5, 8.48e-5, 5.57e-5, 5.56e-5, 5.53e-6, 7.74e-7, 1.03e-5, 8.75e-6 }; The number of grid points in the toroidal direction at which the magnetic axis geometry is to be evaluated is specified via the n_zeta parameter. It needs to be checked that n_zeta is large enough, i.e., above the Nyquist limit corresponding to the specified number of Fourier coefficients. Then, the input and output arrays can be allocated:
 int nCplx = n_zeta/2+1; if (nCplx\u0026lt;ntor+1) { printf(\u0026#34;error: number of grid points too low.\\n\u0026#34;); return; } fftw_complex *in = fftw_alloc_complex(nCplx); double *out = fftw_alloc_real(n_zeta); fftw_plan p = fftw_plan_dft_c2r_1d(n_zeta, in, out, FFTW_ESTIMATE); Now that the input array is allocated, the available Fourier coefficients can be copied over and (if present) the remainder of the input array is set to zero:
 // copy over available Fourier coefficients for (int n=0; n\u0026lt;=ntor; ++n) { in[n] = R_ax_cos[n] - I * R_ax_sin[n]; } // zero out remaining input Fourier coefficients for (int n=ntor+1; n\u0026lt;nCplx; ++n) { in[n] = 0.0; } The full example can be found in src/app_magn_axis.c.
 Assuming stellarator symmetry, half of the Fourier coefficients can be omitted and the transform reduces to the one-dimensional IDCT and IDST, respectively:
-$$
-$$ The FFTW documentation explicitly advises against using R*DFT00 transforms for this purpose due to numerical stability issues which are currently circumvented within FFTW by using a less efficient algorithm. If the data is required anyway on the whole domain from 0 to 2π, it is probably easiest and fastest (in terms of development work) to simply use a c2r DFT and provide only real data in the input.
+\\begin{align*} R_\\mathrm{ax}(\\zeta) =\u0026amp; \\sum\\limits_{n=0}^{N} R_{\\mathrm{ax}, n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) \\\\ Z_\\mathrm{ax}(\\zeta) =\u0026amp; \\sum\\limits_{n=0}^{N} Z_{\\mathrm{ax}, n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) \\end{align*}
+The FFTW documentation explicitly advises against using R*DFT00 transforms for this purpose due to numerical stability issues which are currently circumvented within FFTW by using a less efficient algorithm. If the data is required anyway on the whole domain from 0 to 2π, it is probably easiest and fastest (in terms of development work) to simply use a c2r DFT and provide only real data in the input.
 On the other hand, in case the evaluation locations are not required to be located on \u0026ldquo;full\u0026rdquo; grid points in the toroidal direction, REDFT01 and RODFT01 can be used. This is the subject of the now-starting second half of this example.
 The number of grid points as well as the output array size are given as follows:
 int nCplx = n_zeta / 2; if (nCplx \u0026lt; ntor + 1) { printf(\u0026#34;error: number of grid points too low.\\n\u0026#34;); return; } Only the cosine Fourier coefficients are copied over into the (real) input array:
@@ -333,17 +333,17 @@ for (int n=0; n\u0026lt;nCplx; ++n) { out[n_zeta - 1 - n] = out[n]; } The output
 The violet curve labelled \u0026lsquo;DFT\u0026rsquo; is the output from the c2r DFT applied in the first half of this example. The green curve labelled \u0026lsquo;REDFT01\u0026rsquo; is the output from the REDFT01 applied in the second half of this example. Note that the locations of the REDFT01 output needed to be shifted to the right by half an index to yield overlapping curves.
 The full example can be found in src/app_magn_axis_stellsym.c.
 Geometry of a Flux Surface in a Stellarator # The real-space geometry of the flux surface is a general toroidal surface which is conveniently parameterized using poloidal and toroidal angle-like coordinates. The surface geometry is then given via a two-dimensional DFT:
-$$
-$$ where (θ,ζ) are the poloidal and toroidal angle-like variables in radians, respectively. For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine. Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π. The poloidal angle-like coordinate θ ranges from 0 to 2π once the short way around the torus (wristband-like).
+\\begin{align*} R(\\theta, \\zeta) =\u0026amp; \\phantom{+}~ \\sum\\limits_{n= 0}^{N} R_{0,n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) + R_{0,n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) \\\\ ~\u0026amp; + \\sum\\limits_{m=1}^{M} \\sum\\limits_{n=-N}^{N} R_{m,n}^\\mathrm{cos} \\cos \\left( m \\theta - n \\zeta \\right) + R_{m,n}^\\mathrm{sin} \\sin \\left( m \\theta - n \\zeta \\right) \\\\ Z(\\theta, \\zeta) =\u0026amp; \\phantom{+}~ \\sum\\limits_{n= 0}^{N} Z_{0,n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) + Z_{0,n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) \\\\ ~\u0026amp; + \\sum\\limits_{m=1}^{M} \\sum\\limits_{n=-N}^{N} Z_{m,n}^\\mathrm{sin} \\sin \\left( m \\theta - n \\zeta \\right) + Z_{m,n}^\\mathrm{cos} \\cos \\left( m \\theta - n \\zeta \\right) \\end{align*}
+where (θ,ζ) are the poloidal and toroidal angle-like variables in radians, respectively. For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine. Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π. The poloidal angle-like coordinate θ ranges from 0 to 2π once the short way around the torus (wristband-like).
 The two-dimensional DFT above can be simplified (shown here for R only) by introducing rectangular two-dimensional Fourier coefficient matrices:
-$$
-$$ In this example the geometry of the flux surface is evaluated on a regular grid in θ and ζ:
-$$
-$$ $$
-$$ where l ranges from 0 to n_ζ-1 and k ranges from 0 to n_θ-1.
+$$ R_{m,n} = \\begin{cases} 0 \u0026amp; m=0, n\u0026lt;0 \\\\ R_{0,n}^\\mathrm{cos} - i R_{0,n}^\\mathrm{sin} \u0026amp; m=0,n \\geq 0 \\\\ R_{m,n}^\\mathrm{cos} - i R_{m,n}^\\mathrm{sin} \u0026amp; \\textrm{else} \\end{cases} $$
+In this example the geometry of the flux surface is evaluated on a regular grid in θ and ζ:
+$$ \\zeta_l = 2 \\pi l / n_\\zeta $$
+$$ \\theta_k = 2 \\pi k / n_\\theta $$
+where l ranges from 0 to n_ζ-1 and k ranges from 0 to n_θ-1.
 Inserting this into the Fourier series for, e.g., the R coordinate, leads to a DFT:
-$$
-$$ The R coordinate is a real-valued quantity which implies that a two-dimensional c2r DFT provided by FFTW can be used to perform the backward transform in order to evaluate the flux surface geometry. One further issue consists in the fact that the definition of the Fourier geometry employed in VMEC uses an angle argument (m θ - n ζ) where the two-dimensional DFT written out above uses (m θ + n ζ). The Fourier coefficients coming from VMEC have to be inserted into the positions corresponding to (-n) in the input array given to FFTW in order to resolve this pecularity.
+$$ R_{l,k} = \\sum\\limits_{m= 0}^{M} \\sum\\limits_{n=-N}^{N} R_{m,n} , e^{2 \\pi i ( n l / n_\\zeta + m k / n_\\theta ) } $$
+The R coordinate is a real-valued quantity which implies that a two-dimensional c2r DFT provided by FFTW can be used to perform the backward transform in order to evaluate the flux surface geometry. One further issue consists in the fact that the definition of the Fourier geometry employed in VMEC uses an angle argument (m θ - n ζ) where the two-dimensional DFT written out above uses (m θ + n ζ). The Fourier coefficients coming from VMEC have to be inserted into the positions corresponding to (-n) in the input array given to FFTW in order to resolve this pecularity.
 The next part concers the code to copy over the Fourier coefficients staring from the VMEC output in arrays rmnc and zmns into the input to FFTW.
 The index in the FFTW input corresponding to given mode numbers n and m can be computed as follows:
 if (n \u0026lt;= 0) { idx_in = -n * nyq_pol + m; } else { idx_in = (n_zeta - n) * nyq_pol + m; } This code is abbreviated in the following as /* compute idx_in */.
@@ -352,8 +352,8 @@ int idx_vmec = 0; int m = 0; for (int n = 0; n \u0026lt;= ntor; ++n) { /* comput
 The second part of the copying adresses the Fourier coefficients with m\u0026gt;0:
 for (m = 1; m \u0026lt; mpol; ++m) { for (int n = -ntor; n \u0026lt;= ntor; ++n) { /* compute idx_in */ in_R[idx_in] = 0.5 * rmnc[idx_vmec]; in_Z[idx_in] = -0.5 * I * zmns[idx_vmec]; idx_vmec++; } } Here, the coefficients are scaled by a factor of 0.5. FFTW implies that coefficientss for m\u0026lt;0 were present in the logically equivalent DFT input, which is not the case for VMEC output. Thus, they are (in this case errornously) scaled internally by a factor of 2, which needs to be counteracted by a scaling factor of 0.5 in the input.
 Assuming stellarator symmetry, half of the Fourier coefficients can be omitted and the transform reduces to the two-dimensional IDCT and IDST:
-$$
-$$ This is currently resolved by simply omitting the stellarator-asymmetric terms in the input to FFTW.
+\\begin{align*} R(\\theta, \\zeta) =\u0026amp; \\sum\\limits_{n= 0}^{N} R_{0,n}^\\mathrm{cos} \\cos \\left( n \\zeta \\right) + \\sum\\limits_{m=1}^{M} \\sum\\limits_{n=-N}^{N} R_{m,n}^\\mathrm{cos} \\cos \\left( m \\theta - n \\zeta \\right) \\\\ Z(\\theta, \\zeta) =\u0026amp; \\sum\\limits_{n= 0}^{N} Z_{0,n}^\\mathrm{sin} \\sin \\left( n \\zeta \\right) + \\sum\\limits_{m=1}^{M} \\sum\\limits_{n=-N}^{N} Z_{m,n}^\\mathrm{sin} \\sin \\left( m \\theta - n \\zeta \\right) \\end{align*}
+This is currently resolved by simply omitting the stellarator-asymmetric terms in the input to FFTW.
 The full example code can be found in src/app_flux_surface.c. A Python script is provided to plot the resulting real-space geometry in src/plot_lcfs_realspace.py.
 Allocation of arrays # Throughout this example collection, the proposed convenience wrapper functions provided by FFTW for allocating real- and complex-valued arrays are used:
 int n = 32; int nOut = n/2+1; double *in = fftw_alloc_real(n); fftw_complex *out = fftw_alloc_complex(nOut); where n is the real-space size of the DFT and nOut is the number of Fourier coefficients resulting from a r2c DFT. The corresponding \u0026ldquo;raw\u0026rdquo; allocation code would look like this:
