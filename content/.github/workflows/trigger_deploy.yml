@@ -1,0 +1,18 @@
+on: push
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Stage
+      uses: actions/github-script@v5
+      with:
+        github-token: ${{ secrets.DEPLOY_LABATHOME_DE_CONTENT }}
+        script: |
+          await github.rest.actions.createWorkflowDispatch({
+            owner: 'jonathanschilling',
+            repo: 'labathome.de',
+            workflow_id: 'deploy.yml',
+            ref: 'master',
+          });
+
