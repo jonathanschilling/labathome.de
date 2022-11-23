@@ -31,7 +31,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = "https://github.com/jonathanschilling/labathome.de-content"
+  BookRepo = "https://github.com/jonathanschilling/labathome.de"
   
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
