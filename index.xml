@@ -15,7 +15,7 @@
       <description>This website is created using the Hugo static website generator.
 I chose the hugo-book theme.
 You can contact me via email: jonathan.schilling@mail.de
-Test some $inline$math: $$E = m c^2$$</description>
+Test some $inline$ math: $$E = m c^2$$</description>
     </item>
     
   </channel>
