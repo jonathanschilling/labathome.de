@@ -30,6 +30,7 @@ jobs:
         pwd
         ls -l
         hugo -D
+        mv public/index.xml public/index.xml.disabled
         ls -l public
 
     - name: deploy
