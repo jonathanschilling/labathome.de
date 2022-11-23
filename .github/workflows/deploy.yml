@@ -7,23 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    # add the private key to the ssh-agent
-    # the private repo is referenced via ssh so the key will be used
-    # from the agent when doing the checkout
-    - uses: webfactory/ssh-agent@v0.5.0
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-    - uses: actions/checkout@v2
-      with:
-        submodules: recursive
-        fetch-depth: 0
-    - name: update content
-      run: |
-        cd ${{ github.workspace }}/content
-        git log -n 1
-        git checkout master
-        git log -n 1
+    - name: checkout
+      uses: actions/checkout@v2
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -51,4 +36,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-
