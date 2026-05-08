@@ -1,6 +1,7 @@
 ---
 title: 'GYS PROTIG 201 AC/DC'
 weight: 4
+url: /en/mechanical-engineering/gys-protig/
 ---
 
 ## GYS PROTIG 201 AC/DC

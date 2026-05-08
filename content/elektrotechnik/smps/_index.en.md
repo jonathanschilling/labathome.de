@@ -1,6 +1,7 @@
 ---
 title: 'SMPS'
 weight: 1
+url: /en/electrical-engineering/smps/
 ---
 
 From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:

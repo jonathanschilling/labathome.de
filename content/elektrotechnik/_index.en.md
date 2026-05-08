@@ -2,6 +2,7 @@
 title: 'Electrical Engineering'
 weight: 1
 bookCollapseSection: true
+url: /en/electrical-engineering/
 ---
 
 # Electronics

@@ -20,27 +20,25 @@ https://octokit.github.io/rest.js/v18#actions-create-workflow-dispatch
 
 ## Random Notes
 
-* need to setup Personal Access Token to have -content repo access this repo
-  --> register in -content repo as SECRET_...
-* on first lauch: enable GitHub Pages in this repo's settings (branch gh-pages, folder '/')
+* On first launch of a fork: enable GitHub Pages in the repo settings (branch
+  `gh-pages`, folder `/`). The deploy workflow will populate that branch on
+  every push to `master`.
 
 ## Markdown character convention
 
-There are two rules, depending on the file:
+Every Markdown file in the repo (front matter, prose, tables) is 7-bit ASCII
+**plus** the degree sign `°` (U+00B0), which is universally readable and
+matches the conventional notation for angles and temperatures.
 
-- **`.en.md`, `README.md`, `CLAUDE.md`, and any other English Markdown**: 7-bit
-  ASCII only. Use the replacements in the table below.
-- **`.de.md` (German content)**: German umlauts (a-/o-/u-umlaut, capitals,
-  sharp s -- U+00E4/F6/FC/C4/D6/DC/DF) **and** the degree sign U+00B0 are
-  allowed, since they match standard German typography. Everything else from
-  the table below should still be replaced.
+`.de.md` files additionally allow the German umlauts and sharp s
+(U+00C4/D6/DC/DF/E4/F6/FC) since they match standard German typography.
 
-Replacement table (apply universally except for the two carve-outs above):
+Everything else from the table below should still be replaced with its ASCII
+equivalent in all files.
 
-| Original (codepoint)                  | ASCII replacement |
+| Original (codepoint)                  | Replacement |
 |---------------------------------------|-------------------|
-| German umlauts + sharp s (U+00C4/D6/DC/DF/E4/F6/FC) | `Ae`/`Oe`/`Ue`/`ss`/`ae`/`oe`/`ue` -- in `.en.md` only; keep as-is in `.de.md` |
-| degree sign (U+00B0)                  | `deg` (e.g. `45 deg`, `30 degC`) -- in `.en.md` only; keep as-is in `.de.md` |
+| German umlauts + sharp s (U+00C4/D6/DC/DF/E4/F6/FC) | `Ae`/`Oe`/`Ue`/`ss`/`ae`/`oe`/`ue` -- only required in `.en.md`/root docs; `.de.md` keeps these as-is |
 | em dash (U+2014)                      | `--`              |
 | en dash (U+2013)                      | `-`               |
 | minus sign (U+2212)                   | `-`               |
@@ -67,19 +65,21 @@ runtime, so the source stays ASCII either way.
 To audit the working tree:
 
 ```sh
-# English files and root docs: must be pure ASCII
-LC_ALL=C grep -rPn '[^\x00-\x7F]' $(find content -name '*.en.md') README.md CLAUDE.md
-
-# German files: list all non-ASCII chars; only umlauts (ae/oe/ue/Ae/Oe/Ue/ss)
-# and the degree sign should appear -- anything else means a stray char.
 python3 -c "
-import sys, glob
-ok = set(range(128)) | {0x00C4, 0x00D6, 0x00DC, 0x00DF, 0x00E4, 0x00F6, 0x00FC, 0x00B0}
-for f in glob.glob('content/**/*.de.md', recursive=True) + glob.glob('content/*.de.md'):
-    for ln, line in enumerate(open(f, encoding='utf-8'), 1):
-        for c in line:
-            if ord(c) not in ok:
-                print(f'{f}:{ln}: U+{ord(c):04X} ({c!r})')
-                break
+import glob
+en_ok = set(range(128)) | {0x00B0}
+de_ok = en_ok | {0x00C4, 0x00D6, 0x00DC, 0x00DF, 0x00E4, 0x00F6, 0x00FC}
+en_files = (glob.glob('content/**/*.en.md', recursive=True)
+            + glob.glob('content/*.en.md')
+            + ['README.md', 'CLAUDE.md'])
+de_files = (glob.glob('content/**/*.de.md', recursive=True)
+            + glob.glob('content/*.de.md'))
+for files, ok in ((en_files, en_ok), (de_files, de_ok)):
+    for f in files:
+        for ln, line in enumerate(open(f, encoding='utf-8'), 1):
+            for c in line:
+                if ord(c) not in ok:
+                    print(f'{f}:{ln}: U+{ord(c):04X} ({c!r})')
+                    break
 "
 ```

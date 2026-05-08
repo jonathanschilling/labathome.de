@@ -1,5 +1,6 @@
 ---
 title: 'AVM T1'
+url: /en/electrical-engineering/transputer/avm-t1/
 ---
 
 # AVM T1
@@ -28,7 +29,7 @@ the total to 7 transputers with 17 MB of DRAM.
 When I read about the T1 on the excellent site
 [www.geekdot.com](http://www.geekdot.com), my interest was piqued.
 I had heard of the transputer concept before, but what I saw there
-promised an experience similar to the [Leonardo XL](../../leonardo_xl).
+promised an experience similar to the [Leonardo XL](../../leonardo-xl/).
 
 When my first T1 arrived from eBay, I opened the case and inspected
 the boards. The component designators match the ones Axel Muhr uses

@@ -1,6 +1,7 @@
 ---
 title: 'Machine tooling'
 weight: 7
+url: /en/mechanical-engineering/tooling/
 ---
 
 ## Clamping cube

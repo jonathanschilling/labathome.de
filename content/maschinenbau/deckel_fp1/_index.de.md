@@ -14,10 +14,10 @@ Heute flogen dann nach gut einem Jahr zum ersten Mal wieder Späne:
 
 ![erste Späne](IMG_7697_r.jpg)
 
-Alles begann damit, dass ich damals meine [kleine Drehbank](dlz450) so langsam betriebsbereit hatte
+Alles begann damit, dass ich damals meine [kleine Drehbank](../dlz180x450/) so langsam betriebsbereit hatte
 und somit der Wunsch nach einer Fräsmaschine immer größer wurde.
 Diverse Online-Angebote auf eBay, eBay Kleinanzeigen, alibaba.com, etc. wurden begutachtet,
-aber für meine Anwendungen (z.B. [Vakuumflansche](kf40_cf40)) schien mir mehr und mehr eine FP1 das Mittel der Wahl zu sein.
+aber für meine Anwendungen (z.B. [Vakuumflansche](/physics/kf40_cf40/)) schien mir mehr und mehr eine FP1 das Mittel der Wahl zu sein.
 Als ich dann in der TU Braunschweig sogar mal auf einer von Franz Singer überholten FP1 probefräsen durfte
 (Vielen Dank dafür nochmal hier!), war es um mich geschehen.
 

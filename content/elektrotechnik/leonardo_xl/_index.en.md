@@ -1,5 +1,6 @@
 ---
 title: 'Leonardo XL PCI'
+url: /en/electrical-engineering/leonardo-xl/
 ---
 
 # Leonardo XL PCI

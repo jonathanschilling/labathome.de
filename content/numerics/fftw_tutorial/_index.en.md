@@ -2,6 +2,7 @@
 title: 'FFTW Tutorial'
 weight: 1
 mathjax: true
+url: /en/numerics/fftw-tutorial/
 ---
 # FFTW Tutorial
 

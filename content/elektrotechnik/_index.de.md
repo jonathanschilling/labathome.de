@@ -4,7 +4,7 @@ weight: 1
 bookCollapseSection: true
 ---
 
-# Electronics
+# Elektrotechnik
 
 Auf dieser Seite geht es um meine erste große Passion, die Elektrotechnik.
 

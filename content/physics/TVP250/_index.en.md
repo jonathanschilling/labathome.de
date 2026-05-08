@@ -1,6 +1,7 @@
 ---
 title: 'Pfeiffer TVP250'
 weight: 1
+url: /en/physics/tvp250/
 ---
 
 ## Pfeiffer TVP250 (2016-11-06)
@@ -68,7 +69,7 @@ The inductivity of the motor strongly distorts the signal and makes it hard to d
 
 Therefore, I build a star of four 30 ohms resistors which are attached to the driver instead of the TMP motor.
 Now the signal looks as intended and allows to verify the correct signal generation.
-Two opposite phases are shown, therefore the phase shift is 180deg.
+Two opposite phases are shown, therefore the phase shift is 180°.
 
 ![30 ohms resistive load](01.jpg)
 
@@ -135,7 +136,7 @@ the position of the rotor for each set of the two voltages :-)
 
 The plan is now to attach these signals to the ATmega and write some sort of look-up-table to identify the rotor position.
 Then, the controller can decide which current patten to apply to the coils depending on the current operating mode:
-power-down (no signal), acceleration (45deg leading phase), decceleration (45deg lagging phase) or idle (0deg phase shift).
+power-down (no signal), acceleration (45° leading phase), decceleration (45° lagging phase) or idle (0° phase shift).
 
 ## New Controller Board (2017-05-20)
 

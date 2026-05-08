@@ -1,6 +1,7 @@
 ---
 title: 'Saupe DLZ180x450'
 weight: 2
+url: /en/mechanical-engineering/dlz180x450/
 ---
 
 ## Saupe DLZ180x450

@@ -1,6 +1,7 @@
 ---
 title: 'Johannes Tittel BM6'
 weight: 6
+url: /en/mechanical-engineering/tiboma-bm6/
 ---
 
 ## Johannes Tittel BM6
@@ -120,7 +121,7 @@ From left to right:
    sawtooth ratchet on the right
 5. Height-adjustment shaft: M8 on the left, then square for the handwheel,
    then bushing seat, then 7-tooth helical gearing,
-   pitch angle (by eye) 45deg
+   pitch angle (by eye) 45°
 
 The bushing is fixed by the grub screw from behind (in the housing).
 

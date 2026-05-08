@@ -2,6 +2,7 @@
 title: '25kV Transformer'
 weight: 1
 mathjax: true
+url: /en/electrical-engineering/high-voltage/25kv-transformer/
 ---
 
 ## 25kV transformer

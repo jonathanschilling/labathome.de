@@ -1,6 +1,7 @@
 ---
 title: 'KF40/CF40 Adapter Flanges'
 weight: 2
+url: /en/physics/kf40-cf40/
 ---
 
 ## KF40/CF40 Adapter Flanges

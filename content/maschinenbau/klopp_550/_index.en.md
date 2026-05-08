@@ -1,6 +1,7 @@
 ---
 title: 'Klopp 550'
 weight: 5
+url: /en/mechanical-engineering/klopp-550/
 ---
 
 ## Klopp 550
@@ -119,7 +120,7 @@ on the agenda -- namely the oil sump under the rocker arm.
 I've already shovelled out the worst of the gunk, but there's still
 something in there.
 
-The manual specifies "SHELL Vitrea Oil 100, 68 cSt (9E) at 50 degC".
+The manual specifies "SHELL Vitrea Oil 100, 68 cSt (9E) at 50 °C".
 
 I first reluctantly went on with cleaning the outside of the machine.
 
@@ -301,7 +302,7 @@ I think I've become addicted to oily, sticky fingers :-)
 After a Klopp-free weekend, today I got back into it at full speed :-D
 
 First, I refastened the table and oiled it. The index pins for setting
-to 0deg are also back in:
+to 0° are also back in:
 
 ![table mounted](vorn_rechts_dunkel_scharf.jpg)
 

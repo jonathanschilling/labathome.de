@@ -68,12 +68,7 @@ If/when the theme is updated upstream to use modern Hugo APIs, these overrides c
 
 `content/` is organised by topic (`elektrotechnik`, `maschinenbau`, `numerics`, `physics`), each with an `_index` that sets `bookCollapseSection: true` and a `weight` to control sidebar ordering. See "Bilingual setup" below for how each page is split across languages.
 
-**Character convention.** Two rules, depending on the file:
-
-- `.en.md` and root docs (`README.md`, this `CLAUDE.md`) are 7-bit ASCII -- German umlauts written as `ae`/`oe`/`ue`/`ss`, em dash as `--`, degree as `deg`, etc.
-- `.de.md` (German content) keeps the German umlauts (a-/o-/u-umlaut, capitals, sharp s -- U+00C4/D6/DC/DF/E4/F6/FC) and the degree sign (U+00B0) for standard German typography. Everything else (em dash, ellipsis, superscripts, Greek letters, arrows, ...) is still replaced.
-
-The full substitution table and audit commands are in `README.md` ("Markdown character convention"). Math inside `<tex>$...$</tex>` blocks uses LaTeX commands (`\pi`, `\Omega`, `\cdot`) so MathJax renders the actual symbols at runtime while the source stays ASCII either way.
+**Character convention.** Every Markdown file is 7-bit ASCII plus the degree sign `°` (U+00B0), which is allowed everywhere because it's the conventional notation for angles and temperatures. `.de.md` files additionally keep the German umlauts and sharp s (U+00C4/D6/DC/DF/E4/F6/FC) since they match standard German typography. Everything else (em dash, ellipsis, superscripts, Greek letters, arrows, ...) is replaced with its ASCII equivalent in every file. The full substitution table and audit script are in `README.md` ("Markdown character convention"). Math inside `<tex>$...$</tex>` blocks uses LaTeX commands (`\pi`, `\Omega`, `\cdot`) so MathJax renders the actual symbols at runtime regardless.
 
 `enableGitInfo = true` in `config.toml`, so the theme renders "Last Modified" links -- be aware that file mtimes / git history are user-visible on the rendered site.
 

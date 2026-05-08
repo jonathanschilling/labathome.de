@@ -1,5 +1,6 @@
 ---
 title: 'AVM B1'
+url: /en/electrical-engineering/transputer/avm-b1/
 ---
 
 # AVM B1
@@ -61,7 +62,7 @@ transputer development board, it makes for a very cheap and direct
 transputer entry-level card.
 If link 1, which is brought out to the expansion bus (see above), now
 leads "outside", you can hook up further transputer(s) (or transputer
-networks) -- for example the [AVM T1 (-B if you have one)](../avm_t1).
+networks) -- for example the [AVM T1 (-B if you have one)](../avm-t1/).
 
 For that you need an RS-422 converter, which is plugged onto the B1:
 
@@ -75,5 +76,5 @@ links. They are wired up according to the schematic below, ideally on a
 piece of perfboard. The 15-pin D-Sub connector is not strictly necessary,
 but since I use the original cable for the connection to the T1 I have
 used one here. The pinout of that cable, along with further information
-about the T1, can be found on the [corresponding page](../avm_t1).
+about the T1, can be found on the [corresponding page](../avm-t1/).
 

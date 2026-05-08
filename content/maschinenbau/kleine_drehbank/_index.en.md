@@ -1,6 +1,7 @@
 ---
 title: 'Small Tabletop Lathe'
 weight: 3
+url: /en/mechanical-engineering/small-tabletop-lathe/
 ---
 
 ## new old lathe acquired (2021-04-03)
@@ -713,12 +714,12 @@ about 2 mm:
 
 ![grooving tool](05.jpg)
 
-The ram-head slide is set on its scale to 30deg to plunge precisely into
+The ram-head slide is set on its scale to 30° to plunge precisely into
 the corner.
 
 I then prepared the upper part for scraping the tool-holder face.
 The shaper tool here is a huge HSS blank that someone once brought me.
-It's ground with a radius of about 10 mm, 0deg rake, about 20deg clearance.
+It's ground with a radius of about 10 mm, 0° rake, about 20° clearance.
 That gives pretty good surfaces in cast iron.
 
 ![shaping the top 1](09.jpg)

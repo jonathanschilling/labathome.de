@@ -11,17 +11,17 @@ enableGitInfo = true
 
 # (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
 # You can remove related files with config below
-disableKinds = ['taxonomy']
+disableKinds = ['taxonomy', 'rss']
 
-defaultContentLanguage = "en"
+defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 
 [languages]
-  [languages.en]
-    label = "English"
-    weight = 1
   [languages.de]
     label = "Deutsch"
+    weight = 1
+  [languages.en]
+    label = "English"
     weight = 2
 
 # goldmark unsafe: required so the <tex>...</tex> wrappers used for MathJax

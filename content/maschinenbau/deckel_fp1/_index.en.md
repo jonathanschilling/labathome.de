@@ -1,6 +1,7 @@
 ---
 title: 'Deckel FP1'
 weight: 1
+url: /en/mechanical-engineering/deckel-fp1/
 ---
 
 ## Deckel FP1
@@ -16,10 +17,10 @@ Today -- after a good year -- chips finally flew again for the first time:
 
 ![first chips](IMG_7697_r.jpg)
 
-It all started when I had my [small lathe](dlz450) up and running back
+It all started when I had my [small lathe](../dlz180x450/) up and running back
 then, and the wish for a milling machine grew bigger and bigger.
 Various online listings on eBay, eBay Kleinanzeigen, alibaba.com, etc.
-were inspected, but for my applications (e.g. [vacuum flanges](kf40_cf40))
+were inspected, but for my applications (e.g. [vacuum flanges](/en/physics/kf40-cf40/))
 an FP1 increasingly seemed the right tool.
 When I then got to do a test cut on a Franz-Singer-overhauled FP1 at
 TU Braunschweig (many thanks again here!), it was over for me.
