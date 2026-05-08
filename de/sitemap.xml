@@ -2,303 +2,303 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/high_voltage/25kv_transformer/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/high-voltage/25kv-transformer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/high_voltage/25kv_transformer/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/deckel_fp1/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/deckel_fp1/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/deckel-fp1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/deckel_fp1/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/deckel_fp1/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/numerics/fftw_tutorial/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/numerics/fftw_tutorial/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/numerics/fftw-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/numerics/fftw_tutorial/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/numerics/fftw_tutorial/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/high_voltage/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/high-voltage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/high_voltage/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/physics/TVP250/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/physics/TVP250/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/physics/tvp250/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/physics/TVP250/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/physics/TVP250/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/smps/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/physics/kf40_cf40/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/physics/kf40-cf40/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/physics/kf40_cf40/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/dlz180x450/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/dlz180x450/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/dlz180x450/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/dlz180x450/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/dlz180x450/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/kleine_drehbank/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/small-tabletop-lathe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/kleine_drehbank/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/numerics/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/numerics/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/numerics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/numerics/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/numerics/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/physics/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/physics/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/physics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/physics/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/physics/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/gys_protig/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/gys_protig/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/gys-protig/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/gys_protig/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/gys_protig/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/klopp_550/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/klopp_550/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/klopp-550/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/klopp_550/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/klopp_550/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/tiboma_bm6/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/tiboma_bm6/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tiboma-bm6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tiboma_bm6/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/tiboma_bm6/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/maschinenbau/tooling/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tooling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/maschinenbau/tooling/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/about/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/about/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/about/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/about/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/amv_b1/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-b1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/amv_b1/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/avm_t1/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_t1/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-t1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
                 href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/avm_t1/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/transputer/avm_t1/"
-                />
   </url><url>
-    <loc>https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/leonardo_xl/</loc>
-    <lastmod>2026-05-08T23:08:24+02:00</lastmod>
+    <loc>https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/</loc>
+    <lastmod>2026-05-08T23:32:10+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/"
+                href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/leonardo-xl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/leonardo_xl/"
+                href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/leonardo_xl/"
                 />
   </url>
 </urlset>

@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="de" dir="ltr">
 
 <head>
   <meta name="generator" content="Hugo 0.161.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:
+<meta name="description" content="Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:
 
-Alongside some nice components &ndash; MHV and SHV connectors, high-voltage relays and MOSFETs, and an OPA541 power op-amp &ndash; it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.
-This page is about the area outlined in red on the two boards:
-">
+Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und
+einem OPA541 Power-Op-Amp auch ein Schaltnetzteil,
+welches die Gatetreiber für die HV-Mosfets versorgt.
+Um den rot umrandeten Bereich der beiden Platinen geht es hier:
+
+Als Controller-IC kommt hier der SG3526J zum Einsatz.
+Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von Electronetics hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/">
   <meta property="og:site_name" content="Lab@Home">
   <meta property="og:title" content="SMPS">
-  <meta property="og:description" content="From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:
-Alongside some nice components – MHV and SHV connectors, high-voltage relays and MOSFETs, and an OPA541 power op-amp – it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.
-This page is about the area outlined in red on the two boards:">
-  <meta property="og:locale" content="en">
+  <meta property="og:description" content="Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:
+Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und einem OPA541 Power-Op-Amp auch ein Schaltnetzteil, welches die Gatetreiber für die HV-Mosfets versorgt.
+Um den rot umrandeten Bereich der beiden Platinen geht es hier:
+Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von Electronetics hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.">
+  <meta property="og:locale" content="de">
   <meta property="og:type" content="website">
 <title>SMPS | Lab@Home</title>
 <link rel="manifest" href="/labathome.de/manifest.json">
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
-<link rel="alternate" hreflang="de" href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/" title="SMPS">
+<link rel="alternate" hreflang="en" href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/smps/" title="SMPS">
 
 <link rel="stylesheet" href="/labathome.de/book.min.5ac6c2989f0943405962be6800b442aef429ef26ade26545ecf0617a21d1197a.css" integrity="sha256-WsbCmJ8JQ0BZYr5oALRCrvQp7yat4mVF7PBheiHRGXo=">
-<script defer src="/labathome.de/en.search.min.e8b33a01e82b7c0beb551f3e80772fa20cc4ec19eccffa80d7166fbdfdd18ffe.js" integrity="sha256-6LM6AegrfAvrVR8&#43;gHcvogzE7Bnsz/qA1xZvvf3Rj/4="></script>
-<link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/index.xml" title="Lab@Home" />
+<script defer src="/labathome.de/de.search.min.2f8e588382ad521cdc7f8f3bca3df3670cda693d65fb98f8fd2b0ad61297ccf4.js" integrity="sha256-L45Yg4KtUhzcf487yj3zZwzaaT1l&#43;5j4/SsK1hKXzPQ="></script>
 
 
   
@@ -46,7 +50,7 @@ This page is about the area outlined in red on the two boards:">
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Suche" aria-label="Suche" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -75,9 +79,9 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-7b49be1ec3270e7e0626d8f51034ad75" class="toggle" checked />
-    <label for="section-7b49be1ec3270e7e0626d8f51034ad75" class="flex justify-between">
-      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/" class="">Electrical Engineering</a>
+    <input type="checkbox" id="section-0f14875b012e0d543509ebb0b6bf9807" class="toggle" checked />
+    <label for="section-0f14875b012e0d543509ebb0b6bf9807" class="flex justify-between">
+      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/" class="">Elektrotechnik</a>
     </label>
   
 
@@ -91,9 +95,9 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-965e8bebdb994381b348ce197cb62594" class="toggle"  />
-    <label for="section-965e8bebdb994381b348ce197cb62594" class="flex justify-between">
-      <a  class="">High Voltage</a>
+    <input type="checkbox" id="section-f5bd036325b0ef69ed58ee67139992e1" class="toggle"  />
+    <label for="section-f5bd036325b0ef69ed58ee67139992e1" class="flex justify-between">
+      <a  class="">Hochspannung</a>
     </label>
   
 
@@ -107,7 +111,7 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" class="">25kV Transformer</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" class="">25kV-Transformator</a>
   
 
           
@@ -148,8 +152,8 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-877e7226efa87841e804c6880f7c91ea" class="toggle"  />
-    <label for="section-877e7226efa87841e804c6880f7c91ea" class="flex justify-between">
+    <input type="checkbox" id="section-65235a8258c9dd326ea09d61ed87573e" class="toggle"  />
+    <label for="section-65235a8258c9dd326ea09d61ed87573e" class="flex justify-between">
       <a  class="">Transputer</a>
     </label>
   
@@ -228,9 +232,9 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-08e0ac22cd1e62589ce09443fbe61b53" class="toggle"  />
-    <label for="section-08e0ac22cd1e62589ce09443fbe61b53" class="flex justify-between">
-      <a  class="">Mechanical Engineering</a>
+    <input type="checkbox" id="section-5b2dfc4fe34479e71022055b9c9f25c3" class="toggle"  />
+    <label for="section-5b2dfc4fe34479e71022055b9c9f25c3" class="flex justify-between">
+      <a  class="">Maschinenbau</a>
     </label>
   
 
@@ -280,7 +284,7 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/" class="">Small Tabletop Lathe</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/kleine_drehbank/" class="">Kleine Drehbank</a>
   
 
           
@@ -352,7 +356,7 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/" class="">Machine tooling</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/" class="">Maschinenzubehör</a>
   
 
           
@@ -375,9 +379,9 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-fa13c3e819fe79e106b1a16fce0dc214" class="toggle"  />
-    <label for="section-fa13c3e819fe79e106b1a16fce0dc214" class="flex justify-between">
-      <a  class="">Numerics</a>
+    <input type="checkbox" id="section-08ffe328bcdff469970d81c44369a5c4" class="toggle"  />
+    <label for="section-08ffe328bcdff469970d81c44369a5c4" class="flex justify-between">
+      <a  class="">Numerik</a>
     </label>
   
 
@@ -414,9 +418,9 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <input type="checkbox" id="section-4f27c6321fb8253c62b351da42bbd70e" class="toggle"  />
-    <label for="section-4f27c6321fb8253c62b351da42bbd70e" class="flex justify-between">
-      <a  class="">Physics</a>
+    <input type="checkbox" id="section-17bf3eabf890bd5f2eaeb1bc76b524b4" class="toggle"  />
+    <label for="section-17bf3eabf890bd5f2eaeb1bc76b524b4" class="flex justify-between">
+      <a  class="">Physik</a>
     </label>
   
 
@@ -448,7 +452,7 @@ This page is about the area outlined in red on the two boards:">
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/" class="">KF40/CF40 Adapter Flanges</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/" class="">Adapterflansche KF40/CF40</a>
   
 
           
@@ -538,79 +542,84 @@ This page is about the area outlined in red on the two boards:">
 
       
       
-  <article class="markdown"><p>From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:</p>
-<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex pulser module" /></p>
-<p>Alongside some nice components &ndash; MHV and SHV connectors, high-voltage relays and MOSFETs, and an <a href="http://www.ti.com/product/OPA541">OPA541</a> power op-amp &ndash; it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.</p>
-<p>This page is about the area outlined in red on the two boards:</p>
-<p><img src="sciex_pulser_board_smps.jpg" alt="Board inside the pulser module" /></p>
-<p>The controller IC used here is the <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a>.
-The larger of the two transformers, labelled 024435, was made by <a href="https://www.electronetics.us/">Electronetics</a> and is probably a custom part commissioned by Sciex.</p>
-<p>The table below shows the wiring from the power-supply connector at the top left (pins 1-6) to the
-<a href="http://www-bd.gsi.de/dokuwiki/lib/exe/fetch.php?media=misc:nim-standard.pdf">NIM connector</a>:</p>
+  <article class="markdown"><p>Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:</p>
+<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex Pulser-Modul" /></p>
+<p>Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und
+einem <a href="http://www.ti.com/product/OPA541">OPA541</a> Power-Op-Amp auch ein Schaltnetzteil,
+welches die Gatetreiber für die HV-Mosfets versorgt.</p>
+<p>Um den rot umrandeten Bereich der beiden Platinen geht es hier:</p>
+<p><img src="sciex_pulser_board_smps.jpg" alt="Platine im Pulser-Modul" /></p>
+<p>Als Controller-IC kommt hier der <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a> zum Einsatz.
+Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von <a href="https://www.electronetics.us/">Electronetics</a> hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.</p>
+<p>Die folgende Tabelle gibt die Verbindung des Stromversorgunssteckers links oben (Pins 1-6) an den
+<a href="http://www-bd.gsi.de/dokuwiki/lib/exe/fetch.php?media=misc:nim-standard.pdf">NIM-Stecker</a> wieder:</p>
 <table>
   <thead>
       <tr>
-          <th>Pin on board</th>
-          <th>Wire colour</th>
-          <th>NIM pin</th>
-          <th>Function</th>
+          <th>Pin am Board</th>
+          <th>Kabelfarbe</th>
+          <th>NIM-Pin</th>
+          <th>Funktion</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>1</td>
-          <td>yellow</td>
+          <td>gelb</td>
           <td>16</td>
           <td>+12V</td>
       </tr>
       <tr>
           <td>2</td>
-          <td>white</td>
+          <td>weiß</td>
           <td>17</td>
           <td>-12V</td>
       </tr>
       <tr>
           <td>3</td>
-          <td>red</td>
+          <td>rot</td>
           <td>10</td>
           <td>+6V</td>
       </tr>
       <tr>
           <td>4</td>
-          <td>blue</td>
+          <td>blau</td>
           <td>28</td>
           <td>+24V</td>
       </tr>
       <tr>
           <td>5</td>
-          <td>black</td>
+          <td>schwarz</td>
           <td>34</td>
           <td>power GND</td>
       </tr>
       <tr>
           <td>6</td>
-          <td>grey</td>
+          <td>grau</td>
           <td>42</td>
           <td>high-quality GND</td>
       </tr>
   </tbody>
 </table>
-<p>If you now connect a 12V supply between pin 1 and pin 5, the switch-mode supply at least comes to life.
-It delivers a symmetric +/-15V for each of two gate drivers.
-For further testing, the gate-driver sections of the circuit were disconnected.
-Various load resistors were placed between +15V and -15V across the paralleled outputs.
-The resulting <a href="Belastungskurve.dat">load curve</a> is shown here:</p>
-<p><img src="smps_load.png" alt="SMPS load curve" /></p>
-<p>The model assumed is an ideal voltage source with a series (internal) resistance.
-The <a href="plot_smps_load.sh">fit</a> to the measurements (points with I&lt;0.15A were ignored)
-gives an internal resistance of about 9.3 ohm at an open-circuit voltage of 29.7 V.
-A measurement under no load, however, yields an open-circuit voltage of around 70 V.
-The likely reason is that the SMPS topology used here has no feedback
-from the secondary side to the primary-side control.</p>
-<p>The supply is interesting because its construction is fairly simple (= robust, easy to repair)
-and the isolation between the secondary and primary should be reasonably high-voltage-rated.
-Together with its usable rated output current, it might be suitable
-for driving the gates in a DRSSTC&hellip; ?</p>
+<p>Wenn man jetzt zwischen Pin 1 und 5 ein 12V-Netzteil anschließt, erwacht
+zumindest schon man das Schaltnetzteil zum Leben.
+Es liefert für zwei Gatetreiber jeweils symmetrische 15V.
+Für die weiteren Tests wurden die Gatetreiber-Schaltungsteile abgetrennt.
+Verschiedene Lastwiderstände wurden zwischen +15V und -15V an die
+parallelgeschalteten Ausgänge angeschlossen.
+Die sich ergebende <a href="Belastungskurve.dat">Belastungskurve</a> ist hier zu sehen:</p>
+<p><img src="smps_load.png" alt="Belastungskurve des SMPS" /></p>
+<p>Als Modell wurde eine ideale Spannungsquelle mit nachgeschaltetem (Innen-)Widerstand angenommen.
+Der <a href="plot_smps_load.sh">Fit</a> an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
+ergibt einen Innenwiderstand von ca. 9.3 Ohm bei einer Leerlaufspannung von 29.7V.
+Eine Messung ohne Last ergibt jedoch eine Leerlaufspannung von ca. 70V.
+Hier spielt wahrscheinlich die Tatsache eine Rolle,
+dass es bei der verwendeten SMPS-Topologie kein Feedback
+von der Sekundärseite auf die Ansteuerung auf der Primärseite gibt.</p>
+<p>Interessant ist das Netzteil aus dem Grund, dass es recht einfach (=robust, leicht reparierbar) aufgebaut ist
+und die Isolation zwischen Sekundärseite und Primärseite einigermaßen hochspannungsfest sein müsste.
+Zusammen mit dem brauchbaren Nenn-Ausgangsstrom ist es vielleicht
+für die Gate-Ansteuerung in einer DRSSTC geeignet&hellip; ?</p>
 </article>
  
       
@@ -637,7 +646,7 @@ for driving the gates in a DRSSTC&hellip; ?</p>
   <ul>
     <li class="flex align-center">
       <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
-      English
+      Deutsch
     </li> 
   </ul>
 
@@ -646,14 +655,14 @@ for driving the gates in a DRSSTC&hellip; ?</p>
     <li class="active">
       <a href="https://jonathanschilling.github.io/labathome.de/" class="flex align-center">
         <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
-        English
+        Deutsch
       </a>
     </li>
     
     <li class="">
-      <a href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/" class="flex align-center">
+      <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/smps/" class="flex align-center">
         <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
-        Deutsch
+        English
       </a>
     </li>
     
@@ -663,7 +672,7 @@ for driving the gates in a DRSSTC&hellip; ?</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/094c2bf58c6214cde11400f161295af1dabcc98b" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

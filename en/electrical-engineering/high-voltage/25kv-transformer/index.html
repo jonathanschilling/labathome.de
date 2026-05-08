@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.161.1">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  25kV transformer
+  #
+
+I keep reading how &ldquo;impossible&rdquo; and &ldquo;not doable with home means&rdquo; the
+construction of a high-voltage transformer supposedly is.
+I&rsquo;d therefore like to present the construction of my 25 kV / 2.4 kVA
+transformer here.
+I built it with the friendly support of an engineer at Ostfalia in
+Wolfenbuettel, where I was living at the time, in the period from
+December 2010 to about March 2011.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/high-voltage/25kv-transformer/">
+  <meta property="og:site_name" content="Lab@Home">
+  <meta property="og:title" content="25kV Transformer">
+  <meta property="og:description" content="25kV transformer # I keep reading how “impossible” and “not doable with home means” the construction of a high-voltage transformer supposedly is. I’d therefore like to present the construction of my 25 kV / 2.4 kVA transformer here. I built it with the friendly support of an engineer at Ostfalia in Wolfenbuettel, where I was living at the time, in the period from December 2010 to about March 2011.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<title>25kV Transformer | Lab@Home</title>
+<link rel="manifest" href="/labathome.de/manifest.json">
+<link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
+<link rel="alternate" hreflang="de" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" title="25kV-Transformator">
+
+<link rel="stylesheet" href="/labathome.de/book.min.5ac6c2989f0943405962be6800b442aef429ef26ade26545ecf0617a21d1197a.css" integrity="sha256-WsbCmJ8JQ0BZYr5oALRCrvQp7yat4mVF7PBheiHRGXo=">
+<script defer src="/labathome.de/en.search.min.812723f051e91ca88ff7b895a02e05fa01040f901f50acb7aab5469b9e0c8a30.js" integrity="sha256-gScj8FHpHKiP97iVoC4F&#43;gEED5AfUKy3qrVGm54MijA="></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/labathome.de/en"><span>Lab@Home</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7b49be1ec3270e7e0626d8f51034ad75" class="toggle" checked />
+    <label for="section-7b49be1ec3270e7e0626d8f51034ad75" class="flex justify-between">
+      <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/" class="">Electrical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-965e8bebdb994381b348ce197cb62594" class="toggle" checked />
+    <label for="section-965e8bebdb994381b348ce197cb62594" class="flex justify-between">
+      <a  class="">High Voltage</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/high-voltage/25kv-transformer/" class=" active">25kV Transformer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/smps/" class="">SMPS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-877e7226efa87841e804c6880f7c91ea" class="toggle"  />
+    <label for="section-877e7226efa87841e804c6880f7c91ea" class="flex justify-between">
+      <a  class="">Transputer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-b1/" class="">AVM B1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-t1/" class="">AVM T1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/leonardo-xl/" class="">Leonardo XL PCI</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-08e0ac22cd1e62589ce09443fbe61b53" class="toggle"  />
+    <label for="section-08e0ac22cd1e62589ce09443fbe61b53" class="flex justify-between">
+      <a  class="">Mechanical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/deckel-fp1/" class="">Deckel FP1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/dlz180x450/" class="">Saupe DLZ180x450</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/small-tabletop-lathe/" class="">Small Tabletop Lathe</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/gys-protig/" class="">GYS PROTIG 201 AC/DC</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/klopp-550/" class="">Klopp 550</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tiboma-bm6/" class="">Johannes Tittel BM6</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tooling/" class="">Machine tooling</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa13c3e819fe79e106b1a16fce0dc214" class="toggle"  />
+    <label for="section-fa13c3e819fe79e106b1a16fce0dc214" class="flex justify-between">
+      <a  class="">Numerics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/numerics/fftw-tutorial/" class="">FFTW Tutorial</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f27c6321fb8253c62b351da42bbd70e" class="toggle"  />
+    <label for="section-4f27c6321fb8253c62b351da42bbd70e" class="flex justify-between">
+      <a  class="">Physics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/physics/tvp250/" class="">Pfeiffer TVP250</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/physics/kf40-cf40/" class="">KF40/CF40 Adapter Flanges</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/about/" class="">About this website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/labathome.de/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>25kV Transformer</strong>
+
+  <label for="toc-control">
+    
+    <img src="/labathome.de/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#25kv-transformer">25kV transformer</a></li>
+    <li><a href="#core">Core</a></li>
+    <li><a href="#primary-winding">Primary winding</a></li>
+    <li><a href="#bobbin">Bobbin</a></li>
+    <li><a href="#secondary-coil">Secondary coil</a></li>
+    <li><a href="#winding-rig">Winding rig</a></li>
+    <li><a href="#assembly-and-potting">Assembly and potting</a></li>
+    <li><a href="#cost">Cost</a></li>
+    <li><a href="#experiments">Experiments</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="25kv-transformer">
+  25kV transformer
+  <a class="anchor" href="#25kv-transformer">#</a>
+</h2>
+<p>I keep reading how &ldquo;impossible&rdquo; and &ldquo;not doable with home means&rdquo; the
+construction of a high-voltage transformer supposedly is.
+I&rsquo;d therefore like to present the construction of my 25 kV / 2.4 kVA
+transformer here.
+I built it with the friendly support of an engineer at Ostfalia in
+Wolfenbuettel, where I was living at the time, in the period from
+December 2010 to about March 2011.</p>
+<p>Here it is:</p>
+<p><img src="DSC_0125.v01.jpg" alt="25 kV transformer" /></p>
+<p>The technical data are as follows:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Parameter</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Primary voltage</td>
+          <td>250 V</td>
+      </tr>
+      <tr>
+          <td>Primary winding</td>
+          <td>177 turns (2.0 mm enamelled copper)</td>
+      </tr>
+      <tr>
+          <td>Secondary voltage</td>
+          <td>25 kV, single-side grounded</td>
+      </tr>
+      <tr>
+          <td>Secondary winding</td>
+          <td>17466 turns (0.224 mm enamelled copper)</td>
+      </tr>
+      <tr>
+          <td>Rated power</td>
+          <td>2.4 kVA</td>
+      </tr>
+      <tr>
+          <td>Core</td>
+          <td>UI210, 141 laminations of 0.5 mm</td>
+      </tr>
+  </tbody>
+</table>
+<p>The primary and secondary windings are wound on different limbs.
+The advantage is that you can draw arcs without needing a current-limiting
+choke as you would with an instrument transformer.
+When operated as the mains transformer of a spark-gap-driven Tesla coil
+(SGTC, as most call it), the resonance with the primary capacitor also
+nicely produces a voltage rise &ndash; which, with a &ldquo;tightly wound&rdquo; transformer
+(primary and secondary on top of each other) would feed back to the mains
+much more strongly.</p>
+<h2 id="core">
+  Core
+  <a class="anchor" href="#core">#</a>
+</h2>
+<p>The core is a UI210, i.e. with a winding window of 70x210 mm. With 141
+laminations of 0.5 mm thickness this gives a core cross-section of about
+7x7 cm = 49 cm^2. A rule of thumb lets you estimate the achievable
+power: take the core cross-section in cm^2, square it, and you get the
+approximate rated power in VA &ndash; in this case 49^2 = 2401 VA ~ 2.4 kVA.
+The core was later interleaved, tapped flat with a wooden mallet, and
+clamped between beech battens with screws. You have to make sure no
+electrical contact occurs between the threaded rods/screws and the core,
+to avoid eddy currents. I also had to make sure not to create a
+short-circuit turn with the handles. The black handles are therefore
+solid material, into which I cut an M10 thread on each side on the lathe.
+The cap nuts are then secured with short threaded studs.</p>
+<p>The company I got the core laminations from is called Bausch; its
+website is here: <a href="http://www.bausch.de">http://www.bausch.de</a></p>
+<h2 id="primary-winding">
+  Primary winding
+  <a class="anchor" href="#primary-winding">#</a>
+</h2>
+<p>The primary voltage was to be 250 V, since this is the maximum output
+voltage of my variac.
+At a rated power of 2.4 kVA this means a current of about 10 A.
+With a maximum current of 3 A per mm^2 of wire cross-section, a 2 mm wire
+can handle 1^2 * pi * 3 A = 9.5 A. I think that should be sufficient,
+since the transformer is not meant for continuous operation.</p>
+<p>The number of turns I calculated using the formula
+<tex>$$
+N = \frac{\sqrt{2} \cdot U}{2 \pi f \cdot A \cdot B}
+$$</tex>
+with U the primary voltage, B = 1.3 T the flux density in the core,
+A = 0.0049 m^2 and f = 50 Hz the mains frequency.</p>
+<p>This means the wire can be wound in two layers, which is also better
+for heat dissipation.
+For the winding I built a sturdy winding rig from two trestles that could
+be turned with a 6-spoke wooden wheel about 40 cm in diameter. A ball-bearing
+shaft drove a hardwood block that exactly matched the dimensions of the
+core. On a sunny day I tied the rig to a tree in the garden, secured the
+wire, and laid down the primary winding against the weight of a helper
+who was hanging on the wire.</p>
+<h2 id="bobbin">
+  Bobbin
+  <a class="anchor" href="#bobbin">#</a>
+</h2>
+<p>The hardwood block mentioned above was oiled so no adhesive would stick
+to it. I then sawed plates from 1 mm Pertinax and glued them around the
+block with Uhu Endfest 300. After drying, the wooden block could be
+removed with a firm tap.
+To keep the wire from being kinked when winding, I glued balsa-wood
+cheeks of about 30 mm to the sides that aren&rsquo;t in the winding window or
+underneath the transformer.
+I then filed and sanded those down so the wire would lie nicely against
+them.
+While winding, the wire was also fixed in place with double-sided tape
+on the balsa wood and (on the second layer) on the previous layer. Since
+two layers were wound, the winding ended on the same side where it had
+started.</p>
+<p>A piece of insulating sleeving over both wire ends prevents the wire
+from springing back.
+I then potted the un-wound edge (yellow-tinted in the photo) with epoxy:
+a strip of packing tape on the winding, the primary coil laid on its
+side, and the resin could be poured in. The whole winding was then
+varnished with shellac.</p>
+<h2 id="secondary-coil">
+  Secondary coil
+  <a class="anchor" href="#secondary-coil">#</a>
+</h2>
+<p>I wanted a transformer for 25 kV, so by the formula above the turn count
+was already fixed at about 17000.
+A layer should be 1 mm thick, leaving about 0.75 mm for the insulation.
+This was made up of three layers of 0.19 mm PE insulating film with a
+dielectric strength of about 100 kV/mm.
+The film is sold under the name Hostaphan.
+The exact film I used is RN 190 and is available from W. Bath GmbH:
+<a href="http://www.bathgmbh.de/polyesterf.htm">http://www.bathgmbh.de/polyesterf.htm</a>
+A dielectric strength of 100 kV/mm is specified.
+I had a roll of 50 m at 600 mm width, weighing 8.4 kg.
+You can&rsquo;t really tell how much was used by looking at the roll; I&rsquo;d guess
+about 6 m ended up on the transformer.</p>
+<p>The bobbin was built analogously to the primary one, except that the
+balsa cheeks here were only about 10 mm wide.
+The inner secondary terminal is implemented as a strip of copper foil
+glued to the bobbin before winding started, sitting between the hardwood
+block and the bobbin during winding. That way I prevented anything from
+getting tangled up.</p>
+<p>The wire was then soldered to that strip and the winding was started.
+For this transformer I followed this procedure:</p>
+<ol>
+<li>Wind one layer.</li>
+<li>Lock the bobbin in place; here I cut an M10 thread into the hardwood
+block, into which a screw could be driven through a hole in the
+flange plate of the rig.</li>
+<li>Brush on shellac (possibly before step 2, depending on access in the rig).</li>
+<li>Wrap insulating film around it.</li>
+<li>Pull the film tight by hand and &ldquo;smooth it on&rdquo;.
+The shellac makes the film stick to the winding. Once you&rsquo;ve wrapped
+the film around the winding three times, you can press it tighter
+with the flat of your hands using friction. Only this way does most
+of the air get squeezed out of the winding!</li>
+<li>Tape the film down with Tesa or similar and cut a small slit on the
+side (about 3 mm wide) all the way to the start of the winding.
+This slit must really be cut out, because otherwise the wire could
+be sheared off when tightening. Then loosen the locking screw again
+and start the next layer.</li>
+</ol>
+<p>I used shellac because I was confident that, given its natural origin,
+it would not attack the wire enamel and that, once the solvent had
+evaporated, it would become so sticky that it would adhere properly
+to the PE film and not bead off.</p>
+<h2 id="winding-rig">
+  Winding rig
+  <a class="anchor" href="#winding-rig">#</a>
+</h2>
+<ul>
+<li>All shafts should be (and for the secondary winding: must be) on
+ball bearings. I made the shafts from M10 threaded rod and used
+6000-2RS bearings. You have to be painstakingly careful that all
+shafts are parallel to each other and don&rsquo;t wobble! Otherwise the
+wire can jump and the winding becomes faulty / has to be unwound again.</li>
+<li>The wire spool must be braked. At the time I used a paint brush
+pressed firmly against the spool with lab clamps, which braked it.</li>
+<li>The wire has to run over a guide pulley. Here&rsquo;s how that works:
+take a plastic cable conduit, e.g. 25 mm in diameter, and wrap it
+with exactly the wire that is to go onto the bobbin later.
+The wire is fixed at both ends. The wound length should be about
+5 cm more than the largest winding width of the coil to be wound.
+Paper rings are slipped onto this guide pulley (best glued <em>onto</em>,
+not <em>with</em>, it) and can be slid sideways.
+These rings later serve as &ldquo;stops&rdquo; and are pushed to the winding
+width using a ruler.
+The guide pulley sits about 20 cm from the bobbin on two
+&ldquo;outriggers&rdquo; / &ldquo;ears&rdquo; on the rig and is also ball-bearing-mounted.
+It is driven synchronously with the bobbin via a belt &ndash; for this,
+highly flexible measurement cable soldered into a ring works well.
+It is important that the belt does not stretch, otherwise winding
+errors will occur!</li>
+<li>The shellac should be dissolved in warm spirit. That takes about three
+days for the necessary quantity (about 200 g) and produces fewer
+lumps than trying it with cold spirit. Even so, it should be filtered
+before use, e.g. through a tea strainer.</li>
+<li>Forget about cordless drills, motors, etc. for turning the rig.
+My engineer friend and I cranked the 17000 turns of the secondary
+by hand over three days around New Year&rsquo;s Eve 2010. With the thin
+wire and the large supply spool you have to do it very gently!
+In total, about 2 kg of wire ended up on the secondary.</li>
+</ul>
+<h2 id="assembly-and-potting">
+  Assembly and potting
+  <a class="anchor" href="#assembly-and-potting">#</a>
+</h2>
+<p>The layer insulation of the secondary protrudes about 1 cm beyond each side.
+The winding width tapers by about 1 cm every 5 layers.
+For the connection point of the secondary I made a brass turning,
+essentially a disc with a knob on it that has an M10 thread.
+The wire is soldered to the disc (after a large loop, so that if the
+connection point should accidentally tear off there&rsquo;s still something
+left to solder onto). The disc is then glued to the layer insulation
+with double-sided tape.
+Last came another insulation layer over the whole width with a hole
+above each layer for the knob to poke through. This created
+&ldquo;castle moats&rdquo; with a triangular cross-section on each side, which
+were later filled with potting compound once the runaway shellac was
+no longer sticky and the core was crated up.
+The copper strip (inner secondary terminal) was clamped between the
+core and the (beech-wood) core holder and soldered to a Rampa nut.
+An M4 screw threads into that, and you can clamp wires directly to it.
+An installation wire soldered to the strip leads to the terminal box.</p>
+<p>Here is another picture of the transformer:</p>
+<p><img src="Foto074.v01_2.jpg" alt="fully wound, before potting" /></p>
+<p>You can see the copper strip still wrapped around the bolts on the
+outside (before being trimmed). The strip has already been laid through
+underneath the wood once! You can also see the insulating sleeving on
+the primary leads and the converging secondary winding.
+Once the transformer was assembled this far, the terminal mentioned
+above went on top, followed by the last layer of insulation.
+The potting compound also flowed between the core and the bobbin
+(and undesirably leaked out the bottom). This is very important,
+because no air must remain between core and winding &ndash; otherwise (at
+least on the side opposite the ground terminal, where the full layer
+voltage is already present) corona discharges form, which severely
+damage the insulation.
+For the same reason the &ldquo;castle moat&rdquo; must be filled.</p>
+<h2 id="cost">
+  Cost
+  <a class="anchor" href="#cost">#</a>
+</h2>
+<p>Here is a rough cost breakdown:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>core laminations</td>
+          <td>EUR80</td>
+      </tr>
+      <tr>
+          <td>insulation film</td>
+          <td>EUR200, with plenty left over</td>
+      </tr>
+      <tr>
+          <td>primary wire</td>
+          <td>EUR10</td>
+      </tr>
+      <tr>
+          <td>secondary wire</td>
+          <td>EUR50</td>
+      </tr>
+      <tr>
+          <td>total</td>
+          <td>ca. EUR350</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="experiments">
+  Experiments
+  <a class="anchor" href="#experiments">#</a>
+</h2>
+<p>And this (and much more) is what such a transformer can do:</p>
+<p><img src="DSC_0140.v01_1.jpg" alt="Jacob&rsquo;s ladder" /></p>
+<p><img src="DSC_0143.v01.jpg" alt="Jacob&rsquo;s ladder II" /></p>
+<p>A tabular overview of the transformer measurements is here:
+<a href="WickeldatenUndMesswerte.ods">WickeldatenUndMesswerte.ods</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="">
+      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/high_voltage/25kv_transformer/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        Deutsch
+      </a>
+    </li>
+    
+    <li class="active">
+      <a href="https://jonathanschilling.github.io/labathome.de/en/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+      <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>May 8, 2026</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#25kv-transformer">25kV transformer</a></li>
+    <li><a href="#core">Core</a></li>
+    <li><a href="#primary-winding">Primary winding</a></li>
+    <li><a href="#bobbin">Bobbin</a></li>
+    <li><a href="#secondary-coil">Secondary coil</a></li>
+    <li><a href="#winding-rig">Winding rig</a></li>
+    <li><a href="#assembly-and-potting">Assembly and potting</a></li>
+    <li><a href="#cost">Cost</a></li>
+    <li><a href="#experiments">Experiments</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

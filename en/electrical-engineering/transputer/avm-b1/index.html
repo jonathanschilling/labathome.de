@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.161.1">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  AVM B1
+  #
+
+The AVM B1 is an active ISDN controller and was built for the ISA bus up to version 2.0.
+Up to version 3.0 it uses a T400 transputer.
+
+On the left side of the card sits a small transputer system with 1 MB of RAM
+and a TRAM-like expansion interface. At the bottom right is the C011, which
+can be addressed from the ISA bus on one of four jumper-selectable addresses.
+On the B1 the C011 is hard-wired to link 0 of the T400. AVM has wired
+the links on the board for 10 Mbit/s.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-b1/">
+  <meta property="og:site_name" content="Lab@Home">
+  <meta property="og:title" content="AVM B1">
+  <meta property="og:description" content="AVM B1 # The AVM B1 is an active ISDN controller and was built for the ISA bus up to version 2.0. Up to version 3.0 it uses a T400 transputer.
+On the left side of the card sits a small transputer system with 1 MB of RAM and a TRAM-like expansion interface. At the bottom right is the C011, which can be addressed from the ISA bus on one of four jumper-selectable addresses. On the B1 the C011 is hard-wired to link 0 of the T400. AVM has wired the links on the board for 10 Mbit/s.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+<title>AVM B1 | Lab@Home</title>
+<link rel="manifest" href="/labathome.de/manifest.json">
+<link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
+<link rel="alternate" hreflang="de" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" title="AVM B1">
+
+<link rel="stylesheet" href="/labathome.de/book.min.5ac6c2989f0943405962be6800b442aef429ef26ade26545ecf0617a21d1197a.css" integrity="sha256-WsbCmJ8JQ0BZYr5oALRCrvQp7yat4mVF7PBheiHRGXo=">
+<script defer src="/labathome.de/en.search.min.812723f051e91ca88ff7b895a02e05fa01040f901f50acb7aab5469b9e0c8a30.js" integrity="sha256-gScj8FHpHKiP97iVoC4F&#43;gEED5AfUKy3qrVGm54MijA="></script>
+
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/labathome.de/en"><span>Lab@Home</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7b49be1ec3270e7e0626d8f51034ad75" class="toggle" checked />
+    <label for="section-7b49be1ec3270e7e0626d8f51034ad75" class="flex justify-between">
+      <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/" class="">Electrical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-965e8bebdb994381b348ce197cb62594" class="toggle"  />
+    <label for="section-965e8bebdb994381b348ce197cb62594" class="flex justify-between">
+      <a  class="">High Voltage</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/high-voltage/25kv-transformer/" class="">25kV Transformer</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/smps/" class="">SMPS</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-877e7226efa87841e804c6880f7c91ea" class="toggle" checked />
+    <label for="section-877e7226efa87841e804c6880f7c91ea" class="flex justify-between">
+      <a  class="">Transputer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-b1/" class=" active">AVM B1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/transputer/avm-t1/" class="">AVM T1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/electrical-engineering/leonardo-xl/" class="">Leonardo XL PCI</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-08e0ac22cd1e62589ce09443fbe61b53" class="toggle"  />
+    <label for="section-08e0ac22cd1e62589ce09443fbe61b53" class="flex justify-between">
+      <a  class="">Mechanical Engineering</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/deckel-fp1/" class="">Deckel FP1</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/dlz180x450/" class="">Saupe DLZ180x450</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/small-tabletop-lathe/" class="">Small Tabletop Lathe</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/gys-protig/" class="">GYS PROTIG 201 AC/DC</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/klopp-550/" class="">Klopp 550</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tiboma-bm6/" class="">Johannes Tittel BM6</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/mechanical-engineering/tooling/" class="">Machine tooling</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa13c3e819fe79e106b1a16fce0dc214" class="toggle"  />
+    <label for="section-fa13c3e819fe79e106b1a16fce0dc214" class="flex justify-between">
+      <a  class="">Numerics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/numerics/fftw-tutorial/" class="">FFTW Tutorial</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4f27c6321fb8253c62b351da42bbd70e" class="toggle"  />
+    <label for="section-4f27c6321fb8253c62b351da42bbd70e" class="flex justify-between">
+      <a  class="">Physics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/physics/tvp250/" class="">Pfeiffer TVP250</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/physics/kf40-cf40/" class="">KF40/CF40 Adapter Flanges</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://jonathanschilling.github.io/labathome.de/en/about/" class="">About this website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/labathome.de/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>AVM B1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/labathome.de/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="avm-b1">
+  AVM B1
+  <a class="anchor" href="#avm-b1">#</a>
+</h1>
+<p>The AVM B1 is an active ISDN controller and was built for the ISA bus up to version 2.0.
+Up to version 3.0 it uses a T400 transputer.</p>
+<p><img src="avm_b1_gesamt_web.jpg" alt="AVM B1 ISA card" /></p>
+<p>On the left side of the card sits a small transputer system with 1 MB of RAM
+and a TRAM-like expansion interface. At the bottom right is the C011, which
+can be addressed from the ISA bus on one of four jumper-selectable addresses.
+On the B1 the C011 is hard-wired to link 0 of the T400. AVM has wired
+the links on the board for 10 Mbit/s.</p>
+<p>I have made a few modifications to this B1:</p>
+<p>First, the link speed of the C011 was raised to 20 Mbit/s:</p>
+<p><img src="avm_b1_c012_web.jpg" alt="C012 on the B1" /></p>
+<p>For this, pin 17 is bent up using a fine tool &ndash; I used a sharp probe tip &ndash;
+and wired to +5V, e.g. pin 28 of the C011.
+Now of course the link speed of the T400 has to be adjusted as well:</p>
+<p><img src="avm_b1_t400_web.jpg" alt="T400 on the B1" /></p>
+<p>This is unfortunately a bit fiddlier, as the T400 has an even tighter pin
+pitch than the C011. Pins 8, 9 and 11 have to be bent up and tied to +5V,
+e.g. on the 1 uF capacitor that is soldered right next to the T400 and
+serves to buffer the internal supply voltage of the T400&rsquo;s link interface.</p>
+<p>It is also handy, as will become apparent later, to have the RESET pin
+present on the expansion bus. Pin 2 is not used by the B1&rsquo;s normal
+operation and can therefore be cut at the marked location and wired with
+a piece of wire to pin 92 of the T400, or to a nearby via.</p>
+<p>The pinout of the expansion bus, as far as I have measured it, is then as follows:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Pin</th>
+          <th>Meaning</th>
+          <th>Pin</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>?</td>
+          <td>11</td>
+          <td>? (PAL)</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>RESET</td>
+          <td>12</td>
+          <td>? (PAL)</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>? (82525)</td>
+          <td>13</td>
+          <td>GND</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>? (82525)</td>
+          <td>14</td>
+          <td>GND</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>? (82525)</td>
+          <td>15</td>
+          <td>GND</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>?</td>
+          <td>16</td>
+          <td>GND</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>?</td>
+          <td>17</td>
+          <td>GND</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>Link1Out</td>
+          <td>18</td>
+          <td>+5V</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>Link1In</td>
+          <td>19</td>
+          <td>+5V</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>?</td>
+          <td>20</td>
+          <td>+5V</td>
+      </tr>
+  </tbody>
+</table>
+<p>At the latest at this point you should use <a href="http://www.wizzy.com/wizzy/ispy.html">ispy</a>
+to check whether the card still works correctly, and if not, start troubleshooting.</p>
+<p>You may now wonder what these modifications are for.
+Since the B1 is addressable at 0x150 and behaves there like an Inmos B004
+transputer development board, it makes for a very cheap and direct
+transputer entry-level card.
+If link 1, which is brought out to the expansion bus (see above), now
+leads &ldquo;outside&rdquo;, you can hook up further transputer(s) (or transputer
+networks) &ndash; for example the <a href="../avm-t1/">AVM T1 (-B if you have one)</a>.</p>
+<p>For that you need an RS-422 converter, which is plugged onto the B1:</p>
+<p><img src="rs422_top_web.jpg" alt="RS-422 converter, top" /></p>
+<p><img src="rs422_bottom_web.jpg" alt="RS-422 converter, bottom" /></p>
+<p>Maxim gives you two MAX3467 chips for free as samples. They are RS-422
+converters good for up to 40 Mbit/s &ndash; more than enough for the transputer
+links. They are wired up according to the schematic below, ideally on a
+piece of perfboard. The 15-pin D-Sub connector is not strictly necessary,
+but since I use the original cable for the connection to the T1 I have
+used one here. The pinout of that cable, along with further information
+about the T1, can be found on the <a href="../avm-t1/">corresponding page</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="">
+      <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/transputer/amv_b1/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        Deutsch
+      </a>
+    </li>
+    
+    <li class="active">
+      <a href="https://jonathanschilling.github.io/labathome.de/en/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+      <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>May 8, 2026</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
