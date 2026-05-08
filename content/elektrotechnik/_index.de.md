@@ -1,5 +1,5 @@
 ---
-title: 'Electrical Engineering'
+title: 'Elektrotechnik'
 weight: 1
 bookCollapseSection: true
 ---

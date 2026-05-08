@@ -1,5 +1,4 @@
 baseURL = 'https://jonathanschilling.github.io/labathome.de/'
-languageCode = 'en-us'
 title = 'Lab@Home'
 
 theme = "hugo-book"
@@ -12,7 +11,25 @@ enableGitInfo = true
 
 # (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
 # You can remove related files with config below
-disableKinds = ['taxonomy', 'taxonomyTerm']
+disableKinds = ['taxonomy']
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    label = "English"
+    weight = 1
+  [languages.de]
+    label = "Deutsch"
+    weight = 2
+
+# goldmark unsafe: required so the <tex>...</tex> wrappers used for MathJax
+# math survive Markdown rendering (raw HTML is stripped by default in modern Hugo).
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.

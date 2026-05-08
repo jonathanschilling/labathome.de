@@ -1,5 +1,5 @@
 ---
-title: '25kV Transformer'
+title: '25kV-Transformator'
 weight: 1
 mathjax: true
 ---
@@ -36,9 +36,9 @@ eine Spannungsüberhöhung auf, die bei einem "hart gewickelten" Trafo
 ## Kern
 
 Es handelt sich um einen UI210-Kern, also mit einem Wickelfenster von 70x210mm. Bei 141 Blechen mit 0,5mm Dicke
-ergibt sich ein Kernquerschnitt von ca. 7x7cm = 49cm². Anhand einer Faustformel lässt sich daraus
-die zu erreichenden Leistung abschätzen: Man nimmt einfach den Kernquerschnitt in cm² ins Quadrat und erhält die
-ungefähre Nennleisung in VA, in diesem Fall also 49² = 2401 VA ~ 2.4kVA.
+ergibt sich ein Kernquerschnitt von ca. 7x7cm = 49cm^2. Anhand einer Faustformel lässt sich daraus
+die zu erreichenden Leistung abschätzen: Man nimmt einfach den Kernquerschnitt in cm^2 ins Quadrat und erhält die
+ungefähre Nennleisung in VA, in diesem Fall also 49^2 = 2401 VA ~ 2.4kVA.
 Der Kern wurde später wechselseitig geschichtet, mit einem Holzhammer glattgeklopft und zwischen Buchenleisten
 verschraubt. Dabei ist darauf zu achten, dass kein elektischer Kontakt zwischen den Gewindenstangen/Schrauben und dem Kern auftritt,
 um Wirbelströme zu vermeiden. Weiterhin musste ich darauf achten, mit den Handgriffen keine Kurzschlusswindung zu erzeugen.
@@ -52,14 +52,14 @@ heißt Bausch und hat ihre Internet-Seite hier: http://www.bausch.de
 
 Die Primärspannung sollte 250V betragen, da dies die maximale Ausgangsspannung meines Stelltrafos ist.
 Bei der Nennleistung von 2,4kVA bedeutet dass, das ein Strom von ca. 10A fließt.
-Bei einem maximalen Strom von 3A pro mm² Drahtquerschnitt kann ein 2mm-Draht mit
-1² * Pi * 3A = 9,5A belastet werden. Ich denke, dass das reichen sollte, da der Trafo eben nicht
+Bei einem maximalen Strom von 3A pro mm^2 Drahtquerschnitt kann ein 2mm-Draht mit
+1^2 * Pi * 3A = 9,5A belastet werden. Ich denke, dass das reichen sollte, da der Trafo eben nicht
 im Dauerbetrieb laufen soll.
 
 Die Windungsanzahl habe ich nach der Formel
 <tex>$$
 N = \frac{\sqrt{2} \cdot U}{2 \pi f \cdot A \cdot B}
-<tex>$$
+$$</tex>
 mit U der Primärspannung, B = 1.3 T der Flussdichte im Kern, A = 0.0049 m^2 und f=50Hz der Netzfrequenz berechnet.
 
 Dadurch kann der Draht in zwei Lagen gewickelt werden, was für die Wärmeabfuhr auch günstiger ist.

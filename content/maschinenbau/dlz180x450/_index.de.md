@@ -33,7 +33,7 @@ auf ihr herstellen wollte und letztendlich doch nicht dazu kam.
 Mit dabei waren der komplette Wechselrad-Satz, das originale Werkzeug-Set,
 die [Bedienungsanleitung](DLZ180x450_Bedienanleitung.pdf)
 und ein paar Zubehörteile (Rollkörner, Bohrfutter, Drehstähle).
-Der Preis ist ja eh bei eBay einsehbar; ich habe am Ende 650€ für die Maschine gezahlt,
+Der Preis ist ja eh bei eBay einsehbar; ich habe am Ende 650EUR für die Maschine gezahlt,
 was ich auch in Anbetracht der unten aufgeführten zu erledigenden Arbeiten als absoluten Glücksfall ansehe.
 
 Hier noch schnell ein paar Übersichtsdaten der Maschine:
@@ -145,7 +145,7 @@ Folgende Arbeiten habe ich mir für die nächsten Monate bisher vorgenommen:
   (v.a. kein Plastik!) und schicken Skalenrädern
 - Zerlegung des Schlosskastens, Reinigung, evtl. Reparatur (?)
 - finale Anpassung einer bereits vorbereiteten Planscheibe an die KK3-Spindelnase
-- Reitstockklemmung wie bei der µkrodreh vom Stefan
+- Reitstockklemmung wie bei der ukrodreh vom Stefan
   (siehe [Post #71479](https://forum.zerspanungsbude.net/viewtopic.php?p=71479#p71479)),
   evtl. sogar Umbau auf Zahnstangen-Pinole...
 - Bettschlitten-Klemmung von oben zugänglich machen

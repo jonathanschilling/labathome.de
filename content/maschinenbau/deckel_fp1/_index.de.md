@@ -55,9 +55,9 @@ Ein besonders kritischer Punkt beim Kauf einer FP1 sind die Spindellager, wie In
 Bei dem vorgestellten Baujahr sind diese durch Nadellager, die direkt auf der Spindelhülse und der Spindel selbst laufen, ausgeführt.
 Damals war das sicherlich eine Konstruktion, die dem Stand der Technik entsprach (und evtl. auch aus diesem entwuchs),
 aber heutezutage können diese Spindeln bei einem Defekt einen wirtschaftlichen Totalschaden der Maschine bedeuten.
-Die Spieleinstellung erfolgt durch Auswahl der Nadeldurchmesser, sodass diese den Raum zwischen Spindel und Spindelhülse mit ca. 3..5µm Spiel ausfüllen.
+Die Spieleinstellung erfolgt durch Auswahl der Nadeldurchmesser, sodass diese den Raum zwischen Spindel und Spindelhülse mit ca. 3..5um Spiel ausfüllen.
 Durch Fertigungsstreuung kommt es natürlich vor, dass der benötigte absolute Durchmesser der Nadeln von Maschine zu Maschine etwas variiert.
-Wenn die Nadeln verschlissen sind oder Lauffläche(n) nachgeschliffen werden müssen, braucht man nun passende Nadeln in Durchmesser-Abstufungen von µm.
+Wenn die Nadeln verschlissen sind oder Lauffläche(n) nachgeschliffen werden müssen, braucht man nun passende Nadeln in Durchmesser-Abstufungen von um.
 Diese sind (soweit ich informiert bin, bitte ggf. um korrigierende Worte!) aber heutezutage für diese Lagerbauart nicht mehr bzw. nur noch als Restbestände verfügbar.
 
 Die Pinolenführung des Vertikalkopfes wurde also abgenommen und die Spindel von Hand durchgedreht.
@@ -66,13 +66,13 @@ Bingo, mehrere Rastpunkte zu spüren und insgesamt ein eher verdrecktes Inneres:
 ![Vertikalkopf innen](IMG_6391_r.jpg)
 
 Ein weiser Mensch hätte jetzt wahrscheinlich geseufzt und wäre wieder nach Hause gefahren.
-Ich hatte mich vorher etwas bei eBay etc. umgeschaut und war auf ein Angebot von Franz Singer gestoßen, wo es eine Überholung der Pinole um ca. 600-800€ gibt.
+Ich hatte mich vorher etwas bei eBay etc. umgeschaut und war auf ein Angebot von Franz Singer gestoßen, wo es eine Überholung der Pinole um ca. 600-800EUR gibt.
 Dabei sollte man allerdings den Zusatz "Voraussetzung: Nadellaufbahnen dürfen keine Beschädigungen aufweisen." im Hinterkopf haben...
 Ein weiterer Punkt ist allerdings, dass mehrere Leute bereits von kaputten Kugellagern für das Kegelrad oben in der Pinolenführung berichtet hatten.
 Ich hatte aus Zeitdruck die Pinole selbst nicht aus dem Gehäuse genommen (und hätte selbst dann die Rastpunkte immer noch gespürt, s.u.), sondern nur die ganze Einheit durchgedreht.
 
 Wie auch immer, die restliche Basis der Maschine (Führungen, Getriebe, genereller EIndruck) schienen mir gut genug, um das Restrisiko bzgl. Vertikalkopf einzugehen.
-Gekostet hat mich die angebotene rohe Maschine am Ende 2000€ und etwa 3...6 Monate Suche.
+Gekostet hat mich die angebotene rohe Maschine am Ende 2000EUR und etwa 3...6 Monate Suche.
 
 ## Transport
 
@@ -161,7 +161,7 @@ die es tatsächlich geschafft hatten, das Paket zu zerlegen, kam die Vertikalpin
 und erreichte mich schlussendlich genauso wohlbehalten wieder in Greifswald.
 
 Franz konnte die Laufspuren in der Scheibe beseitigen und hat auf meine Bitte hin die Nadellager mit Klüber "ISOFLEX SuperTEL" geschmiert, wie von Deckel gefordert.
-Das gemessene Radialspiel lag bei ca. 3µm und das Axialspiel ist jetzt auch passend eingestellt.
+Das gemessene Radialspiel lag bei ca. 3um und das Axialspiel ist jetzt auch passend eingestellt.
 Gerade da bei der FP1 die Vertikalpinole wohl das kritischste Teil ist, war es mir wichtig, dass diese Arbeit von jemandem gemacht wird, der weiß was er tut.
 Die überarbeitete Pinole lässt sich jetzt wunderbar samtig-sanft durchdrehen und weckt Vertrauen, dass ich mit ihr viele Jahre gute Arbeit mit der FP1 erledigen werde können :-)
 
@@ -597,8 +597,8 @@ Hier ist eine Übersicht über die letztendlich verbauten Teile:
  * 3 Stk. Leistungsschütz Eaton DIL-M7-10
  * 3 Stk. Hilfsschalter Eaton DIL M32-XHI11
  * 2 Stk. Motor-Schutzschalter Eaton PKZM0-4
- * 2m LAPP ÖLFLEX® CLASSIC 110 CY - 7G1,0mm^2 (Motor)
- * 3m LAPP ÖLFLEX® CLASSIC 110 CY - 4G0,75mm^2 (Tasten)
+ * 2m LAPP ÖLFLEX(R) CLASSIC 110 CY - 7G1,0mm^2 (Motor)
+ * 3m LAPP ÖLFLEX(R) CLASSIC 110 CY - 4G0,75mm^2 (Tasten)
 
 Hier sind dann schon mal die Steckverbindungen etc. zum Testen angeschlossen:
 ![Schalttafel mit Steckern](IMG_8140_r.jpg)

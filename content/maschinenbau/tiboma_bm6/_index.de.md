@@ -22,7 +22,7 @@ Hier seht ihr die Bilder aus der Auktion:
 
 ![aus eBay III](01.jpg)
 
-Für etwas über 100€ wurde sie dann mein, und ein paar Tage später wurde sie
+Für etwas über 100EUR wurde sie dann mein, und ein paar Tage später wurde sie
 (liebevoll in einem Holzgestell verpackt) mir geliefert:
 
 ![Ankunft](IMG_1310.jpg)
@@ -66,7 +66,7 @@ Na ja, irgendwie ist sie dann wieder Stück für Stück zusammengekommen:
 
 ![Zusammenbau vorn rechts](IMG_1421.jpg)
 
-Neulich ergatterte ich dann für 30€ einen kleinen Siemens Micromaster 410 Frequenzumrichter
+Neulich ergatterte ich dann für 30EUR einen kleinen Siemens Micromaster 410 Frequenzumrichter
 für Motoren bis 0.37kW und 0 - 650Hz.
 Der kam dann natürlich an die Bohrmaschine und mit einem Stück Tesakrepp als Riemen
 habe ich dann mal probegebohrt: funktioniert astrein!

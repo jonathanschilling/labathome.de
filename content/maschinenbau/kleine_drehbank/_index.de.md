@@ -1,5 +1,5 @@
 ---
-title: 'Small Tabletop Lathe'
+title: 'Kleine Drehbank'
 weight: 3
 ---
 
@@ -126,7 +126,7 @@ aller anderen anstehenden Projekte  gekauft habe.
 
 Ich werde hier, soweit ich dazu komme, die Restauration dokumentieren.
 
-Für die Maschine habe ich etwa 400€ plus Versand bezahlt.
+Für die Maschine habe ich etwa 400EUR plus Versand bezahlt.
 Die Maschine stammt aus dem Schwarzwald und wurde per Spedition geliefert.
 Ich denke, das ist angemessen.
 Ich weiß, dass ich mir zu dem Preis eine Chinadrehe hätte

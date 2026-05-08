@@ -29,7 +29,7 @@ Nun muss natürlich auch die Linkgeschwindigkeit des T400 angepasst werden:
 ![T400 auf dem B1](avm_b1_t400_web.jpg)
 
 Das ist leider ein bisschen kniffliger, da der T400 einen noch geringeren Pinabstand besitzt
-als der C011. Es müssen die Pins 8, 9 und 11 hochgebogen und auf +5V gelegt werden, z.B. an dem 1µF-Kondensator,
+als der C011. Es müssen die Pins 8, 9 und 11 hochgebogen und auf +5V gelegt werden, z.B. an dem 1uF-Kondensator,
 der direkt neben dem T400 aufgelötet ist und zur Pufferung der internen Versorgungsspannung des Link-Interfaces vom T400 dient.
 
 Weiterhin ist es, wie sich später zeigen wird, praktisch, den RESET-Pin auch am Erweiterungsbus

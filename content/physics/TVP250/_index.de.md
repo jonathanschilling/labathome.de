@@ -50,10 +50,10 @@ Here is an image of the driver circuit:
 and a PDF of the board layout as a 300dpi PDF: [TMP_Driver.pdf](TMP_Driver.pdf)
 
 The current setup constists of my usual ATmega32 development board and some crude wiring,
-but the rotor accelerates up to some speed, where defined by the current code on the µC some limit is reached :-)
+but the rotor accelerates up to some speed, where defined by the current code on the uC some limit is reached :-)
 
 Next steps:
-* add LCD display to µC circuit for enhanced debugging capabilities
+* add LCD display to uC circuit for enhanced debugging capabilities
 * find out wether 608P5 or 608P4 bearings are affordable
 * turn an adapter ISO-K 65 <--> KF 40 on the lathe
 
@@ -68,7 +68,7 @@ The inductivity of the motor strongly distorts the signal and makes it hard to d
 
 Therefore, I build a star of four 30 ohms resistors which are attached to the driver instead of the TMP motor.
 Now the signal looks as intended and allows to verify the correct signal generation.
-Two opposite phases are shown, therefore the phase shift is 180°.
+Two opposite phases are shown, therefore the phase shift is 180deg.
 
 ![30 ohms resistive load](01.jpg)
 
@@ -135,7 +135,7 @@ the position of the rotor for each set of the two voltages :-)
 
 The plan is now to attach these signals to the ATmega and write some sort of look-up-table to identify the rotor position.
 Then, the controller can decide which current patten to apply to the coils depending on the current operating mode:
-power-down (no signal), acceleration (45° leading phase), decceleration (45° lagging phase) or idle (0° phase shift).
+power-down (no signal), acceleration (45deg leading phase), decceleration (45deg lagging phase) or idle (0deg phase shift).
 
 ## New Controller Board (2017-05-20)
 

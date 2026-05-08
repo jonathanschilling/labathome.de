@@ -30,7 +30,7 @@ Kurz noch zur Übersicht und Einordnung die wichtigsten Daten aus der [Bedienung
  - Strom WIG DC: 160A (23%), 110A (60%), 90A (100%)
  - Strom MMA: 160A (22%), 110A (60%), 95A (100%)
 Die %-Zahlen in Klammern sind die jeweilige Einschaltdauer.
- - Netzanschluss: 2.5m 1.5mm² mit Schuko-Stecker
+ - Netzanschluss: 2.5m 1.5mm^2 mit Schuko-Stecker
  - aktive PFC, Betrieb von 85 bis 265V Netzspannung
  - "Lüfter: beim E-Hand (MMA)-Schweissen läuft der Lüfter in Dauerbetrieb. Im WIG-Modus ist der Lüfter nur in den Schweissphasen in Betrieb und schaltet sich ab nach der Abkühlung."
  - HF- oder Lift-Zündung für WIG
@@ -120,7 +120,7 @@ Jeder weitere Strömungswiderstand beeinflusst nämlich eine derart kalibrierte 
 Wenn ich also den Schlauch zum Brenner nur lang genug und dünn genug mache, komme ich für einen effektive Gasdurchfluss von 6 L/min vielleicht auf eine (dafür notwendige) Ablesung am Manometer von vielleicht 10 L/min?
 Für reproduzierbare Ergebnisse muss man sich also noch ein Flowmeter besorgen, welches auf den WIG-Brenner aufgesteckt werden kann und somit den tatsächlichen Durchfluss bei fest eingstelltem Druck anzeigt.
 Alternativ (was ich wohl machen werde) besorgt man sich einen Massendurchflussregler (engl. "mass flow controller" (MFC), siehe z.B. [https://www.mksinst.com/c/mass-flow-controllers](https://www.mksinst.com/c/mass-flow-controllers)), der den Durchfluss misst und selbstständig den Druck nachregelt.
-Gebrauchte MFCs gibt es bei eBay für ca. 100€. Dazu aber später mehr...
+Gebrauchte MFCs gibt es bei eBay für ca. 100EUR. Dazu aber später mehr...
 
 ## Fußpedal
 

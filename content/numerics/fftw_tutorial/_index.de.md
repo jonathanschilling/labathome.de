@@ -305,7 +305,7 @@ Y_k = X_0 + (-1)^k X_{n-1} + 2 \sum\limits_{j=1}^{n-2} X_j \cos\left[ \pi j k / 
 $$</tex>
 
 The inverse of this transform is REDFT00 itself.
-The input array is assumed to have even symmetry around *j=0* and even symmetry also around *j=n−1*.
+The input array is assumed to have even symmetry around *j=0* and even symmetry also around *j=n-1*.
 
 ![REDFT00](https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft00.png)
 
@@ -392,7 +392,7 @@ Y_k = 2 \sum\limits_{j=0}^{n-1} X_j \cos\left[ \pi (j+1/2) k / n \right]
 $$</tex>
 
 The inverse of this transform is REDFT01.
-The input array is assumed to have even symmetry around *j=-0.5* and even symmetry also around *j=n−0.5*.
+The input array is assumed to have even symmetry around *j=-0.5* and even symmetry also around *j=n-0.5*.
 
 ![REDFT10](https://raw.githubusercontent.com/jonathanschilling/fftw_tutorial/master/img/redft10.png)
 
@@ -1451,17 +1451,17 @@ Z_\mathrm{ax}(\zeta) =& \sum\limits_{n=0}^{N}   Z_{\mathrm{ax}, n}^\mathrm{sin} 
                                               + Z_{\mathrm{ax}, n}^\mathrm{cos} \cos \left( n \zeta \right)
 \end{align*}</tex>
 
-where ζ is the toroidal angle per field period in radians.
-For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine.
-Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.
+where zeta is the toroidal angle per field period in radians.
+For a five-fold symmetric stellarator like W7-X, zeta ranges from 0 to 5 * 2pi around the whole machine.
+Conversely, the first (unique) toroidal segment of the geometry is contained within a range of zeta from 0 to 2pi.
 
-In this example the geometry of the magnetic axis is evaluated at regular intervals in ζ:
+In this example the geometry of the magnetic axis is evaluated at regular intervals in zeta:
 
 <tex>$$
 \zeta_l = 2 \pi l / n_\zeta
 $$</tex>
 
-where *l* ranges from `0` to `n_ζ-1`.
+where *l* ranges from `0` to `n_zeta-1`.
 
 Inserting this into the Fourier series for, e.g., the *R* coordinate, leads to a DFT:
 
@@ -1473,7 +1473,7 @@ Inserting this into the Fourier series for, e.g., the *R* coordinate, leads to a
 $$</tex>
 
 Note that typically the number of Fourier coefficients included in computation
-of the MHD equilibrium is (much) less than the number of grid points, i.e., *N* < `n_ζ`.
+of the MHD equilibrium is (much) less than the number of grid points, i.e., *N* < `n_zeta`.
 The physics happens in real space and certains aspects of a computation
 might require a fine spatial resolution (i.e., many grid points in real space) to accurately
 resolve, e.g., gradients while the overall complexity of the solution
@@ -1546,7 +1546,7 @@ Z_\mathrm{ax}(\zeta) =& \sum\limits_{n=0}^{N}   Z_{\mathrm{ax}, n}^\mathrm{sin} 
 The [FFTW documentation](http://fftw.org/fftw3_doc/Real-even_002fodd-DFTs-_0028cosine_002fsine-transforms_0029.html#DOCF4)
 explicitly advises against using `R*DFT00` transforms for this purpose due to numerical stability issues
 which are currently circumvented within FFTW by using a less efficient algorithm.
-If the data is required anyway on the whole domain from 0 to 2π,
+If the data is required anyway on the whole domain from 0 to 2pi,
 it is probably easiest and fastest (in terms of development work)
 to simply use a `c2r` DFT and provide only real data in the input.
 
@@ -1614,10 +1614,10 @@ Z(\theta, \zeta) =& \phantom{+}~                      \sum\limits_{n= 0}^{N}   Z
                                                                              + Z_{m,n}^\mathrm{cos} \cos \left( m \theta - n \zeta \right)
 \end{align*}</tex>
 
-where (θ,ζ) are the poloidal and toroidal angle-like variables in radians, respectively.
-For a five-fold symmetric stellarator like W7-X, ζ ranges from 0 to 5 * 2π around the whole machine.
-Conversely, the first (unique) toroidal segment of the geometry is contained within a range of ζ from 0 to 2π.
-The poloidal angle-like coordinate θ ranges from 0 to 2π once the short way around the torus (wristband-like).
+where (theta,zeta) are the poloidal and toroidal angle-like variables in radians, respectively.
+For a five-fold symmetric stellarator like W7-X, zeta ranges from 0 to 5 * 2pi around the whole machine.
+Conversely, the first (unique) toroidal segment of the geometry is contained within a range of zeta from 0 to 2pi.
+The poloidal angle-like coordinate theta ranges from 0 to 2pi once the short way around the torus (wristband-like).
 
 The two-dimensional DFT above can be simplified (shown here for *R* only)
 by introducing rectangular two-dimensional Fourier coefficient matrices:
@@ -1631,7 +1631,7 @@ R_{m,n} = \begin{cases}
 $$</tex>
 
 In this example the geometry of the flux surface is evaluated
-on a regular grid in θ and ζ:
+on a regular grid in theta and zeta:
 
 <tex>$$
 \zeta_l = 2 \pi l / n_\zeta
@@ -1641,7 +1641,7 @@ $$</tex>
 \theta_k = 2 \pi k / n_\theta
 $$</tex>
 
-where *l* ranges from `0` to `n_ζ-1` and *k* ranges from `0` to `n_θ-1`.
+where *l* ranges from `0` to `n_zeta-1` and *k* ranges from `0` to `n_theta-1`.
 
 Inserting this into the Fourier series for, e.g., the *R* coordinate, leads to a DFT:
 
@@ -1656,8 +1656,8 @@ The *R* coordinate is a real-valued quantity
 which implies that a two-dimensional `c2r` DFT provided by FFTW can be used to
 perform the backward transform in order to evaluate the flux surface geometry.
 One further issue consists in the fact that the definition
-of the Fourier geometry employed in VMEC uses an angle argument *(m θ - n ζ)*
-where the two-dimensional DFT written out above uses *(m θ + n ζ)*.
+of the Fourier geometry employed in VMEC uses an angle argument *(m theta - n zeta)*
+where the two-dimensional DFT written out above uses *(m theta + n zeta)*.
 The Fourier coefficients coming from VMEC
 have to be inserted into the positions corresponding to *(-n)*
 in the input array given to FFTW in order to resolve this pecularity.
@@ -1695,7 +1695,7 @@ for (int n = 0; n <= ntor; ++n) {
 }
 ```
 
-Note that VMEC weights the coefficients for `m=0` with positive `n ζ`
+Note that VMEC weights the coefficients for `m=0` with positive `n zeta`
 in contrast to the following coefficients with `m>0`.
 The cosine-parity quantities like *R* are not influence by this,
 but the sine-parity quantities like *Z* need to get the sign of their value flipped

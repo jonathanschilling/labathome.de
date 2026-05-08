@@ -447,7 +447,7 @@ Die Geschichte beginnt mit 28,7 kg GG-25 in Form einer Ronde von 250mm Durchm. u
 
 ![Gussronde](00_Rohmaterial.jpg)
 
-Ich habe die Ronde ø250, l80 bei [Richter Kiel](http://richter-kiel.de/) für 77,nochwas € gekauft.
+Ich habe die Ronde dia250, l80 bei [Richter Kiel](http://richter-kiel.de/) für 77,nochwas EUR gekauft.
 
 BTW, dies ist die Maschine, auf der ich den Deckel und sonstige Sachen fertige:
 
@@ -552,7 +552,7 @@ Ich habe den Reitstock trotz der geringen Ausspannung benutzt,
 weil innen der Deckel ja schon ausgedreht war.
 Daher hab ich die Backen nicht voll angeknallt, um die "Wandung" nicht nach innen einzudrücken.
 Die hat zwar noch 10mm Dicke, aber besser Vorsicht als Neumachen.
-Ausserdem musste ich immerhin 20mm Dicke mit 250mm ø zerspanen.
+Ausserdem musste ich immerhin 20mm Dicke mit 250mm dia zerspanen.
 Da ich da nicht bis morgen dransitzen wollte,
 hab ich ein bisschen Gas gegeben und lieber mit Reitsock gearbeitet.
 

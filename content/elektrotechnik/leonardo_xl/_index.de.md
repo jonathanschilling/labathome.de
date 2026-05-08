@@ -28,7 +28,7 @@ Es handelt sich dabei um ein komplettes 68k-System mit folgenden Komponenten:
 Komponente     |         Funktion                         | Bezeichnung auf der Karte
 ---------------|------------------------------------------|--------------------------
 HAL-9001-MW-95 | FPGA für PCI-Interface                   | IC1
-AT17C65        | I²C-EEPROM (24Cxx-komp.) für FPGA-Config | IC2
+AT17C65        | I^2C-EEPROM (24Cxx-komp.) für FPGA-Config | IC2
 MC68HC001FN16  | 16MHz-68000er mit 8/16-Bit Bus           | IC3
 KM681000BLG-7  | 2 Stk: 128kx16 SRAM                      | IC4(ODD), IC5(EVEN)
 MC68681FN      | DUART mit Quarz 3.686MHz                 | IC6
