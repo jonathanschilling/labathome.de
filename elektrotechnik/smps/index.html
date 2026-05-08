@@ -2,23 +2,29 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.106.0">
+  <meta name="generator" content="Hugo 0.161.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:
-Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und einem OPA541 Power-Op-Amp auch ein Schaltnetzteil, welches die Gatetreiber für die HV-Mosfets versorgt.
-Um den rot umrandeten Bereich der beiden Platinen geht es hier:
-Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von Electronetics hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SMPS" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/" />
+<meta name="description" content="From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:
 
+Alongside some nice components &ndash; MHV and SHV connectors, high-voltage relays and MOSFETs, and an OPA541 power op-amp &ndash; it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.
+This page is about the area outlined in red on the two boards:
+">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:url" content="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/">
+  <meta property="og:site_name" content="Lab@Home">
+  <meta property="og:title" content="SMPS">
+  <meta property="og:description" content="From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:
+Alongside some nice components – MHV and SHV connectors, high-voltage relays and MOSFETs, and an OPA541 power op-amp – it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.
+This page is about the area outlined in red on the two boards:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 <title>SMPS | Lab@Home</title>
 <link rel="manifest" href="/labathome.de/manifest.json">
 <link rel="icon" href="/labathome.de/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/labathome.de/book.min.68be0b7a9674f2a612ce0e9b2e9447ff4b7ac96546e06b642bfd3ded0ca490ef.css" integrity="sha256-aL4LepZ08qYSzg6bLpRH/0t6yWVG4GtkK/097QykkO8=">
-<script defer src="/labathome.de/en.search.min.93f6bebadf3447246d8f8d6e04f56d1ba6349133f7d1b41b70557fe6efda83ac.js" integrity="sha256-k/a&#43;ut80RyRtj41uBPVtG6Y0kTP30bQbcFV/5u/ag6w="></script>
+<link rel="alternate" hreflang="de" href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/" title="SMPS">
+
+<link rel="stylesheet" href="/labathome.de/book.min.5ac6c2989f0943405962be6800b442aef429ef26ade26545ecf0617a21d1197a.css" integrity="sha256-WsbCmJ8JQ0BZYr5oALRCrvQp7yat4mVF7PBheiHRGXo=">
+<script defer src="/labathome.de/en.search.min.e8b33a01e82b7c0beb551f3e80772fa20cc4ec19eccffa80d7166fbdfdd18ffe.js" integrity="sha256-6LM6AegrfAvrVR8&#43;gHcvogzE7Bnsz/qA1xZvvf3Rj/4="></script>
 <link rel="alternate" type="application/rss+xml" href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/smps/index.xml" title="Lab@Home" />
 
 
@@ -69,8 +75,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="toggle" checked />
-    <label for="section-88ae3e6ecb3d3fa1ad09b065b750fd2a" class="flex justify-between">
+    <input type="checkbox" id="section-7b49be1ec3270e7e0626d8f51034ad75" class="toggle" checked />
+    <label for="section-7b49be1ec3270e7e0626d8f51034ad75" class="flex justify-between">
       <a href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/" class="">Electrical Engineering</a>
     </label>
   
@@ -85,8 +91,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="toggle"  />
-    <label for="section-0222f5b30b3f626d82b5b10c2d02c6fe" class="flex justify-between">
+    <input type="checkbox" id="section-965e8bebdb994381b348ce197cb62594" class="toggle"  />
+    <label for="section-965e8bebdb994381b348ce197cb62594" class="flex justify-between">
       <a  class="">High Voltage</a>
     </label>
   
@@ -142,8 +148,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-aa15f7083ed8e658e721b252b26a01ae" class="toggle"  />
-    <label for="section-aa15f7083ed8e658e721b252b26a01ae" class="flex justify-between">
+    <input type="checkbox" id="section-877e7226efa87841e804c6880f7c91ea" class="toggle"  />
+    <label for="section-877e7226efa87841e804c6880f7c91ea" class="flex justify-between">
       <a  class="">Transputer</a>
     </label>
   
@@ -222,8 +228,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-2c2643383fea6fada6fc27dbe97de8e4" class="toggle"  />
-    <label for="section-2c2643383fea6fada6fc27dbe97de8e4" class="flex justify-between">
+    <input type="checkbox" id="section-08e0ac22cd1e62589ce09443fbe61b53" class="toggle"  />
+    <label for="section-08e0ac22cd1e62589ce09443fbe61b53" class="flex justify-between">
       <a  class="">Mechanical Engineering</a>
     </label>
   
@@ -346,7 +352,7 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/" class="">Maschinenzubehör</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/maschinenbau/tooling/" class="">Machine tooling</a>
   
 
           
@@ -369,8 +375,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-ab610fcdf9409e4ed411cb3c34fcb85a" class="toggle"  />
-    <label for="section-ab610fcdf9409e4ed411cb3c34fcb85a" class="flex justify-between">
+    <input type="checkbox" id="section-fa13c3e819fe79e106b1a16fce0dc214" class="toggle"  />
+    <label for="section-fa13c3e819fe79e106b1a16fce0dc214" class="flex justify-between">
       <a  class="">Numerics</a>
     </label>
   
@@ -408,8 +414,8 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <input type="checkbox" id="section-e7cfe3d2127c77d408f29ad616291b1e" class="toggle"  />
-    <label for="section-e7cfe3d2127c77d408f29ad616291b1e" class="flex justify-between">
+    <input type="checkbox" id="section-4f27c6321fb8253c62b351da42bbd70e" class="toggle"  />
+    <label for="section-4f27c6321fb8253c62b351da42bbd70e" class="flex justify-between">
       <a  class="">Physics</a>
     </label>
   
@@ -442,7 +448,7 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
   
 
   
-    <a href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/" class="">Adapterflansche KF40/CF40</a>
+    <a href="https://jonathanschilling.github.io/labathome.de/physics/kf40_cf40/" class="">KF40/CF40 Adapter Flanges</a>
   
 
           
@@ -532,84 +538,79 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
 
       
       
-  <article class="markdown"><p>Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:</p>
-<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex Pulser-Modul" /></p>
-<p>Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und
-einem <a href="http://www.ti.com/product/OPA541">OPA541</a> Power-Op-Amp auch ein Schaltnetzteil,
-welches die Gatetreiber für die HV-Mosfets versorgt.</p>
-<p>Um den rot umrandeten Bereich der beiden Platinen geht es hier:</p>
-<p><img src="sciex_pulser_board_smps.jpg" alt="Platine im Pulser-Modul" /></p>
-<p>Als Controller-IC kommt hier der <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a> zum Einsatz.
-Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von <a href="https://www.electronetics.us/">Electronetics</a> hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.</p>
-<p>Die folgende Tabelle gibt die Verbindung des Stromversorgunssteckers links oben (Pins 1-6) an den
-<a href="http://www-bd.gsi.de/dokuwiki/lib/exe/fetch.php?media=misc:nim-standard.pdf">NIM-Stecker</a> wieder:</p>
+  <article class="markdown"><p>From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:</p>
+<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex pulser module" /></p>
+<p>Alongside some nice components &ndash; MHV and SHV connectors, high-voltage relays and MOSFETs, and an <a href="http://www.ti.com/product/OPA541">OPA541</a> power op-amp &ndash; it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.</p>
+<p>This page is about the area outlined in red on the two boards:</p>
+<p><img src="sciex_pulser_board_smps.jpg" alt="Board inside the pulser module" /></p>
+<p>The controller IC used here is the <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a>.
+The larger of the two transformers, labelled 024435, was made by <a href="https://www.electronetics.us/">Electronetics</a> and is probably a custom part commissioned by Sciex.</p>
+<p>The table below shows the wiring from the power-supply connector at the top left (pins 1-6) to the
+<a href="http://www-bd.gsi.de/dokuwiki/lib/exe/fetch.php?media=misc:nim-standard.pdf">NIM connector</a>:</p>
 <table>
-<thead>
-<tr>
-<th>Pin am Board</th>
-<th>Kabelfarbe</th>
-<th>NIM-Pin</th>
-<th>Funktion</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>gelb</td>
-<td>16</td>
-<td>+12V</td>
-</tr>
-<tr>
-<td>2</td>
-<td>weiß</td>
-<td>17</td>
-<td>-12V</td>
-</tr>
-<tr>
-<td>3</td>
-<td>rot</td>
-<td>10</td>
-<td>+6V</td>
-</tr>
-<tr>
-<td>4</td>
-<td>blau</td>
-<td>28</td>
-<td>+24V</td>
-</tr>
-<tr>
-<td>5</td>
-<td>schwarz</td>
-<td>34</td>
-<td>power GND</td>
-</tr>
-<tr>
-<td>6</td>
-<td>grau</td>
-<td>42</td>
-<td>high-quality GND</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Pin on board</th>
+          <th>Wire colour</th>
+          <th>NIM pin</th>
+          <th>Function</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>yellow</td>
+          <td>16</td>
+          <td>+12V</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>white</td>
+          <td>17</td>
+          <td>-12V</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>red</td>
+          <td>10</td>
+          <td>+6V</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>blue</td>
+          <td>28</td>
+          <td>+24V</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>black</td>
+          <td>34</td>
+          <td>power GND</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>grey</td>
+          <td>42</td>
+          <td>high-quality GND</td>
+      </tr>
+  </tbody>
 </table>
-<p>Wenn man jetzt zwischen Pin 1 und 5 ein 12V-Netzteil anschließt, erwacht
-zumindest schon man das Schaltnetzteil zum Leben.
-Es liefert für zwei Gatetreiber jeweils symmetrische 15V.
-Für die weiteren Tests wurden die Gatetreiber-Schaltungsteile abgetrennt.
-Verschiedene Lastwiderstände wurden zwischen +15V und -15V an die
-parallelgeschalteten Ausgänge angeschlossen.
-Die sich ergebende <a href="Belastungskurve.dat">Belastungskurve</a> ist hier zu sehen:</p>
-<p><img src="smps_load.png" alt="Belastungskurve des SMPS" /></p>
-<p>Als Modell wurde eine ideale Spannungsquelle mit nachgeschaltetem (Innen-)Widerstand angenommen.
-Der <a href="plot_smps_load.sh">Fit</a> an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
-ergibt einen Innenwiderstand von ca. 9.3 Ohm bei einer Leerlaufspannung von 29.7V.
-Eine Messung ohne Last ergibt jedoch eine Leerlaufspannung von ca. 70V.
-Hier spielt wahrscheinlich die Tatsache eine Rolle,
-dass es bei der verwendeten SMPS-Topologie kein Feedback
-von der Sekundärseite auf die Ansteuerung auf der Primärseite gibt.</p>
-<p>Interessant ist das Netzteil aus dem Grund, dass es recht einfach (=robust, leicht reparierbar) aufgebaut ist
-und die Isolation zwischen Sekundärseite und Primärseite einigermaßen hochspannungsfest sein müsste.
-Zusammen mit dem brauchbaren Nenn-Ausgangsstrom ist es vielleicht
-für die Gate-Ansteuerung in einer DRSSTC geeignet&hellip; ?</p>
+<p>If you now connect a 12V supply between pin 1 and pin 5, the switch-mode supply at least comes to life.
+It delivers a symmetric +/-15V for each of two gate drivers.
+For further testing, the gate-driver sections of the circuit were disconnected.
+Various load resistors were placed between +15V and -15V across the paralleled outputs.
+The resulting <a href="Belastungskurve.dat">load curve</a> is shown here:</p>
+<p><img src="smps_load.png" alt="SMPS load curve" /></p>
+<p>The model assumed is an ideal voltage source with a series (internal) resistance.
+The <a href="plot_smps_load.sh">fit</a> to the measurements (points with I&lt;0.15A were ignored)
+gives an internal resistance of about 9.3 ohm at an open-circuit voltage of 29.7 V.
+A measurement under no load, however, yields an open-circuit voltage of around 70 V.
+The likely reason is that the SMPS topology used here has no feedback
+from the secondary side to the primary-side control.</p>
+<p>The supply is interesting because its construction is fairly simple (= robust, easy to repair)
+and the isolation between the secondary and primary should be reasonably high-voltage-rated.
+Together with its usable rated output current, it might be suitable
+for driving the gates in a DRSSTC&hellip; ?</p>
 </article>
  
       
@@ -618,11 +619,53 @@ für die Gate-Ansteuerung in einer DRSSTC geeignet&hellip; ?</p>
         
   <div class="flex flex-wrap justify-between">
 
+  
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/5adc20849eab08c1dd9d5b22c41db07261a665d1" title='Last modified by Jonathan Schilling | November 23, 2022' target="_blank" rel="noopener">
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="https://jonathanschilling.github.io/labathome.de/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="https://jonathanschilling.github.io/labathome.de/de/elektrotechnik/smps/" class="flex align-center">
+        <img src="/labathome.de/svg/translate.svg" class="book-icon" alt="Languages" />
+        Deutsch
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/094c2bf58c6214cde11400f161295af1dabcc98b" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>November 23, 2022</span>
+      <span>May 8, 2026</span>
     </a>
   </div>
 

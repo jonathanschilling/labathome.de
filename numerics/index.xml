@@ -4,7 +4,8 @@
     <title>Numerics on Lab@Home</title>
     <link>https://jonathanschilling.github.io/labathome.de/numerics/</link>
     <description>Recent content in Numerics on Lab@Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jonathanschilling.github.io/labathome.de/numerics/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://jonathanschilling.github.io/labathome.de/numerics/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

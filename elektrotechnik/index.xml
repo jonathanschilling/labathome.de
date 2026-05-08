@@ -4,7 +4,8 @@
     <title>Electrical Engineering on Lab@Home</title>
     <link>https://jonathanschilling.github.io/labathome.de/elektrotechnik/</link>
     <description>Recent content in Electrical Engineering on Lab@Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://jonathanschilling.github.io/labathome.de/elektrotechnik/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
