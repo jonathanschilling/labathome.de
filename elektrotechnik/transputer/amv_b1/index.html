@@ -549,7 +549,7 @@ Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit 1MB
 </h1>
 <p>Der AVM B1 ist ein aktiver ISDN-Controller und bis Version 2.0 für den ISA-Bus gebaut.
 Bis Version 3.0 wird ein Transputer vom Typ T400 verwendet.</p>
-<p><img src="avm_b1_gesamt_web.jpg" alt="AVM B1 ISA-Karte" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_gesamt_web.jpg" alt="AVM B1 ISA-Karte" /></p>
 <p>Auf der linken Seite der Karte findet sich ein kleines Transputer-System mit
 1MB RAM sowie einem TRAM-ähnlichen Erweiterungsinterface. Rechts unten auf der Karte
 sitzt der C011, der auf den 4 jumperbaren Adressen vom ISA-Bus aus angesprochen werden kann.
@@ -557,12 +557,12 @@ Der C011 ist auf der B1 fest auf Link 0 des T400 verdrahtet. Die Links sind
 von AVM auf der Platine auf 10MBit/s verdrahtet.</p>
 <p>An diesem B1 habe ich nun einige Modifikationen vorgenommen:</p>
 <p>Zuerst wurde die Linkgeschwindigkeit des C011 auf 20MBit hochgesetzt:</p>
-<p><img src="avm_b1_c012_web.jpg" alt="C012 auf dem B1" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_c012_web.jpg" alt="C012 auf dem B1" /></p>
 <p>Dazu wird Pin 17 mittels eines spitzen Werkzeugs,
 ich habe hier eine feine Messspitze verwendet, hochgebogen
 und auf +5V verdrahtet, z.B. Pin 28 des C011.<br>
 Nun muss natürlich auch die Linkgeschwindigkeit des T400 angepasst werden:</p>
-<p><img src="avm_b1_t400_web.jpg" alt="T400 auf dem B1" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_t400_web.jpg" alt="T400 auf dem B1" /></p>
 <p>Das ist leider ein bisschen kniffliger, da der T400 einen noch geringeren Pinabstand besitzt
 als der C011. Es müssen die Pins 8, 9 und 11 hochgebogen und auf +5V gelegt werden, z.B. an dem 1uF-Kondensator,
 der direkt neben dem T400 aufgelötet ist und zur Pufferung der internen Versorgungsspannung des Link-Interfaces vom T400 dient.</p>
@@ -651,8 +651,8 @@ Wenn nun Link 1, der auf den Erweiterungsbus gelegt ist (s.o.),
 nach &ldquo;draußen&rdquo; führt, kann man dort weitere Transputer(netze) anschließen,
 z.B. den <a href="../avm_t1">AVM T1(-B, wenn vorhanden)</a>.</p>
 <p>Dazu braucht es jedoch einen RS-422-Konverter, der auf den B1 aufgesteckt wird:</p>
-<p><img src="rs422_top_web.jpg" alt="RS-422-Converter top" /></p>
-<p><img src="rs422_bottom_web.jpg" alt="RS-422-Converter bottom" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/rs422_top_web.jpg" alt="RS-422-Converter top" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/rs422_bottom_web.jpg" alt="RS-422-Converter bottom" /></p>
 <p>Bei Maxim bekommt als kostenlose Samples zwei MAX3467. Es handelt sich dabei um RS-422-Konverter für bis zu 40MBit/s,
 also mehr als ausreichend für die Transputer-Links. Diese werden nun anhand der nachfolgenden Schaltskizze verdrahtet,
 am besten auf einer Lochraster-Platine. Der 15-pol. D-SUB-Stecker ist dabei kein Muss, aber da ich für
@@ -711,7 +711,7 @@ auf der <a href="../avm_t1">entsprechenden Unterseite</a>.</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

@@ -553,13 +553,13 @@ The motor is a four-phase brushless DC type, with a permanent magnet on the shaf
   <a class="anchor" href="#pfeiffer-tvp250-2016-11-06">#</a>
 </h2>
 <p>I am currently building a controller for my good old Pfeiffer TVP250:</p>
-<p><img src="pfeiffer_oelseite_r.jpg" alt="Pfeiffer TVP250" /></p>
+<p><img src="/labathome.de/physics/TVP250/pfeiffer_oelseite_r.jpg" alt="Pfeiffer TVP250" /></p>
 <p>The motor is a four-phase brushless DC type, with a permanent magnet on the shaft.
 Thus, by applying a DC voltage to any of the phases with respect to the center tap, the rotor
 rotates into a well-defined position. As it turns out, to accellerate the rotor, a constant phase
 shift of 45 degrees has to be maintained between the driving magnetic field and the magnet on the rotor.</p>
 <p>The old controller died (this is how I got this pump in the first place),
-but I was able to get <a href="PM0012BD.pdf">some information from Pfeiffer</a>:</p>
+but I was able to get <a href="/labathome.de/physics/TVP250/PM0012BD.pdf">some information from Pfeiffer</a>:</p>
 <ul>
 <li>User&rsquo;s Manual &ldquo;PM 800 012 BD&rdquo; resp. &ldquo;B 400 000 C d&rdquo;</li>
 <li>Schematics &ldquo;S 400 000 C&rdquo;</li>
@@ -567,7 +567,7 @@ but I was able to get <a href="PM0012BD.pdf">some information from Pfeiffer</a>:
 </ul>
 <p>Yesterday evening I was able to test the new driver electronics for the first time.
 The L6203 run pretty hot given that they used to be mosfets, but nothing a nice heatsink could not cope with.
-Here are the EAGLE schematics again: <a href="TMP_Controller.zip">TMP_Controller.zip</a></p>
+Here are the EAGLE schematics again: <a href="/labathome.de/physics/TVP250/TMP_Controller.zip">TMP_Controller.zip</a></p>
 <p>A video of the first run can be found on YouTube: <a href="https://youtu.be/dmyyyMA9du0">https://youtu.be/dmyyyMA9du0</a></p>
 <p>The oscillation is due to the rotor locking on the driving field, being accellerated, then the phase shift
 (and thus the driving force) vanishes and the rotor deccellerates again.</p>
@@ -588,8 +588,8 @@ The original drive circuit also used Hall sensors, but in an all-analog approach
 Bearing are EL8 wich could be replaced by a modern 608 in P5 precision, maybe P4 if it is affordable&hellip;
 Since all the rubber rings are ca. 30 years old, I will disassemble the whole unit and replace them too.</p>
 <p>Here is an image of the driver circuit:</p>
-<p><img src="TMP_Controller.png" alt="TMP controller" /></p>
-<p>and a PDF of the board layout as a 300dpi PDF: <a href="TMP_Driver.pdf">TMP_Driver.pdf</a></p>
+<p><img src="/labathome.de/physics/TVP250/TMP_Controller.png" alt="TMP controller" /></p>
+<p>and a PDF of the board layout as a 300dpi PDF: <a href="/labathome.de/physics/TVP250/TMP_Driver.pdf">TMP_Driver.pdf</a></p>
 <p>The current setup constists of my usual ATmega32 development board and some crude wiring,
 but the rotor accelerates up to some speed, where defined by the current code on the uC some limit is reached :-)</p>
 <p>Next steps:</p>
@@ -605,32 +605,32 @@ but the rotor accelerates up to some speed, where defined by the current code on
 <p>Today I had some time to go on building my new driver circuit for the Pfeiffer TVP-250.</p>
 <p>This is a view on the motor signals when I started today.
 The inductivity of the motor strongly distorts the signal and makes it hard to debug the driver circuit.</p>
-<p><img src="00.jpg" alt="bad inductive feedback from the motor coils" /></p>
+<p><img src="/labathome.de/physics/TVP250/00.jpg" alt="bad inductive feedback from the motor coils" /></p>
 <p>Therefore, I build a star of four 30 ohms resistors which are attached to the driver instead of the TMP motor.
 Now the signal looks as intended and allows to verify the correct signal generation.
 Two opposite phases are shown, therefore the phase shift is 180deg.</p>
-<p><img src="01.jpg" alt="30 ohms resistive load" /></p>
+<p><img src="/labathome.de/physics/TVP250/01.jpg" alt="30 ohms resistive load" /></p>
 <p>For a precise control of the acceleration phase of the motor, I need information on at which position the rotor
 is currently located. I already had a single unipolar Hall switch, which gives me one defined pulse per revolution,
 but I did not like that anymore.
 So I decided to go for linear Hall sensors (SS 56 ET) which produce a voltage linearly dependent on the
 surrounding magnetic field.</p>
-<p><img src="02.jpg" alt="Hall sensor board" /></p>
+<p><img src="/labathome.de/physics/TVP250/02.jpg" alt="Hall sensor board" /></p>
 <p>The single sensors are mounted via one strong wire and thus can be bent to stay in place without having to
 fiddle with bending more that one strong wire at a time.</p>
-<p><img src="03.jpg" alt="single Hall sensor (SS 59 ET)" /></p>
+<p><img src="/labathome.de/physics/TVP250/03.jpg" alt="single Hall sensor (SS 59 ET)" /></p>
 <p>Here you can see the sensor board attached to the pump body.
 In order to get a strong signal, I positioned the sensors as close to the magnet as possible.</p>
-<p><img src="04.jpg" alt="position of the Hall sensor board at the pump" /></p>
+<p><img src="/labathome.de/physics/TVP250/04.jpg" alt="position of the Hall sensor board at the pump" /></p>
 <p>However, this turned out to be not optimal. The waveform is quite distorted and one can imagine
 that I was not willing to use this as an input to my circuit.</p>
-<p><img src="05.jpg" alt="first view on the Hall signals" /></p>
+<p><img src="/labathome.de/physics/TVP250/05.jpg" alt="first view on the Hall signals" /></p>
 <p>Therefore, I moved the Hall sensors some millimeters away from the magnet and obtained a much nicer
 sine-like waveform; due to the larger distance the amplitude has also fallen to about 10% of the original one.
 Since the main controller should be an ATmega8 with an integrated ADC with an input voltage range of 0 &hellip; 2.56V,
 I needed a level shifter which did as well some amplification to utilize as much of the ADC range as possible.
 The LT1006 was specifically designed to operate on 5V, so it was a nice choice (apart from the fact that I had one of them lying arround ;-) )</p>
-<p><img src="10.jpg" alt="LT1006 version level shifter schematics" /></p>
+<p><img src="/labathome.de/physics/TVP250/10.jpg" alt="LT1006 version level shifter schematics" /></p>
 <p>I was just about to order some new LT1006s when I took a second thougt on the circuit and wether the
 goal can be reached as well with some more common opamp like the LF411&hellip;</p>
 <p>Here is what I came up with:<br>
@@ -642,9 +642,9 @@ can operate comforably high above ground. The only noticable side effect so far 
 to another voltage to compensate for the voltage drop at the output diodes.
 One could argue that the diode characteristic is going to put a nonlinear term into the amplifier,
 but since the diode is biased at ~0.4mA, I do not expect the forward voltage to change much.</p>
-<p><img src="11.jpg" alt="LF411 version level shifter schematics" /></p>
+<p><img src="/labathome.de/physics/TVP250/11.jpg" alt="LF411 version level shifter schematics" /></p>
 <p>Here is the realisation of the circuit on the breadboard:</p>
-<p><img src="08.jpg" alt="desk" /></p>
+<p><img src="/labathome.de/physics/TVP250/08.jpg" alt="desk" /></p>
 <p>Below you see the final waveforms to get digitized. The shape is not exactly sinusoidal which I belive
 is a geometric effect resulting from the shape of the magnets dipole field rotating aside the Hall sensors.
 At first, I worried about the kind-of saturation of the signals at the top and bottom.
@@ -653,7 +653,7 @@ It is definetely on an opamp effect. I thought about the uniqueness of each set 
 and wether I could always determine the exact rotor position from that.
 However, when (e.g.) signal 1 is at its top level, signal 2 has a strong slope and so I can identify
 the position of the rotor for each set of the two voltages :-)</p>
-<p><img src="09.jpg" alt="final output signals" /></p>
+<p><img src="/labathome.de/physics/TVP250/09.jpg" alt="final output signals" /></p>
 <p>The plan is now to attach these signals to the ATmega and write some sort of look-up-table to identify the rotor position.
 Then, the controller can decide which current patten to apply to the coils depending on the current operating mode:
 power-down (no signal), acceleration (45deg leading phase), decceleration (45deg lagging phase) or idle (0deg phase shift).</p>
@@ -663,20 +663,20 @@ power-down (no signal), acceleration (45deg leading phase), decceleration (45deg
 </h2>
 <p>After moving to Greifswald, I have now set up my lab again and did some progress on the TVP250 controller.</p>
 <p>First step was to actually build the preamp circuit I mentioned in my last post on a circuit board.</p>
-<p><img src="preamp.jpg" alt="Preamp for Hall sensor signals" /></p>
+<p><img src="/labathome.de/physics/TVP250/preamp.jpg" alt="Preamp for Hall sensor signals" /></p>
 <p>Then, I modified an old microcontroller develmopment board to</p>
 <ul>
 <li>calculate the rotor position from the two digitized Hall sensor voltages</li>
 <li>set the driver input signals accordingly to synchronosly drive the motor in the pump and</li>
 <li>handle user interaction via an LCD and two pushbuttons (start and halt).</li>
 </ul>
-<p><img src="controller.jpg" alt="ATmega328 board used for the Pfeiffer TVP250 controller" /></p>
+<p><img src="/labathome.de/physics/TVP250/controller.jpg" alt="ATmega328 board used for the Pfeiffer TVP250 controller" /></p>
 <p>After some fiddling with a proper algorithm which is both capable of semi-realtime control of the drivers
 and handling user interaction with the slow LCD interface, the pump nicely accelerates and decelerates on user request.</p>
 <p>Here is a short video of the operation: <a href="https://www.youtube.com/watch?v=7gtoqjd_-4Y">https://www.youtube.com/watch?v=7gtoqjd_-4Y</a></p>
 <p>Now, I have to get my forepump running and see if the pump really accelerates up to 500Hz.
 At that point, I will also need to implement the hold-mode in the source code which limits the maximum frequency of the driver.</p>
-<p>The source code (written for AVRGCC in AVRstudio 4.18) can be found in this zip file: <a href="tmp_controller_20170520.zip">tmp_controller_20170520.zip</a>.</p>
+<p>The source code (written for AVRGCC in AVRstudio 4.18) can be found in this zip file: <a href="/labathome.de/physics/TVP250/tmp_controller_20170520.zip">tmp_controller_20170520.zip</a>.</p>
 </article>
  
       
@@ -729,7 +729,7 @@ At that point, I will also need to implement the hold-mode in the source code wh
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

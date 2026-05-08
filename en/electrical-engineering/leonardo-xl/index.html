@@ -552,7 +552,7 @@ the (now-defunct) company Hermstedt.</p>
 apparently contained a 68000. That had to be looked into right away!</p>
 <p>So I quickly ordered the card for a few euros, together with a Pentium I
 PC-Compatibility Card for PowerMacs, and started analysing it:</p>
-<p><img src="Leonardo_XL-PCI_V1.3.jpg" alt="Leonardo XL-PCI V1.3" /></p>
+<p><img src="/labathome.de/elektrotechnik/leonardo_xl/Leonardo_XL-PCI_V1.3.jpg" alt="Leonardo XL-PCI V1.3" /></p>
 <p>In this picture the ISDN transformers have already been desoldered so the
 Sub-D sockets can be reused for other purposes. A precision-socket section
 has also been soldered in for J7, to allow reading out the config EEPROM,
@@ -612,14 +612,14 @@ address range is available on the expansion port.</p>
   </tbody>
 </table>
 <p>Beyond that, the card has an expansion bus that resembles the PDS of the older Macs.</p>
-<p>As far as I have measured it, it has the pinout recorded in <a href="Pinout_Expansion.ods">this Calc spreadsheet</a>.</p>
+<p>As far as I have measured it, it has the pinout recorded in <a href="/labathome.de/elektrotechnik/leonardo_xl/Pinout_Expansion.ods">this Calc spreadsheet</a>.</p>
 <p>Then, by means of a session with PonyProg and a flying-wire build of
 the SI-Prog hardware, the config EEPROM was opened up and the following
 configuration file was extracted:</p>
-<p><img src="DSC00008.jpg" alt="SI-Prog setup" /></p>
+<p><img src="/labathome.de/elektrotechnik/leonardo_xl/DSC00008.jpg" alt="SI-Prog setup" /></p>
 <ul>
-<li><a href="fpga_config.bin">FPGA config EEPROM as binary</a></li>
-<li><a href="fpga_config_bitstream.txt">FPGA config EEPROM as a text bitstream</a></li>
+<li><a href="/labathome.de/elektrotechnik/leonardo_xl/fpga_config.bin">FPGA config EEPROM as binary</a></li>
+<li><a href="/labathome.de/elektrotechnik/leonardo_xl/fpga_config_bitstream.txt">FPGA config EEPROM as a text bitstream</a></li>
 </ul>
 <p>Unfortunately I have no idea what kind of FPGA this is, and my enquiries
 to GAFICON &ndash; the company that handles the German distribution for
@@ -628,8 +628,8 @@ Pro2Col, the buyer of Hermstedt &ndash; have so far gone unanswered.</p>
 You can still grab the original drivers via the Wayback Machine from
 a backup of the Hermstedt site.
 I downloaded and unpacked the Windows 95 driver. There are a few
-unimportant files, but also some binaries, e.g. <a href="HermWAN.sys">HermWAN.sys</a>
-and <a href="LeoFW.bin">LeoFW.bin</a>.</p>
+unimportant files, but also some binaries, e.g. <a href="/labathome.de/elektrotechnik/leonardo_xl/HermWAN.sys">HermWAN.sys</a>
+and <a href="/labathome.de/elektrotechnik/leonardo_xl/LeoFW.bin">LeoFW.bin</a>.</p>
 <p>The name of the latter file in particular triggered some heavy associations
 :-). So, off to the hex editor:
 in the first two 32-bit words you find the values 0x400 and 0x4AC,
@@ -644,7 +644,7 @@ using one&rsquo;s own firmware! Very handy&hellip;</p>
 <p>So I ran the firmware through IDA Pro, and lo and behold &ndash; they had
 forgotten to strip the debug symbols before shipping the driver :-).
 That makes it easy to identify the functions and produce an annotated
-listing: <a href="LeoFW.bin.asm">firmware disassembly</a>.</p>
+listing: <a href="/labathome.de/elektrotechnik/leonardo_xl/LeoFW.bin.asm">firmware disassembly</a>.</p>
 <p>The Windows driver HermWAN.sys was also not stripped of its debug symbols,
 so it too is helpless against IDA Pro. Since this is x86 code, the HexRays
 Decompiler even works, allowing pseudocode to be produced :-).</p>
@@ -655,12 +655,12 @@ see what gets written into which registers in order to deassert the reset
 and start the 68HC001.
 Since the reset pin is also routed to the expansion port, you don&rsquo;t even
 have to solder anything to the card itself for this :-).</p>
-<p><img src="DSC00026.jpg" alt="Reset investigation" /></p>
+<p><img src="/labathome.de/elektrotechnik/leonardo_xl/DSC00026.jpg" alt="Reset investigation" /></p>
 <p>Then, with <code>lspci</code> from Linux you find out that the card occupies 1 MByte
 of PCI address space, and that the control registers sit in the upper
 512 kByte &ndash; more precisely from 0x80000 in the card&rsquo;s address space.</p>
 <p>That alone is enough to write a Linux kernel module that releases the
-reset on load and re-asserts it on unload: <a href="leodrv.tar.gz">leodrv</a>.
+reset on load and re-asserts it on unload: <a href="/labathome.de/elektrotechnik/leonardo_xl/leodrv.tar.gz">leodrv</a>.
 The source code also gives the exact register positions.</p>
 <p>That&rsquo;s where things stand at the moment; more will follow as soon as
 there&rsquo;s time again for this interesting project.</p>
@@ -716,7 +716,7 @@ there&rsquo;s time again for this interesting project.</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

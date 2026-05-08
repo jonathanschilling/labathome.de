@@ -538,10 +538,10 @@ This page is about the area outlined in red on the two boards:">
       
       
   <article class="markdown"><p>From an old Sciex QStar XL time-of-flight mass spectrometer I was able to salvage a pulser module:</p>
-<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex pulser module" /></p>
+<p><img src="/labathome.de/elektrotechnik/smps/sciex_qstar_pulser_cut.jpg" alt="Sciex pulser module" /></p>
 <p>Alongside some nice components &ndash; MHV and SHV connectors, high-voltage relays and MOSFETs, and an <a href="http://www.ti.com/product/OPA541">OPA541</a> power op-amp &ndash; it also contains a switch-mode power supply that drives the gate drivers for the HV MOSFETs.</p>
 <p>This page is about the area outlined in red on the two boards:</p>
-<p><img src="sciex_pulser_board_smps.jpg" alt="Board inside the pulser module" /></p>
+<p><img src="/labathome.de/elektrotechnik/smps/sciex_pulser_board_smps.jpg" alt="Board inside the pulser module" /></p>
 <p>The controller IC used here is the <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a>.
 The larger of the two transformers, labelled 024435, was made by <a href="https://www.electronetics.us/">Electronetics</a> and is probably a custom part commissioned by Sciex.</p>
 <p>The table below shows the wiring from the power-supply connector at the top left (pins 1-6) to the
@@ -598,10 +598,10 @@ The larger of the two transformers, labelled 024435, was made by <a href="https:
 It delivers a symmetric +/-15V for each of two gate drivers.
 For further testing, the gate-driver sections of the circuit were disconnected.
 Various load resistors were placed between +15V and -15V across the paralleled outputs.
-The resulting <a href="Belastungskurve.dat">load curve</a> is shown here:</p>
-<p><img src="smps_load.png" alt="SMPS load curve" /></p>
+The resulting <a href="/labathome.de/elektrotechnik/smps/Belastungskurve.dat">load curve</a> is shown here:</p>
+<p><img src="/labathome.de/elektrotechnik/smps/smps_load.png" alt="SMPS load curve" /></p>
 <p>The model assumed is an ideal voltage source with a series (internal) resistance.
-The <a href="plot_smps_load.sh">fit</a> to the measurements (points with I&lt;0.15A were ignored)
+The <a href="/labathome.de/elektrotechnik/smps/plot_smps_load.sh">fit</a> to the measurements (points with I&lt;0.15A were ignored)
 gives an internal resistance of about 9.3 ohm at an open-circuit voltage of 29.7 V.
 A measurement under no load, however, yields an open-circuit voltage of around 70 V.
 The likely reason is that the SMPS topology used here has no feedback
@@ -662,7 +662,7 @@ for driving the gates in a DRSSTC&hellip; ?</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

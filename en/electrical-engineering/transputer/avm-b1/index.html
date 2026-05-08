@@ -549,7 +549,7 @@ On the left side of the card sits a small transputer system with 1 MB of RAM and
 </h1>
 <p>The AVM B1 is an active ISDN controller and was built for the ISA bus up to version 2.0.
 Up to version 3.0 it uses a T400 transputer.</p>
-<p><img src="avm_b1_gesamt_web.jpg" alt="AVM B1 ISA card" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_gesamt_web.jpg" alt="AVM B1 ISA card" /></p>
 <p>On the left side of the card sits a small transputer system with 1 MB of RAM
 and a TRAM-like expansion interface. At the bottom right is the C011, which
 can be addressed from the ISA bus on one of four jumper-selectable addresses.
@@ -557,11 +557,11 @@ On the B1 the C011 is hard-wired to link 0 of the T400. AVM has wired
 the links on the board for 10 Mbit/s.</p>
 <p>I have made a few modifications to this B1:</p>
 <p>First, the link speed of the C011 was raised to 20 Mbit/s:</p>
-<p><img src="avm_b1_c012_web.jpg" alt="C012 on the B1" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_c012_web.jpg" alt="C012 on the B1" /></p>
 <p>For this, pin 17 is bent up using a fine tool &ndash; I used a sharp probe tip &ndash;
 and wired to +5V, e.g. pin 28 of the C011.
 Now of course the link speed of the T400 has to be adjusted as well:</p>
-<p><img src="avm_b1_t400_web.jpg" alt="T400 on the B1" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/avm_b1_t400_web.jpg" alt="T400 on the B1" /></p>
 <p>This is unfortunately a bit fiddlier, as the T400 has an even tighter pin
 pitch than the C011. Pins 8, 9 and 11 have to be bent up and tied to +5V,
 e.g. on the 1 uF capacitor that is soldered right next to the T400 and
@@ -653,8 +653,8 @@ If link 1, which is brought out to the expansion bus (see above), now
 leads &ldquo;outside&rdquo;, you can hook up further transputer(s) (or transputer
 networks) &ndash; for example the <a href="../avm-t1/">AVM T1 (-B if you have one)</a>.</p>
 <p>For that you need an RS-422 converter, which is plugged onto the B1:</p>
-<p><img src="rs422_top_web.jpg" alt="RS-422 converter, top" /></p>
-<p><img src="rs422_bottom_web.jpg" alt="RS-422 converter, bottom" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/rs422_top_web.jpg" alt="RS-422 converter, top" /></p>
+<p><img src="/labathome.de/elektrotechnik/transputer/amv_b1/rs422_bottom_web.jpg" alt="RS-422 converter, bottom" /></p>
 <p>Maxim gives you two MAX3467 chips for free as samples. They are RS-422
 converters good for up to 40 Mbit/s &ndash; more than enough for the transputer
 links. They are wired up according to the schematic below, ideally on a
@@ -714,7 +714,7 @@ about the T1, can be found on the <a href="../avm-t1/">corresponding page</a>.</
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Last modified by Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>

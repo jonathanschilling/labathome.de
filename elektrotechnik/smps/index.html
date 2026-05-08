@@ -543,12 +543,12 @@ Als Controller-IC kommt hier der SG3526J zum Einsatz. Der größere der beiden T
       
       
   <article class="markdown"><p>Aus einem alten Sciex QStar XL Flugzeit-Massenspektrometer konnte ich ein Pulser-Modul bergen:</p>
-<p><img src="sciex_qstar_pulser_cut.jpg" alt="Sciex Pulser-Modul" /></p>
+<p><img src="/labathome.de/elektrotechnik/smps/sciex_qstar_pulser_cut.jpg" alt="Sciex Pulser-Modul" /></p>
 <p>Dieses enthält neben einigen feinen Bauteilen, wie MHV- und SHV-Buchsen, Hochspannungs-Relais, -Mosfets und
 einem <a href="http://www.ti.com/product/OPA541">OPA541</a> Power-Op-Amp auch ein Schaltnetzteil,
 welches die Gatetreiber für die HV-Mosfets versorgt.</p>
 <p>Um den rot umrandeten Bereich der beiden Platinen geht es hier:</p>
-<p><img src="sciex_pulser_board_smps.jpg" alt="Platine im Pulser-Modul" /></p>
+<p><img src="/labathome.de/elektrotechnik/smps/sciex_pulser_board_smps.jpg" alt="Platine im Pulser-Modul" /></p>
 <p>Als Controller-IC kommt hier der <a href="https://www.microsemi.com/existing-parts/parts/55269">SG3526J</a> zum Einsatz.
 Der größere der beiden Trafos mit der Bezeichnung 024435 wurde von <a href="https://www.electronetics.us/">Electronetics</a> hergestellt und ist wahrscheinlich ein von Sciex in Auftrag gegebenes Sondermodell.</p>
 <p>Die folgende Tabelle gibt die Verbindung des Stromversorgunssteckers links oben (Pins 1-6) an den
@@ -607,10 +607,10 @@ Es liefert für zwei Gatetreiber jeweils symmetrische 15V.
 Für die weiteren Tests wurden die Gatetreiber-Schaltungsteile abgetrennt.
 Verschiedene Lastwiderstände wurden zwischen +15V und -15V an die
 parallelgeschalteten Ausgänge angeschlossen.
-Die sich ergebende <a href="Belastungskurve.dat">Belastungskurve</a> ist hier zu sehen:</p>
-<p><img src="smps_load.png" alt="Belastungskurve des SMPS" /></p>
+Die sich ergebende <a href="/labathome.de/elektrotechnik/smps/Belastungskurve.dat">Belastungskurve</a> ist hier zu sehen:</p>
+<p><img src="/labathome.de/elektrotechnik/smps/smps_load.png" alt="Belastungskurve des SMPS" /></p>
 <p>Als Modell wurde eine ideale Spannungsquelle mit nachgeschaltetem (Innen-)Widerstand angenommen.
-Der <a href="plot_smps_load.sh">Fit</a> an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
+Der <a href="/labathome.de/elektrotechnik/smps/plot_smps_load.sh">Fit</a> an die Messungen (die Punkte für I&lt;0.15A wurden vernachlässigt)
 ergibt einen Innenwiderstand von ca. 9.3 Ohm bei einer Leerlaufspannung von 29.7V.
 Eine Messung ohne Last ergibt jedoch eine Leerlaufspannung von ca. 70V.
 Hier spielt wahrscheinlich die Tatsache eine Rolle,
@@ -672,7 +672,7 @@ für die Gate-Ansteuerung in einer DRSSTC geeignet&hellip; ?</p>
 
 
 
-  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/723bdc80fddea8666756a28db50e6a38280f46c9" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/jonathanschilling/labathome.de/commit/b41b27a33423dbcad795a7ef0daf41299bd4addf" title='Zuletzt geändert von Jonathan Schilling | May 8, 2026' target="_blank" rel="noopener">
       <img src="/labathome.de/svg/calendar.svg" class="book-icon" alt="Calendar" />
       <span>May 8, 2026</span>
     </a>
