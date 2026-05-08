@@ -1,0 +1,7 @@
+{{- $href := .Destination -}}
+{{- $resource := .Page.Resources.GetMatch $href -}}
+{{- if $resource -}}
+<a href="{{ $resource.RelPermalink }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

@@ -157,7 +157,7 @@ T-Stücke zur Stößelführung flie0en. In der Mitte der Rohrlänge (also ganz h
 das Rohr ist relativ lang) ist noch ein Loch, sodass die Spindel für die HLV gleich mitgeschmiert wird.
 Kompliziert zu beschreiben; hier mal ein Bild von der Unterseite des Stößels:
 
-![Stößelunterseite](Stössel_von_unten.jpg)
+![Stößelunterseite](Stoessel_von_unten.jpg)
 
 Man sieht deutlich das Rohr, das in einer Schlinge an dem Öltank angeschlossen ist, mit den T-Stücken
 für die Zuführung zur Führung ( :-) ). In der Mitte der Länge des Rohres (ganz links im Bild, wo der Öltropfen am Rohr hängt)
@@ -524,7 +524,7 @@ Ecken zu vermeiden:
 
 Die Aushöhlung, die später von außen angefräst wird für die Lüftungsschlitze:
 
-![Lüftungsschlitze Vorarbeit](18_Absatz_Lüftungsschlitze.jpg)
+![Lüftungsschlitze Vorarbeit](18_Absatz_Lueftungsschlitze.jpg)
 
 Wieder ein paar Späne angefallen:
 
